@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import Logo from '../../images/footer-logo.png'
+import Logo from '../../images/logo.png'
 
 
 const Footer = (props) => {
@@ -25,55 +25,28 @@ const Footer = (props) => {
                                         <img src={Logo} alt="" />
                                     </h3>
                                 </div>
-                                <p>Strikes the upper surface of the impenetrable foliage of my trees, and but a few stray gleams steal</p>
-                                <div className="social-icons">
-                                    <ul>
-                                        <li><Link onClick={ClickHandler} to="/"><i className="ti-facebook"></i></Link></li>
-                                        <li><Link onClick={ClickHandler} to="/"><i className="ti-twitter-alt"></i></Link></li>
-                                        <li><Link onClick={ClickHandler} to="/"><i className="ti-linkedin"></i></Link></li>
-                                        <li><Link onClick={ClickHandler} to="/"><i className="ti-pinterest"></i></Link></li>
-                                    </ul>
-                                </div>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ac blandit lacus. Maecenas eu augue vitae nibh placerat semper molestie a elit. Morbi hendrerit ipsum vitae nulla placerat convallis.</p>                       
                             </div>
                         </div>
                         <div className="col col-xl-3 col-lg-3 col-md-6 col-12">
                             <div className="widget contact-widget service-link-widget">
                                 <div className="widget-title">
-                                    <h3>Address Location</h3>
+                                    <h3>Contatti</h3>
                                 </div>
                                 <ul>
-                                    <li>Upper surface of the impenetrable foliage of my trees, and</li>
-                                    <li><span>Phone:</span> 12465246</li>
-                                    <li><span>Email:</span> demo@example.com</li>
-                                    <li><span>Office Time:</span> 10AM- 5PM</li>
+                                    <li><span>Telefono:</span> 123456789</li>
+                                    <li><span>Email:</span> prova@prova.it</li>
+                                    <li><span>Orari:</span> 10AM- 5PM</li>
                                 </ul>
                             </div>
                         </div>
-                        <div className="col col-xl-3 col-lg-3 col-md-6 col-12">
-                            <div className="widget link-widget">
-                                <div className="widget-title">
-                                    <h3>Quick Links</h3>
-                                </div>
-                                <ul>
-                                    <li><Link onClick={ClickHandler} to="/about">About us</Link></li>
-                                    <li><Link onClick={ClickHandler} to="/causes">Our services</Link></li>
-                                    <li><Link onClick={ClickHandler} to="/contact">Contact us</Link></li>
-                                    <li><Link onClick={ClickHandler} to="/team">Meet team</Link></li>
-                                </ul>
-                                <ul>
-                                    <li><Link onClick={ClickHandler} to="/contact">Privacy Policy</Link></li>
-                                    <li><Link onClick={ClickHandler} to="/testimonials">Testimonials</Link></li>
-                                    <li><Link onClick={ClickHandler} to="/blog">News</Link></li>
-                                    <li><Link onClick={ClickHandler} to="/team">Team</Link></li>
-                                </ul>
-                            </div>
-                        </div>
+                       
                         <div className="col col-xl-3 col-lg-3 col-md-6 col-12">
                             <div className="widget newsletter-widget">
                                 <div className="widget-title">
                                     <h3>Newsletter</h3>
                                 </div>
-                                <p>You will be notified when somthing new will be appear.</p>
+                                <p>Iscriviti alla newsletter per rimanere aggionrato.</p>
                                 <form onSubmit={SubmitHandler}>
                                     <div className="input-1">
                                         <input type="email" className="form-control" placeholder="Email Address *" required />
@@ -92,11 +65,11 @@ const Footer = (props) => {
                     <div className="row">
                         <div className="separator"></div>
                         <div className="col col-xs-12">
-                            <p className="copyright">Copyright &copy; 2023 Proffer. All rights reserved</p>
+                            <p className="copyright">Copyright &copy; 2024 Valepertutti. All rights reserved Powered By Besteam</p>
                             <div className="extra-link">
                                 <ul>
-                                    <li><Link onClick={ClickHandler} to="/contact">Privace & Policy</Link></li>
-                                    <li><Link onClick={ClickHandler} to="/contact">terms and conditions</Link></li>
+                                    <li><Link onClick={ClickHandler} to="/">Privace & Policy</Link></li>
+                                    <li><Link onClick={ClickHandler} to="/">Terms and conditions</Link></li>
                                 </ul>
                             </div>
                         </div>
