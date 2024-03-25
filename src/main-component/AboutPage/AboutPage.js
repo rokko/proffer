@@ -19,17 +19,10 @@ const AboutPage = () => {
     return (
         <Fragment>
             <Navbar hclass={'header-style-1'} Logo={Logo} btnClass={'theme-btn-s1'} />
-            <PageTitle pageTitle={'About Us'} pagesub={'About'} />
+            <PageTitle pageTitle={'Chi Siamo?'} pagesub={'Chi Siamo?'} />
             <About4 />
             <MissionSection />
-            <Targetarea />
-            <CauseSection />
-            <EventsSection eClass={'p-t-0'}/>
-            <PartnerSection />
-            <CtaSection />
-            <CtaSectionS2 />
-            <BlogSection />
-            <Instagram />
+           
             <Footer />
             <Scrollbar />
         </Fragment>

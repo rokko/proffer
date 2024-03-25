@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+.cursor-personalizzato{
+  cursor: url('/cursor.png'), auto;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
