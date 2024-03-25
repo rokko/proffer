@@ -69,6 +69,10 @@ const Header = (props) => {
 
                   
                 </div>
+                <div style={{display:'flex', flexDirection:'row',gap:'10px'}}>
+                <img width="48" height="48" src="https://img.icons8.com/doodle/48/instagram-new.png" alt="instagram-new"/> 
+                <div style={{width:'150px',display:'flex', flexDirection:'row', justifyContent:'center', backgroundColor:'green', color:'white', fontWeight:'bold', borderRadius:'30px', alignItems:'center'}}>DONA ORA</div>
+                </div>
             </nav>
         </header>
 
