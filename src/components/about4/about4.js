@@ -14,54 +14,7 @@ const About4 = (props) => {
                         </div>
                     </div>
                 </div>
-                <div className="row">
-                    <div className="col col-xs-12">
-                        <div className="about-features-grid">
-                            <div className="grid">
-                                <div className="icon">
-                                    <i className="fi flaticon-charity"></i>
-                                </div>
-                                <h3>Prova</h3>
-                                <p>ProvaProvaProvaProvaProvaProva.</p>
-                            </div>
-                            <div className="grid">
-                                <div className="icon">
-                                    <i className="fi flaticon-charity"></i>
-                                </div>
-                                <h3>Prova</h3>
-                                <p>ProvaProvaProvaProvaProvaProvaProva.</p>
-                            </div>
-                            <div className="grid">
-                                <div className="icon">
-                                    <i className="fi flaticon-charity"></i>
-                                </div>
-                                <h3>Prova</h3>
-                                <p>ProvaProvaProvaProvaProvaProva.</p>
-                            </div>
-                            <div className="grid">
-                                <div className="icon">
-                                    <i className="fi flaticon-charity"></i>
-                                </div>
-                                <h3>Prova</h3>
-                                <p>ProvaProvaProvaProvaProvaProvaProva.</p>
-                            </div>
-                            <div className="grid">
-                                <div className="icon">
-                                    <i className="fi flaticon-charity"></i>
-                                </div>
-                                <h3>Prova</h3>
-                                <p>ProvaProvaProvaProvaProvaProva.</p>
-                            </div>
-                            <div className="grid">
-                                <div className="icon">
-                                    <i className="fi flaticon-charity"></i>
-                                </div>
-                                <h3>Prova</h3>
-                                <p>MProvaProvaProvaProvaProvaProvaProvaProva.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+               
             </div>
         </section>
     )

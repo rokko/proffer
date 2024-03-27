@@ -16,7 +16,7 @@ const Collaborazioni = (props) => {
                     <div className="col col-lg-7 col-12">
                         <div className="target-content">
                             <div className="section-title">
-                                <span>#Collaborazioni&Partner</span>
+                                <span>#Collaborazioni</span>
                                 
                             </div>
                             <div className="content">
