@@ -15,14 +15,14 @@ import Instagram from '../../components/Instagram/Instagram';
 import Footer from '../../components/footer/Footer';
 import Logo from '../../images/logo.png'
 import MissionSection2 from '../../components/MissionSection/MissionSection2';
+import About51000 from '../../components/about4/about5PerMille';
 
 const CinqueMille= () => {
     return (
         <Fragment>
             <Navbar hclass={'header-style-1'} Logo={Logo} btnClass={'theme-btn-s1'} />
             <PageTitle pageTitle={'5x1000'} pagesub={'5x1000'} />
-            <About4 />
-            <MissionSection2 />
+            <About51000 />
            
             <Footer />
             <Scrollbar />

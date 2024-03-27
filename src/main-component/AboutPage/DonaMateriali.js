@@ -15,14 +15,14 @@ import Instagram from '../../components/Instagram/Instagram';
 import Footer from '../../components/footer/Footer';
 import Logo from '../../images/logo.png'
 import MissionSection2 from '../../components/MissionSection/MissionSection2';
+import AboutDonaMateriali from '../../components/about4/aboutDonaMateriali';
 
 const DonaMateriali= () => {
     return (
         <Fragment>
             <Navbar hclass={'header-style-1'} Logo={Logo} btnClass={'theme-btn-s1'} />
             <PageTitle pageTitle={'Dona Materiali'} pagesub={'Dona Materiali'} />
-            <About4 />
-            <MissionSection2 />
+            <AboutDonaMateriali/>
            
             <Footer />
             <Scrollbar />
