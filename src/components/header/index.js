@@ -1,4 +1,8 @@
-import React, { useState } from 'react'
+/* global google */
+// Il resto del tuo codice...
+
+
+import React, { useState, useEffect} from 'react'
 import { Link } from 'react-router-dom'
 import MobileMenu from '../MobileMenu/MobileMenu'
 import { totalPrice } from "../../utils";
@@ -6,10 +10,39 @@ import { connect } from "react-redux";
 import { removeFromCart } from "../../store/actions/action";
 
 
+
 const Header = (props) => {
     const [menuActive, setMenuState] = useState(false);
     const [cartActive, setcartState] = useState(false);
+    useEffect(() => {
+        // Funzione per inizializzare Google Translate
+        window.googleTranslateElementInit = function() {
+          new window.google.translate.TranslateElement({
+            pageLanguage: 'it', // Imposta la lingua di partenza
+            layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+          }, 'google_translate_element');
+        };
+    
+        // Carica lo script di Google Translate
+        const googleTranslateScript = document.createElement('script');
+        googleTranslateScript.type = 'text/javascript';
+        googleTranslateScript.async = true;
+        googleTranslateScript.src = '//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
+        document.body.appendChild(googleTranslateScript);
+      }, []);
+      const changeLanguageByButtonClick = (language) => {
+        const iframe = document.querySelector('.goog-te-menu-frame');
+        if (!iframe) return;
+        const doc = iframe.contentDocument || iframe.contentWindow.document;
+        const elements = doc.querySelectorAll('a');
+        Array.from(elements).forEach(element => {
+          if (element.innerHTML.includes(language)) {
+            element.click();
+          }
+        });
 
+        console.log('ciao')
+      };
     const SubmitHandler = (e) => {
         e.preventDefault()
     }
@@ -64,6 +97,10 @@ const Header = (props) => {
                 <img width="48" height="48" src="https://img.icons8.com/doodle/48/instagram-new.png" alt="instagram-new"/> 
                 <div style={{width:'150px',display:'flex', flexDirection:'row', justifyContent:'center', backgroundColor:'green', color:'white', fontWeight:'bold', borderRadius:'30px', alignItems:'center'}}>DONA ORA</div>
                 </div>
+                                <div style={{marginLeft:'30px'}}>
+                                    <img onClick={()=>changeLanguageByButtonClick('italian')} width="48" height="48" src="https://img.icons8.com/color/48/italy.png" alt="italy"/>
+                                    <img onClick={()=>changeLanguageByButtonClick('english')}width="48" height="48" src="https://img.icons8.com/color/48/great-britain.png" alt="great-britain"/>
+                                </div>
             </nav>
         </header>
 
