@@ -4,7 +4,7 @@
 .site-header {
 
 	.navigation {
-		background-color: $white;
+		background-color: #fff!important;
 		margin-bottom: 0;
 		border: 0;
 		@include rounded-border(0);
@@ -466,7 +466,7 @@
 		}
 
 		#navbar > ul > li > a {
-			color: $white;
+			color: #000;
 			padding: 46px 15px;
 			position: relative;
 
