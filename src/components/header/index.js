@@ -41,9 +41,7 @@ const Header = (props) => {
                                 <ul className="sub-menu">
                                     <li><Link onClick={ClickHandler} to="/about">STORIA</Link></li>
                                     <li><Link onClick={ClickHandler} to="/mission">MISSION</Link></li>
-                                    <li><Link onClick={ClickHandler} to="/testimonials">PERCHE' LO FACCIAMO</Link></li>
-                                    <li><Link onClick={ClickHandler} to="/team">TEAM</Link></li>
-                                    <li><Link onClick={ClickHandler} to="/team-single/Michel-Troat">TRASPARENZA</Link></li>
+                
                                 </ul>
                             </li>
                             <li className="menu-item-has-children">
