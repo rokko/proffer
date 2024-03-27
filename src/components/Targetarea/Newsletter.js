@@ -13,7 +13,7 @@ const NewsLetter = (props) => {
             <div className="container">
                 <div className="row">
                 <div className="section-title">
-                                <span style={{textAlign:'center'}}>#NewsLetter</span>
+                                <span style={{textAlign:'center'}}>NewsLetter</span>
 
                                 <br/>
                                 <br/>

@@ -15,7 +15,7 @@ const Targetarea2 = (props) => {
                     
                   
                             <div className="section-title">
-                                <span style={{textAlign:'center'}}>#Brochure</span>
+                                <span style={{textAlign:'center'}}>Brochure</span>
                                 
                             </div>
                             <div className="content">

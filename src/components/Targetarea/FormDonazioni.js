@@ -18,7 +18,7 @@ const FormDonazioni = (props) => {
                         <div className="target-content">
                             <div className="section-title">
                             
-                                <span>#DonaOra</span>
+                                <span>DonaOra</span>
                                 <br/>
                                 <br/>
 
