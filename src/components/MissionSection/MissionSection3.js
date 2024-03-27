@@ -9,7 +9,7 @@ const MissionSection = (props) => {
             <div className="container">
                 <div className="row">
                     <div className="col col-xs-12">
-                        <div className="mission-vision-grids clearfix">
+                        <div className="mission-vision-grids clearfix" style={{display: 'flex', justifyContent: 'space-between', flexDirection:'column'}}>
                             <NavLink to="/dona-ora">
                             <div className="grid">
                                 <div className="overlay"></div>
