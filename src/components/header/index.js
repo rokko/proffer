@@ -53,14 +53,8 @@ const Header = (props) => {
                                 </ul>
                             </li>
                             <li className="menu-item-has-children">
-                                <Link onClick={ClickHandler} to="/">Come Aiutarci</Link>
-                                <ul className="sub-menu">
-                                <li><Link onClick={ClickHandler} to="/blog-single/Canna-Law-Blog-is-a-forum-for-discussing-the-practical">ASTE</Link></li>
-                                            <li><Link onClick={ClickHandler} to="/blog-single/Canna-Law-Blog-is-a-forum-for-discussing-the-practical">5X1000</Link></li>
-                                            <li><Link onClick={ClickHandler} to="/blog-single-left-sidebar/Canna-Law-Blog-is-a-forum-for-discussing-the-practical">DONA ORA</Link></li>
-                                            <li><Link onClick={ClickHandler} to="/blog-single-fullwidth/Canna-Law-Blog-is-a-forum-for-discussing-the-practical">DONA MATERIALI</Link></li>
-                                            <li><Link onClick={ClickHandler} to="/blog-single-fullwidth/Canna-Law-Blog-is-a-forum-for-discussing-the-practical">LAVORA CON NOI</Link></li>
-                                </ul>
+                                <Link onClick={ClickHandler} to="/comeaiutarci">Come Aiutarci</Link>
+                               
                             </li>
                            
                         </ul>
