@@ -20,7 +20,7 @@ const CauseSinglePage = (props) => {
     return (
         <Fragment>
             <Navbar hclass={'header-style-1'} Logo={Logo} btnClass={'theme-btn-s1'} />
-            <PageTitle pageTitle={caseDetails.cTitle} pagesub={'Project'} />
+            <PageTitle pageTitle={caseDetails.cTitle} pagesub={'Progetto'} />
             <section className="case-single-section section-padding">
                 <div className="container">
                 <h3>Titolo del progetto </h3>
@@ -29,7 +29,7 @@ const CauseSinglePage = (props) => {
                                 <img src={caseDetails.cImg} alt="" />
                             </div>
                         </div>
-                        <div className="col col-xl-4 col-lg-5 col-12">
+                        <div >
                             <div className="case-info-area">
                                
                                
@@ -41,7 +41,7 @@ const CauseSinglePage = (props) => {
                     <div className="row donate-area-bottom">
                         <div className="col col-lg-8 col-12">
                             <div className="donate-area-wrapper">
-                                <h3>Donate now</h3>
+                                <h3>Dona Ora</h3>
                                 <p><span>1</span> Choose your donate amount</p>
                                 <form id="give-form-232-1" className="give-form give-form-232 give-form-type-multi" action="https://wpocean.com/wp/nasarna/donations/ensure-education-for-every-poor-children/?payment-mode=manual" data-id="232-1" data-currency_symbol="&#36;" data-currency_code="USD" data-currency_position="before" data-thousands_separator="," data-decimal_separator="." data-number_decimals="2" method="post">
                                     <div className="give-total-wrap">
@@ -180,12 +180,12 @@ const CauseSinglePage = (props) => {
                             <div className="case-single-sidebar">
                                 <div className="widget contact-widget">
                                     <div>
-                                        <p>Our phone number:</p>
-                                        <h4>++316741264727198</h4>
+                                        <p>Numero di telefono:</p>
+                                        <h4>+39 347654321</h4>
                                     </div>
                                     <div>
-                                        <p>Our email address:</p>
-                                        <h4>contact@sagonl.com</h4>
+                                        <p>Email:</p>
+                                        <h4>prova@gmail.com</h4>
                                     </div>
                                 </div>
 
