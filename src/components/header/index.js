@@ -107,7 +107,7 @@ const Header = (props) => {
                 </div>
                 <div style={{display:'flex', flexDirection:'row',gap:'10px'}}>
                 <img width="48" height="48" src="https://img.icons8.com/doodle/48/instagram-new.png" alt="instagram-new"/> 
-                <div style={{width:'150px',display:'flex', flexDirection:'row', justifyContent:'center', backgroundColor:'green', color:'#78c3e0', fontWeight:'bold', borderRadius:'30px', alignItems:'center'}} onClick={handleOpenModal}>DONA ORA</div>
+                <div style={{width:'150px',display:'flex', flexDirection:'row', justifyContent:'center', backgroundColor:'#78c3e0', color:'white', fontWeight:'bold', borderRadius:'30px', alignItems:'center'}} onClick={handleOpenModal}>DONA ORA</div>
                 </div>
                                 <div style={{marginLeft:'30px'}}>
                                     <img onClick={()=>changeLanguageByButtonClick('italian')} width="48" height="48" src="https://img.icons8.com/color/48/italy.png" alt="italy"/>
