@@ -1,6 +1,10 @@
-import React, { useState } from 'react';
+import React, { Fragment, useState } from 'react';
 import './donaora.style.scss';
-function DonaOra() {
+import Navbar from '../../components/Navbar/Navbar';
+import Logo from '../../images/logo.png'
+import Footer from '../../components/footer/Footer';
+
+function DonaOra2() {
   const [formData, setFormData] = useState({
     nome: '',
     cognome: '',
@@ -29,7 +33,19 @@ function DonaOra() {
   };
 
   return (
+    <Fragment>
     
+    <Navbar hclass={'header-style-1'} Logo={Logo} btnClass={'theme-btn-s1'} />
+    <br/>
+      <br/>
+      <br/>
+      <br/><br/>
+      <br/>
+      <h1 style={{ textAlign: 'center' }}>Dona ora</h1>
+      <p>Testo testo testo testo testo testo testo</p>
+      <br/>
+      <br/> <br/>
+      <br/>
     <form className="form-dona" onSubmit={handleSubmit}>
       <div className="input-group">
         <input
@@ -110,7 +126,9 @@ function DonaOra() {
       </div>
       <button type="submit">Invia</button>
     </form>
+    <Footer/>
+    </Fragment>
   );
 }
 
-export default DonaOra;
+export default DonaOra2;

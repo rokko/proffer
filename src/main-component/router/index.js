@@ -34,6 +34,7 @@ import Trasparenza from '../AboutPage/Trasparenza';
 import CinqueMille from '../AboutPage/51000';
 import Aste from '../AboutPage/Aste';
 import DonaMateriali from '../AboutPage/DonaMateriali';
+import DonaOra2 from '../CauseSinglePage/DonaOra2';
 
 
 const AllRoute = () => {
@@ -46,7 +47,7 @@ const AllRoute = () => {
           <Route path="/comeaiutarci" element={<ComeAiutarci />}/>
           <Route path="/mission" element={<MissionPage />}></Route>
           <Route path="/ogni-giorno" element={<OgniGiorno />}></Route>
-          <Route path="/dona-ora" element={<DonaOra />}></Route>
+          <Route path="/dona-ora" element={<DonaOra2 />}></Route>
           <Route path="/perche-facciamo" element={<PercheFacciamo/>}></Route>
           <Route path="/trasparenza" element={<Trasparenza/>}></Route>
           <Route path="/dona-materiali" element={<DonaMateriali/>}></Route>
