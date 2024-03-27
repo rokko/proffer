@@ -34,8 +34,11 @@ const Hero = () => {
             >
                 <SwiperSlide>
                     <div className="slide-inner slide-bg-image" style={{ backgroundImage: `url(${hero1})` }}>
-                        <div className="container">
+                        <div className="container"  style={{marginTop:'50px'}}>
                             <div data-swiper-parallax="300" className="slide-title">
+                                <br/>
+                                <br/>
+
                                 <h2>Chi siamo? </h2>
                             </div>
                             <div data-swiper-parallax="400" className="slide-text">
@@ -50,6 +53,8 @@ const Hero = () => {
                     <div className="slide-inner slide-bg-image" style={{ backgroundImage: `url(${hero2})` }}>
                         <div className="container">
                             <div data-swiper-parallax="300" className="slide-title">
+                            <br/>
+                                <br/>
                                 <h2>Cosa facciamo?</h2>
                             </div>
                             <div data-swiper-parallax="400" className="slide-text">
@@ -64,6 +69,8 @@ const Hero = () => {
                     <div className="slide-inner slide-bg-image" style={{ backgroundImage: `url(${hero2})` }}>
                         <div className="container">
                             <div data-swiper-parallax="300" className="slide-title">
+                            <br/>
+                                <br/>
                                 <h2>Come aiutarci</h2>
                             </div>
                             <div data-swiper-parallax="400" className="slide-text">
