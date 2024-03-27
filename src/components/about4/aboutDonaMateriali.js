@@ -19,7 +19,6 @@ const AboutDonaMateriali = (props) => {
                     <p>Descrizione DescrizioneDescrizioneDescrizioneDescrizioneDescrizioneDescrizione</p>
                 </div>
             </div>
-            <ContactForm/>
         </section>
     )
 }
