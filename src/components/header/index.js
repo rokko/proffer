@@ -110,7 +110,7 @@ const Header = (props) => {
                 <div style={{width:'150px',display:'flex', flexDirection:'row', justifyContent:'center', backgroundColor:'#78c3e0', color:'white', fontWeight:'bold', borderRadius:'30px', alignItems:'center'}} onClick={handleOpenModal}>DONA ORA</div>
                 </div>
                                 <div style={{marginLeft:'30px'}}>
-                                    <img onClick={()=>changeLanguageByButtonClick('english')}width="48" height="48" src="https://img.icons8.com/color/48/great-britain.png" alt="great-britain"/>
+                                    <img onClick={()=>changeLanguageByButtonClick('english')}width="40" height="40" src="https://img.icons8.com/color/48/great-britain.png" alt="great-britain"/>
                                 </div>
             </nav>
             <Modal open={isModalOpen} onClose={handleCloseModal}>
