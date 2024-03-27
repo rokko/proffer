@@ -14,11 +14,11 @@ const FormDonazioni = (props) => {
             <div className="container">
                 <div className="row">
                     
-                    <div className="col col-lg-7 col-12">
-                        <div className="target-content">
+              
+                   
                             <div className="section-title">
                             
-                                <span>DonaOra</span>
+                                <span style={{textAlign:'center'}}>Dona Ora</span>
                                 <br/>
                                 <br/>
 
@@ -27,14 +27,15 @@ const FormDonazioni = (props) => {
                                 <br/>
                                 <br/>
 
-                                <DonaOra />
+                               
                                 
-                            </div>
+                           
                             <div className="content">
+                            <DonaOra />
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    
                 </div>
         </section>
     )
