@@ -79,7 +79,7 @@ const CauseSection2 = (props) => {
             <div className="container-fluid">
                 <div className="section-title-s2">
                     <span>#Progetti</span>
-                    <h2>Progetti  <span>attivi</span></h2>
+                  
                 </div>
                 <div className="content-area causes-slider">
                     <Slider {...settings}>

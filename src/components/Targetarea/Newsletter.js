@@ -9,26 +9,24 @@ const NewsLetter = (props) => {
     }
 
     return (
-        <section className="target-area section-padding" id="about">
+        <section className="target-area section-padding" id="about" style={{display:'flex', flexDirection:'column',alignContent:'center', alignItems:'center',justifyContent:'center'}}>
             <div className="container">
                 <div className="row">
+                <div className="section-title">
+                                <span style={{textAlign:'center'}}>#NewsLetter</span>
 
-                    <div className="col col-lg-7 col-12">
-                        <div className="target-content">
-                            <div className="section-title">
-                                <span>#NewsLetter</span>
+                                <br/>
+                                <br/>
 
                             </div>
+                           
                                 <div class="container">
-                                    <h1><strong>Iscriviti </strong> alla nostra newsletter</h1>
                                     <form action="" className='form-css'>
                                         <input type="email" name="email" id="email" placeholder="example@example.com" />
                                         <input type="submit" name="submit" value="Iscriviti" />
                                     </form>
                                 </div>                                </div>
-                    </div>
                 </div>
-            </div>
         </section>
     )
 }

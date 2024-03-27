@@ -9,22 +9,20 @@ const Targetarea2 = (props) => {
     }
 
     return (
-        <section className="target-area section-padding" id="about">
+        <section className="target-area section-padding" id="about" style={{display:'flex', flexDirection:'column',alignContent:'center', alignItems:'center',justifyContent:'center'}}>
             <div className="container">
                 <div className="row">
                     
-                    <div className="col col-lg-7 col-12">
-                        <div className="target-content">
+                  
                             <div className="section-title">
-                                <span>#Brochure</span>
+                                <span style={{textAlign:'center'}}>#Brochure</span>
                                 
                             </div>
                             <div className="content">
                                 
                                 </div>
                             </div>
-                        </div>
-                    </div>
+                      
                 </div>
         </section>
     )

@@ -43,10 +43,8 @@ const Footer = (props) => {
                        
                         <div className="col col-xl-3 col-lg-3 col-md-6 col-12">
                             <div className="widget newsletter-widget">
-                                <div className="widget-title">
-                                    <h3>Newsletter</h3>
-                                </div>
-                                <p>Iscriviti alla newsletter per rimanere aggionrato.</p>
+                             
+                                <p>Iscriviti alla newsletter per rimanere aggiornato.</p>
                                 <form onSubmit={SubmitHandler}>
                                     <div className="input-1">
                                         <input type="email" className="form-control" placeholder="Email Address *" required />
