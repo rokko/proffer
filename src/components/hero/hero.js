@@ -31,7 +31,7 @@ const Hero = () => {
                     <div className="slide-inner slide-bg-image" style={{ backgroundImage: `url(${hero1})` }}>
                         <div className="container">
                             <div data-swiper-parallax="300" className="slide-title">
-                                <h2>Chi <span>siamo?</span> </h2>
+                                <h2>Chi siamo? </h2>
                             </div>
                             <div data-swiper-parallax="400" className="slide-text">
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ac blandit lacus. Maecenas eu augue vitae nibh placerat semper molestie a elit. Morbi hendrerit ipsum vitae nulla placerat convallis. Aliquam a facilisis quam, in euismod sapien. Nunc dapibus mauris at lorem tincidunt, quis sollicitudin orci elementum. Mauris lacinia ut urna a rhoncus. Vivamus id nisl non ante blandit sagittis. Cras mattis semper lorem. Vestibulum augue dolor, tristique nec pharetra sed, eleifend eu dui. Aenean ex massa, tempus ut bibendum a, aliquam in purus. Integer vel laoreet nibh, dignissim facilisis erat. Nam sit amet magna sed elit porttitor rutrum eu eget sapien. Sed eu malesuada odio. Mauris nec felis ac felis accumsan laoreet.
@@ -45,7 +45,7 @@ const Hero = () => {
                     <div className="slide-inner slide-bg-image" style={{ backgroundImage: `url(${hero2})` }}>
                         <div className="container">
                             <div data-swiper-parallax="300" className="slide-title">
-                                <h2>Cosa <span>facciamo?</span></h2>
+                                <h2>Cosa facciamo?</h2>
                             </div>
                             <div data-swiper-parallax="400" className="slide-text">
                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ac blandit lacus. Maecenas eu augue vitae nibh placerat semper molestie a elit. Morbi hendrerit ipsum vitae nulla placerat convallis. Aliquam a facilisis quam, in euismod sapien. Nunc dapibus mauris at lorem tincidunt, quis sollicitudin orci elementum. Mauris lacinia ut urna a rhoncus. Vivamus id nisl non ante blandit sagittis. Cras mattis semper lorem. Vestibulum augue dolor, tristique nec pharetra sed, eleifend eu dui. Aenean ex massa, tempus ut bibendum a, aliquam in purus. Integer vel laoreet nibh, dignissim facilisis erat. Nam sit amet magna sed elit porttitor rutrum eu eget sapien. Sed eu malesuada odio. Mauris nec felis ac felis accumsan laoreet.</p>
@@ -59,7 +59,7 @@ const Hero = () => {
                     <div className="slide-inner slide-bg-image" style={{ backgroundImage: `url(${hero2})` }}>
                         <div className="container">
                             <div data-swiper-parallax="300" className="slide-title">
-                                <h2>Come <span>aiutarci?</span></h2>
+                                <h2>Come aiutarci</h2>
                             </div>
                             <div data-swiper-parallax="400" className="slide-text">
                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ac blandit lacus. Maecenas eu augue vitae nibh placerat semper molestie a elit. Morbi hendrerit ipsum vitae nulla placerat convallis. Aliquam a facilisis quam, in euismod sapien. Nunc dapibus mauris at lorem tincidunt, quis sollicitudin orci elementum. Mauris lacinia ut urna a rhoncus. Vivamus id nisl non ante blandit sagittis. Cras mattis semper lorem. Vestibulum augue dolor, tristique nec pharetra sed, eleifend eu dui. Aenean ex massa, tempus ut bibendum a, aliquam in purus. Integer vel laoreet nibh, dignissim facilisis erat. Nam sit amet magna sed elit porttitor rutrum eu eget sapien. Sed eu malesuada odio. Mauris nec felis ac felis accumsan laoreet.</p>
