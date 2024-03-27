@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import Team from '../../api/Team'
+import ContactForm from '../ContactForm'
 
 
 const TeamSection = (props) => {
@@ -37,6 +38,10 @@ const TeamSection = (props) => {
                     ))}
                 </div>
             </div>
+            <h2 style={{textAlign:'center'}}>Diventa Volontario</h2>
+            <br/>
+            <br/>
+            <ContactForm/>
         </section>
     )
 }

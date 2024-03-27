@@ -16,6 +16,7 @@ import Footer from '../../components/footer/Footer';
 import Logo from '../../images/logo.png'
 import MissionSection2 from '../../components/MissionSection/MissionSection2';
 import AboutDonaMateriali from '../../components/about4/aboutDonaMateriali';
+import ContactForm from '../../components/ContactForm';
 
 const DonaMateriali= () => {
     return (
@@ -23,7 +24,7 @@ const DonaMateriali= () => {
             <Navbar hclass={'header-style-1'} Logo={Logo} btnClass={'theme-btn-s1'} />
             <PageTitle pageTitle={'Dona Materiali'} pagesub={'Dona Materiali'} />
             <AboutDonaMateriali/>
-           
+             <ContactForm />
             <Footer />
             <Scrollbar />
         </Fragment>
