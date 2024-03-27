@@ -23,7 +23,7 @@ const CauseSinglePage = (props) => {
             <PageTitle pageTitle={caseDetails.cTitle} pagesub={'Project'} />
             <section className="case-single-section section-padding">
                 <div className="container">
-                    <div className="row">
+                <h3>Titolo del progetto </h3>
                         <div className="col col-xl-8 col-lg-7 col-12">
                             <div className="img-holder details-img">
                                 <img src={caseDetails.cImg} alt="" />
@@ -31,31 +31,13 @@ const CauseSinglePage = (props) => {
                         </div>
                         <div className="col col-xl-4 col-lg-5 col-12">
                             <div className="case-info-area">
-                                <h3>During these uncertain times, it’s important to reach out to help </h3>
-                                <div className="goal-raised">
-                                    <div><span>Goal:</span> $500</div>
-                                    <div><span>Raised:</span> $300</div>
-                                </div>
-                                <div className="progress">
-                                    <div className="progress-bar" style={{ width: `${caseDetails.process}%` }}>
-                                        <span className="progress-value">{caseDetails.process}%</span>
-                                    </div>
-                                </div>
-                                <p>Housed in a nice, gilded frame. It showed a lady fitted out with a fur hat and fur boa who sat upright, raising a heavy fur muff that covered the whole of her lower arm towards the viewer gregor then turned</p>
-                                <div className="social-area">
-                                    <ul>
-                                        <li><Link onClick={ClickHandler} to="/"><i className="ti-facebook"></i></Link></li>
-                                        <li><Link onClick={ClickHandler} to="/"><i className="ti-twitter-alt"></i></Link></li>
-                                        <li><Link onClick={ClickHandler} to="/"><i className="ti-linkedin"></i></Link></li>
-                                        <li><Link onClick={ClickHandler} to="/"><i className="ti-pinterest"></i></Link></li>
-                                    </ul>
-
-                                    <span>Follow us</span>
-                                </div>
-                                <p>NB: Please give the donation using bang bang</p>
+                               
+                               
+                                
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas non felis varius, lacinia nisi vel, scelerisque dui. Donec suscipit condimentum ornare. Ut massa velit, maximus in placerat nec, feugiat at urna. Etiam arcu massa, interdum dapibus mattis sed, auctor a ante. Proin non porttitor tortor, id facilisis purus. Nullam blandit erat nec ipsum volutpat vehicula. Sed convallis vehicula hendrerit. Aenean velit urna, pretium at hendrerit non, ullamcorper sed ipsum.</p>
+                                
                             </div>
                         </div>
-                    </div>
                     <div className="row donate-area-bottom">
                         <div className="col col-lg-8 col-12">
                             <div className="donate-area-wrapper">
