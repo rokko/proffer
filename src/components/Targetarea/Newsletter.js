@@ -21,7 +21,7 @@ const NewsLetter = (props) => {
                             </div>
                                 <div class="container">
                                     <h1><strong>Iscriviti </strong> alla nostra newsletter</h1>
-                                    <form action="">
+                                    <form action="" className='form-css'>
                                         <input type="email" name="email" id="email" placeholder="example@example.com" />
                                         <input type="submit" name="submit" value="Iscriviti" />
                                     </form>

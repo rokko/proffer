@@ -14,6 +14,7 @@ import BlogSection from '../../components/BlogSection/BlogSection';
 import Instagram from '../../components/Instagram/Instagram';
 import Footer from '../../components/footer/Footer';
 import Logo from '../../images/logo.png'
+import MissionSection2 from '../../components/MissionSection/MissionSection2';
 
 const AboutPage= () => {
     return (
@@ -21,7 +22,7 @@ const AboutPage= () => {
             <Navbar hclass={'header-style-1'} Logo={Logo} btnClass={'theme-btn-s1'} />
             <PageTitle pageTitle={'Chi Siamo?'} pagesub={'Chi Siamo?'} />
             <About4 />
-            <MissionSection />
+            <MissionSection2 />
            
             <Footer />
             <Scrollbar />

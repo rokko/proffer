@@ -21,7 +21,6 @@ const MissionPage= () => {
             <Navbar hclass={'header-style-1'} Logo={Logo} btnClass={'theme-btn-s1'} />
             <PageTitle pageTitle={'Mission?'} pagesub={'Mission'} />
             <About4 />
-            <MissionSection />
            
             <Footer />
             <Scrollbar />
