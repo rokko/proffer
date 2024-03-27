@@ -8,12 +8,19 @@ import MobileMenu from '../MobileMenu/MobileMenu'
 import { totalPrice } from "../../utils";
 import { connect } from "react-redux";
 import { removeFromCart } from "../../store/actions/action";
+import Modal from '../../main-component/Modal';
+import DonaOra from '../../main-component/CauseSinglePage/DonaOra';
 
 
 
 const Header = (props) => {
     const [menuActive, setMenuState] = useState(false);
     const [cartActive, setcartState] = useState(false);
+
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+    const handleOpenModal = () => setIsModalOpen(true);
+    const handleCloseModal = () => setIsModalOpen(false);
     useEffect(() => {
         // Funzione per inizializzare Google Translate
         window.googleTranslateElementInit = function() {
@@ -97,13 +104,16 @@ const Header = (props) => {
                 </div>
                 <div style={{display:'flex', flexDirection:'row',gap:'10px'}}>
                 <img width="48" height="48" src="https://img.icons8.com/doodle/48/instagram-new.png" alt="instagram-new"/> 
-                <div style={{width:'150px',display:'flex', flexDirection:'row', justifyContent:'center', backgroundColor:'green', color:'white', fontWeight:'bold', borderRadius:'30px', alignItems:'center'}}>DONA ORA</div>
+                <div style={{width:'150px',display:'flex', flexDirection:'row', justifyContent:'center', backgroundColor:'green', color:'white', fontWeight:'bold', borderRadius:'30px', alignItems:'center'}} onClick={handleOpenModal}>DONA ORA</div>
                 </div>
                                 <div style={{marginLeft:'30px'}}>
                                     <img onClick={()=>changeLanguageByButtonClick('italian')} width="48" height="48" src="https://img.icons8.com/color/48/italy.png" alt="italy"/>
                                     <img onClick={()=>changeLanguageByButtonClick('english')}width="48" height="48" src="https://img.icons8.com/color/48/great-britain.png" alt="great-britain"/>
                                 </div>
             </nav>
+            <Modal open={isModalOpen} onClose={handleCloseModal}>
+        <DonaOra />
+      </Modal>
         </header>
 
     )

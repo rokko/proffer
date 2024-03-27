@@ -12,7 +12,7 @@ const CasePage =() => {
     return(
         <Fragment>
             <Navbar hclass={'header-style-1'} Logo={Logo} btnClass={'theme-btn-s1'} />
-            <PageTitle pageTitle={'Case Stadies'} pagesub={'Resent Case Studies'}/> 
+            <PageTitle pageTitle={'Progetti'} pagesub={'Progetti in corso'}/> 
             <CauseSection cClass={'pt-120'}/>
             <Instagram />
             <Footer/>

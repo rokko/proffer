@@ -78,8 +78,8 @@ const CauseSection = (props) => {
         <section className={`causes-section section-padding ${props.cClass}`}>
             <div className="container-fluid">
                 <div className="section-title-s2">
-                    <span>#Causes</span>
-                    <h2>Popular  <span>causes</span></h2>
+                    <span>#Progetti</span>
+                    <h2>Progetti  <span>in corso</span></h2>
                 </div>
                 <div className="content-area causes-slider">
                     <Slider {...settings}>

@@ -1,6 +1,7 @@
 import React from 'react'
 import abimg from '../../images/target.jpg'
 import { Link } from 'react-router-dom';
+import DonaOra from '../../main-component/CauseSinglePage/DonaOra';
 
 const FormDonazioni = (props) => {
 
@@ -16,7 +17,17 @@ const FormDonazioni = (props) => {
                     <div className="col col-lg-7 col-12">
                         <div className="target-content">
                             <div className="section-title">
+                            
                                 <span>#DonaOra</span>
+                                <br/>
+                                <br/>
+
+                                <br/>
+                                <br/>
+                                <br/>
+                                <br/>
+
+                                <DonaOra />
                                 
                             </div>
                             <div className="content">
