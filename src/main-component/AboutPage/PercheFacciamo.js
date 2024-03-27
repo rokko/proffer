@@ -15,14 +15,14 @@ import Instagram from '../../components/Instagram/Instagram';
 import Footer from '../../components/footer/Footer';
 import Logo from '../../images/logo.png'
 import MissionSection2 from '../../components/MissionSection/MissionSection2';
+import AboutPerche from '../../components/about4/aboutPerche';
 
 const PercheFacciamo= () => {
     return (
         <Fragment>
             <Navbar hclass={'header-style-1'} Logo={Logo} btnClass={'theme-btn-s1'} />
             <PageTitle pageTitle={'Perche lo facciamo?'} pagesub={'Perchè lo facciamo?'} />
-            <About4 />
-            <MissionSection2 />
+            <AboutPerche />
            
             <Footer />
             <Scrollbar />
