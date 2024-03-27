@@ -23,9 +23,6 @@ const HomePage = () => {
     return (
         <Fragment>
             <Navbar hclass={'header-style-1'} Logo={Logo} btnClass={'theme-btn-s1'}/>
-            <br/>
-            <br/>
-
           <Hero />
             <Targetarea2 />
             

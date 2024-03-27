@@ -17,6 +17,11 @@ const Hero = () => {
     return (
 
         <section className="hero-slider hero-style-1">
+            <br/>
+            <br/>
+            <br/>
+            
+            
             <Swiper
                 // install Swiper modules
                 modules={[Navigation, A11y]}
