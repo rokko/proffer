@@ -24,8 +24,9 @@ const TeamSection = (props) => {
                             <Link onClick={ClickHandler} to="/" className="theme-btn-s4">Diventa un volontario</Link>
                         </div>
                     </div>
+                    
                     {Team.map((team, aitem) => (
-                        <div className="grid"  key={aitem}>
+                        <div className="grid" style={{margin:'5px'}} key={aitem}>
                             <div >
                                 <img src={team.AtImg} alt="" style={{borderRadius:'50%'}} />
                             </div>
