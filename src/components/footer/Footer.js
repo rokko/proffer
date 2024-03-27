@@ -43,6 +43,9 @@ const Footer = (props) => {
                        
                         <div className="col col-xl-3 col-lg-3 col-md-6 col-12">
                             <div className="widget newsletter-widget">
+                            <img width="48" height="48" src="https://img.icons8.com/doodle/48/instagram-new.png" alt="instagram-new"/> 
+                            <br/><br/>
+
                              
                                 <p>Iscriviti alla newsletter per rimanere aggiornato.</p>
                                 <form onSubmit={SubmitHandler}>
@@ -50,7 +53,7 @@ const Footer = (props) => {
                                         <input type="email" className="form-control" placeholder="Email Address *" required />
                                     </div>
                                     <div className="submit clearfix">
-                                        <button type="submit"><i className="fi flaticon-paper-plane"></i></button>
+                                        <button type="submit" style={{display:'flex',justifyContent:'center',alignItems:'center'}}><i className="fi flaticon-paper-plane"></i></button>
                                     </div>
                                 </form>
                             </div>
@@ -58,7 +61,6 @@ const Footer = (props) => {
                     </div>
                 </div>
             </div>
-            
             <div className="lower-footer">
                 <div className="container">
                     <div className="row">
