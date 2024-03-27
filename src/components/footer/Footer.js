@@ -58,6 +58,7 @@ const Footer = (props) => {
                     </div>
                 </div>
             </div>
+            
             <div className="lower-footer">
                 <div className="container">
                     <div className="row">

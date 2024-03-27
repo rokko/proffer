@@ -1,6 +1,7 @@
 import React from 'react'
 import abimg from '../../images/target.jpg'
 import { Link } from 'react-router-dom';
+import PdfViewer from '../Brochure';
 
 const Targetarea2 = (props) => {
 
@@ -19,7 +20,7 @@ const Targetarea2 = (props) => {
                                 
                             </div>
                             <div className="content">
-                                
+                                <PdfViewer/>
                                 </div>
                             </div>
                       

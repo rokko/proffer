@@ -9,23 +9,21 @@ const Collaborazioni = (props) => {
     }
 
     return (
-        <section className="target-area section-padding" id="about">
-            <div className="container">
-                <div className="row">
+        <section className="target-area section-padding" id="about" style={{display:'flex', flexDirection:'column',alignContent:'center', alignItems:'center',justifyContent:'center'}}>
+       
+               
                     
-                    <div className="col col-lg-7 col-12">
-                        <div className="target-content">
+                   
                             <div className="section-title">
-                                <span>Collaborazioni</span>
+                                <span style={{textAlign:'center'}}>Collaborazioni</span>
                                 
                             </div>
                             <div className="content">
                                 Qui lista partner e collaborazioni loghi
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                     
+                   
+               
         </section>
     )
 }
