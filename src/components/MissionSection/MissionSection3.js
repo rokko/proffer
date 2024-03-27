@@ -1,6 +1,8 @@
+import { Link } from "@mui/material";
 import React from "react";
+import { NavLink } from "react-router-dom";
 
-const MissionSection3 = (props) => {
+const MissionSection = (props) => {
 
     return (
         <section className="mission-vision-section">
@@ -8,16 +10,20 @@ const MissionSection3 = (props) => {
                 <div className="row">
                     <div className="col col-xs-12">
                         <div className="mission-vision-grids clearfix">
+                            <NavLink to="/dona-ora">
                             <div className="grid">
                                 <div className="overlay"></div>
                                 <h3></h3>
                                 <p>Dona Ora</p>
                             </div>
-                         
+                            </NavLink>
+                            <NavLink to="/dona-materiali">
                             <div className="grid">
                                 <div className="overlay"></div>
-                                <h3>Dona Materiali</h3>
+                                <p>Dona Materiali</p>
                             </div>
+                            </NavLink>
+                           
                         </div>
                     </div>
                 </div>
@@ -26,4 +32,4 @@ const MissionSection3 = (props) => {
     );
 }
 
-export default MissionSection3;
+export default MissionSection;

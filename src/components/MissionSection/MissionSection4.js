@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 const MissionSection4 = (props) => {
 
@@ -8,16 +9,18 @@ const MissionSection4 = (props) => {
                 <div className="row">
                     <div className="col col-xs-12">
                         <div className="mission-vision-grids clearfix">
+                            <NavLink to='/aste'>
                             <div className="grid">
                                 <div className="overlay"></div>
-                                <h3></h3>
                                 <p>Aste</p>
                             </div>
-                         
+                            </NavLink>
+                            <NavLink to="/51000">
                             <div className="grid">
                                 <div className="overlay"></div>
-                                <h3>5x1000</h3>
+                                <p>5x1000</p>
                             </div>
+                            </NavLink>
                         </div>
                     </div>
                 </div>
