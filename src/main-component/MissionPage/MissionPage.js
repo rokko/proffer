@@ -15,11 +15,11 @@ import Instagram from '../../components/Instagram/Instagram';
 import Footer from '../../components/footer/Footer';
 import Logo from '../../images/logo.png'
 
-const AboutPage= () => {
+const MissionPage= () => {
     return (
         <Fragment>
             <Navbar hclass={'header-style-1'} Logo={Logo} btnClass={'theme-btn-s1'} />
-            <PageTitle pageTitle={'Chi Siamo?'} pagesub={'Chi Siamo?'} />
+            <PageTitle pageTitle={'Mission?'} pagesub={'Mission'} />
             <About4 />
             <MissionSection />
            
@@ -28,4 +28,4 @@ const AboutPage= () => {
         </Fragment>
     )
 };
-export default AboutPage;
+export default MissionPage;

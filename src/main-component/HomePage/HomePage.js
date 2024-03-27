@@ -13,21 +13,31 @@ import Instagram from '../../components/Instagram/Instagram';
 import Footer from '../../components/footer/Footer';
 import Scrollbar from '../../components/scrollbar/scrollbar';
 import Logo from '../../images/logo.png'
+import Targetarea2 from '../../components/Targetarea/Targetarea2';
+import CauseSection2 from '../../components/CauseSection/index2';
+import NewsLetter from '../../components/Targetarea/Newsletter';
+import Collaborazioni from '../../components/Targetarea/Collaborazioni';
+import FormDonazioni from '../../components/Targetarea/FormDonazioni';
 
 const HomePage = () => {
     return (
         <Fragment>
             <Navbar hclass={'header-style-1'} Logo={Logo} btnClass={'theme-btn-s1'}/>
-            <Hero />
-            <Targetarea />
-            <CauseSection />
+          <Hero />
+            <Targetarea2 />
+            
+            <CauseSection2 />
+            <NewsLetter/>
+            <Collaborazioni />
+            <FormDonazioni />
+            {/*
             <About />
             <EventsSection />
             <PartnerSection />
             <CtaSection />
             <CtaSectionS2 />
             <BlogSection />
-            <Instagram />
+    <Instagram />*/}
             <Footer />
             <Scrollbar />
         </Fragment>

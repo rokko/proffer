@@ -16,27 +16,22 @@ const TeamSection = (props) => {
                     <div className="grid info-grid">
                         <div className="section-title">
                             <span>#Team</span>
-                            <h2>Our Volunteer</h2>
+                            <h2>I nostri volontari</h2>
                         </div>
                         <div className="team-details">
-                            <p>Magazine and housed in a nice, gilded frame. It showed a lady fitted out</p>
-                            <Link onClick={ClickHandler} to="/" className="theme-btn-s4">Become A Volunteer</Link>
+                            <p>Lorem Ipsum</p>
+                            <Link onClick={ClickHandler} to="/" className="theme-btn-s4">Diventa un volontario</Link>
                         </div>
                     </div>
                     {Team.map((team, aitem) => (
-                        <div className="grid" key={aitem}>
-                            <div className="img-holder">
-                                <img src={team.AtImg} alt="" />
+                        <div className="grid"  key={aitem}>
+                            <div >
+                                <img src={team.AtImg} alt="" style={{borderRadius:'50%'}} />
                             </div>
                             <div className="member-info">
                                 <h4><Link onClick={ClickHandler} to={`/team-single/${team.slug}`}>{team.name}</Link></h4>
                                 <p>{team.title}</p>
-                                <ul>
-                                    <li><Link to="/"><i className="ti-facebook"></i></Link></li>
-                                    <li><Link to="/"><i className="ti-twitter-alt"></i></Link></li>
-                                    <li><Link to="/"><i className="ti-linkedin"></i></Link></li>
-                                    <li><Link to="/"><i className="ti-pinterest"></i></Link></li>
-                                </ul>
+                                
                             </div>
                         </div>
                     ))}

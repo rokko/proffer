@@ -25,6 +25,7 @@ import BlogDetailsFull from '../BlogDetailsFull/BlogDetailsFull'
 import BlogDetailsLeftSiide from '../BlogDetailsLeftSiide/BlogDetailsLeftSiide'
 import ContactPage from '../ContactPage/ContactPage';
 import ErrorPage from '../ErrorPage/ErrorPage';
+import MissionPage from '../MissionPage/MissionPage';
 
 
 const AllRoute = () => {
@@ -34,6 +35,7 @@ const AllRoute = () => {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Homepage />} />
+          <Route path="/mission" element={<MissionPage />}></Route>
           <Route path="home" element={<Homepage />} />
           <Route path="home-2" element={<HomePage2 />} />
           <Route path="home-3" element={<HomePage3 />} />
