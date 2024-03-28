@@ -32,7 +32,7 @@ function PdfViewer() {
   };
 
   return (
-    <div>
+    <div style={{display:'flex', flexDirection:'column',alignContent:'center', alignItems:'center',justifyContent:'center'}}>
       <Document file={file} onLoadSuccess={onDocumentLoadSuccess}>
         <div style={pageStyle}>
           {/* Renderizza la pagina corrente */}
@@ -41,7 +41,7 @@ function PdfViewer() {
           {pageNumber + 1 <= numPages && <Page pageNumber={pageNumber + 1} />}
         </div>
       </Document>
-      <div>
+      <div style={{marginTop:'20px', display:'flex', flexDirection:'row',gap:'10px'}}>
         <button onClick={goToPrevPage}>Precedente</button>
         <button onClick={goToNextPage}>Successiva</button>
       </div>
