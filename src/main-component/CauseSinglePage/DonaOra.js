@@ -75,7 +75,7 @@ function DonaOra() {
       <div className="input-group">
         <select name="tipoPagamento" value={formData.tipoPagamento} onChange={handleChange}>
           <option value="singola">Singola</option>
-          <option value="periodica">Periodica</option>
+          <option value="periodica">Periodica Mensile</option>
         </select>
         <input
           type="number"
