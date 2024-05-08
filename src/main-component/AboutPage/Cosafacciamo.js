@@ -15,13 +15,14 @@ import Instagram from '../../components/Instagram/Instagram';
 import Footer from '../../components/footer/Footer';
 import Logo from '../../images/logo.png'
 import MissionSection2 from '../../components/MissionSection/MissionSection2';
+import AboutCosaFacciamo from '../../components/about4/abouCosaFacciamo';
 
 const CosaFacciamo= () => {
     return (
         <Fragment>
             <Navbar hclass={'header-style-1'} Logo={Logo} btnClass={'theme-btn-s1'} />
             <PageTitle pageTitle={'Cosa Facciamo?'} pagesub={'Cosa Facciamo?'} />
-            <About4 />
+            <AboutCosaFacciamo/>
             <MissionSection2 />
            
             <Footer />
