@@ -85,12 +85,16 @@ const CauseSection = (props) => {
                 <div className="content-area causes-slider">
                     <Slider {...settings}>
                         {Causes.slice(0, 6).map((Cause, citem) => (
-                            <div className="item" key={citem} style={{backgroundColor:'black!important'}}>
+                            <Link  to={`/cause-single/${Cause.slug}`}>
+                            <div className="item" key={citem} >
+                            <Link  to={`/cause-single/${Cause.slug}`}>
                                 <div className="inner">
                                     <div className="img-holder">
                                         <img src={Cause.cImg} alt="" />
                                     </div>
+                                    <Link  to={`/cause-single/${Cause.slug}`}>
                                     <div className="overlay">
+                                   <Link  to={`/cause-single/${Cause.slug}`}>
                                         <div className="overlay-content">
                                             <div className="progress">
                                                 <div className="progress-bar" style={{ width: `${Cause.process}%` }}>
@@ -103,9 +107,13 @@ const CauseSection = (props) => {
                                                 <Link onClick={ClickHandler} to={`/cause-single/${Cause.slug}`} className="donate-btn"><i className="fi flaticon-heart-1"></i>Donate</Link>
                                             </div>
                                         </div>
+                                        </Link>
                                     </div>
+                                    </Link>
                                 </div>
+                                </Link>
                             </div>
+                            </Link>
                         ))}
                     </Slider>
                 </div>
