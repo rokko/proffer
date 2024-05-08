@@ -85,7 +85,7 @@ const Header = (props) => {
                                 </ul>
                             </li>
                             <li className="menu-item-has-children">
-                                <Link onClick={ClickHandler} to="/">Cosa Facciamo</Link>
+                                <Link onClick={ClickHandler} to="/cosa-facciamo">Cosa Facciamo</Link>
                                 <ul className="sub-menu">
                                     <li><Link onClick={ClickHandler} to="/ogni-giorno">I FEEL THIS 1</Link></li>
                                     <li><Link onClick={ClickHandler} to="/ogni-giorno">I FEEL THIS 2</Link></li>
