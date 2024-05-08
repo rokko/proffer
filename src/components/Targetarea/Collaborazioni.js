@@ -10,7 +10,7 @@ const Collaborazioni = (props) => {
     }
 
     return (
-        <section className="target-area section-padding" id="about" style={{display:'flex', flexDirection:'column',alignContent:'center', alignItems:'center',justifyContent:'center'}}>
+        <section className="target-area section-padding" id="about" style={{display:'flex', flexDirection:'column',alignContent:'center', alignItems:'center',justifyContent:'center',  backgroundColor:'#ced4da'}}>
        
                
                     

@@ -75,7 +75,7 @@ const CauseSection2 = (props) => {
 
     return (
 
-        <section className={`causes-section section-padding ${props.cClass}`}>
+        <section className={`causes-section section-padding ${props.cClass}`} style={{ backgroundColor:'#ced4da', padding:'20px'}}>
             <div className="container-fluid">
                 <div className="section-title-s2">
                     <span>Progetti</span>
