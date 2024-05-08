@@ -2,8 +2,8 @@
   text-align: center;
 }
 
-.cursor-personalizzato{
-  cursor: url('/cursor.png'), auto;
+*{
+  cursor: url('./images/cursore.svg'),16 16, auto!important;
 }
 
 .App-logo {

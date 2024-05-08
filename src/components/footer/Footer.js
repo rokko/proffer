@@ -25,7 +25,7 @@ const Footer = (props) => {
                                         <img src={Logo} alt="" />
                                     </h3>
                                 </div>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ac blandit lacus. Maecenas eu augue vitae nibh placerat semper molestie a elit. Morbi hendrerit ipsum vitae nulla placerat convallis.</p>                       
+<p>Dove può condurti la passione per la pallacanestro?</p>                       
                             </div>
                         </div>
                         <div className="col col-xl-3 col-lg-3 col-md-6 col-12">
