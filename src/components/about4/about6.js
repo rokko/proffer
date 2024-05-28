@@ -1,5 +1,7 @@
 import React from 'react'
-
+import Organigramma from '../../images/organigramma.png'
+import Statuto from '../../images/statuto.png'
+import Bilancio from '../../images/bilancio.png'
 const About6 = (props) => {
 
     return (
@@ -17,22 +19,29 @@ const About6 = (props) => {
                 <div className="row">
                     <div className="col col-xs-12">
                         <div className="about-features-grid">
-                            <div className="grid">
-                                
+
+                            <div className="grid asinistra" style={{display:'flex', flexDirection:'row', gap:'10px'}}>
+                                <img src={Organigramma} width={48} />
+<div>
                                 <h3>Organigramma</h3>
                                 <p>ProvaProvaProvaProvaProvaProva.</p>
+                                </div>
                             </div>
-                            <div className="grid">
-                              
+                            <div className="grid asinistra" style={{display:'flex', flexDirection:'row',gap:'10px'}}>
+                                <img src={Statuto} width={48} />
+<div>
                                 <h3>Statuto</h3>
                                 <p>ProvaProvaProvaProvaProvaProvaProva.</p>
+                                </div>
                             </div>
-                            <div className="grid">
-                               
+                            <div className="grid " style={{display:'flex', flexDirection:'row',gap:'10px'}}>
+                                <img src={Bilancio} width={48} />
+<div>
                                 <h3>Bilancio</h3>
                                 <p>ProvaProvaProvaProvaProvaProva.</p>
+                                </div>
                             </div>
-                
+
                         </div>
                     </div>
                 </div>
