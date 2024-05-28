@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import './donaora.style.scss';
+import DonaOraImage from '../../images/sfondoDonaOra.jpg'
+
 function DonaOra() {
   const [formData, setFormData] = useState({
     nome: '',
@@ -30,7 +32,7 @@ function DonaOra() {
 
   return (
     
-    <form className="form-dona" onSubmit={handleSubmit}>
+    <form style={{backgroundImage:`url(${DonaOraImage}`}} className="form-dona" onSubmit={handleSubmit}>
       <div className="input-group">
         <input
           type="text"
