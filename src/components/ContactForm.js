@@ -12,9 +12,9 @@ function ContactForm() {
     // Integration with backend or email service goes here
   };
   return (
-    <form onSubmit={handleSubmit} className="form-container">
+    <form onSubmit={handleSubmit}  style={{backgroundColor:'#2d307a', color:'white'}} className="form-container">
       <div>
-        <label htmlFor="name" className="form-label">Nome:</label>
+        <label style={{color:'white'}}htmlFor="name" className="form-label">Nome:</label>
         <input
           type="text"
           id="name"
@@ -25,7 +25,7 @@ function ContactForm() {
         />
       </div>
       <div>
-        <label htmlFor="email" className="form-label">Email:</label>
+        <label style={{color:'white'}} htmlFor="email" className="form-label">Email:</label>
         <input
           type="email"
           id="email"
@@ -36,7 +36,7 @@ function ContactForm() {
         />
       </div>
       <div>
-        <label htmlFor="message" className="form-label">Messaggio:</label>
+        <label style={{color:'white'}} htmlFor="message" className="form-label">Messaggio:</label>
         <textarea
           id="message"
           className="form-textarea"
