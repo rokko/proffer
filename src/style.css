@@ -3,6 +3,9 @@ p {
 }
 /*# sourceMappingURL=style.css.map */
 
+body {
+  cursor: url('/public/cursore.svg'), auto; /* 'auto' è il fallback */
+}
 .cursor-personalizzato {
   cursor: url('/cursor.png'), auto;
 

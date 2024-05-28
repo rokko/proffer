@@ -2,8 +2,8 @@
   text-align: center;
 }
 
-*{
-  cursor: url('./images/cursore.svg'),16 16, auto!important;
+* {
+  cursor: pointer!important; /* 'auto' è il fallback */
 }
 
 .App-logo {
