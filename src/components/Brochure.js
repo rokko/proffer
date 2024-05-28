@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import { Document, Page, pdfjs } from 'react-pdf';
 import file from '../images/pdf.pdf'
 import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
-
+import frecciaSinistra from '../images/frecciaSinistra.png'
+import frecciaDestra from '../images/frecciaDestra.png'
 
 // Configura il worker di pdf.js
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
@@ -34,7 +35,7 @@ function PdfViewer() {
   return (
     <div style={{display:'flex', flexDirection:'row',alignContent:'center', alignItems:'center',justifyContent:'center',gap:'3rem'}}>
       
-      <button onClick={goToPrevPage}><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA0ElEQVR4nO3YuQrCQBRG4YO+laWouHRu2Gip4kNro41gIeICLpGBKSQkWCjRe/k/mD6HJJM7ARERERGRAvWBLbAHxhg1Am5AEleIKWPMALi+RIS1A0oY0suICHdmiCFt4JKKuAMTDGllRDyAKYY0gXNGxAxDGjkRcwyp50QsMKQGnKxHVIFjKqLItYqby0cqwOGHEUlca4X80aO1jFv+V7h42V1tv64+iK5GFFdDo6sx/t3BKpzf8XDU3eDk58MGw7oxIMxFnV9fjIiIiIgIaU9zyuryINMk1gAAAABJRU5ErkJggg==" /></button>
+      <button onClick={goToPrevPage} style={{backgroundColor:'white', width:'100px'}}><img src={frecciaSinistra} /></button>
       <Document file={file} onLoadSuccess={onDocumentLoadSuccess}>
         <div style={pageStyle}>
           {/* Renderizza la pagina corrente */}
@@ -43,7 +44,7 @@ function PdfViewer() {
           {pageNumber + 1 <= numPages && <Page pageNumber={pageNumber + 1} />}
         </div>
       </Document>
-      <button onClick={goToNextPage}><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAtElEQVR4nO3YPQrCQBRF4VPpfiytLSyMC1BSGLNVK7GwcQFWgrV/hUYCU4hoIYGY+7gfvAUcZpiZBMzMzMzMOmgIbNKMELYDqjQ3IEPU/iVEOmYG3D/ETBC0+BIzRZBj1FYmQ5BjfpEDx7elb3MuwJiGesD5jxFVmmvTe6YPnCKE1ObAQX1rtamI8HQpItwlS0d0RBnhBVxGiMiBh/rpFOpTdxshojYAVsBa/XeQmZmZmaHlCeC06ncEGe4qAAAAAElFTkSuQmCC" /></button>
+      <button onClick={goToNextPage} style={{backgroundColor:'white', width:'100px'}}><img src={frecciaDestra}/></button>
     
      
     </div>
