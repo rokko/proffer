@@ -39,7 +39,7 @@ const TeamSection = (props) => {
                     ))}
                 </div>
             </div>
-            <h2 style={{textAlign:'center'}}>Diventa Volontario</h2>
+            <h2 style={{textAlign:'center', color:'#2d307a'}}>Diventa Volontario</h2>
             <br/>
             <br/>
             <ContactForm/>
