@@ -2,7 +2,9 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import Logo from '../../images/logo.png'
 import sfondo from '../../images/footersfondo.webp'
-
+import Facebook from '../../images/facebook.png'
+import Youtube from '../../images/youtube.png'
+import Instagram from '../../images/instagram.png'
 const Footer = (props) => {
 
     const ClickHandler = () => {
@@ -46,7 +48,9 @@ const Footer = (props) => {
                        
                         <div className="col col-xl-3 col-lg-3 col-md-6 col-12">
                             <div className="widget newsletter-widget">
-                            <img width="48" height="48" src="https://img.icons8.com/doodle/48/instagram-new.png" alt="instagram-new"/> 
+                            <img width="48" height="48" src={Instagram} alt="instagram-new"/> 
+                <img width="48" height="48" src={Youtube} alt="instagram-new"/> 
+                <img width="48" height="48" src={Facebook} alt="instagram-new"/> 
                             <br/><br/>
 
                              
