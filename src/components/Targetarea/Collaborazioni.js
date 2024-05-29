@@ -2,6 +2,12 @@ import React from 'react'
 import abimg from '../../images/target.jpg'
 import { Link } from 'react-router-dom';
 import nike from '../../images/nike.png'
+import avaz from '../../images/partner/avaz.png'
+import dondolo from '../../images/partner/dondolo.png'
+import faro from '../../images/partner/faro.png'
+import iotifo from '../../images/partner/iotifo.png'
+import lagiornata from '../../images/partner/lagiornata.png'
+import westin from '../../images/partner/westin.png'
 
 const Collaborazioni = (props) => {
 
@@ -20,10 +26,12 @@ const Collaborazioni = (props) => {
                                 
                             </div>
                             <div className="content" style={{display:'flex', flexDirection:'row', alignContent:'center', alignItems:'center', gap:'10px'}}>
-                                <img src={nike} />
-                                <img src={nike} />
-                                <img src={nike} />
-                                <img src={nike} />
+                                <img width={100} src={avaz} />
+                                <img width={100} src={dondolo} />
+                                <img width={100} src={faro} />
+                                <img width={100} src={iotifo} />
+                                <img width={100} src={lagiornata} />
+                                <img width={100} src={westin} />
 
                                
                                 </div>

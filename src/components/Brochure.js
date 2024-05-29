@@ -28,7 +28,7 @@ function PdfViewer() {
   const pageStyle = {
     display: 'flex',
     justifyContent: 'center',
-    maxHeight: '400px', // Imposta l'altezza massima qui
+    maxHeight: '1000px', // Imposta l'altezza massima qui
     overflow: 'hidden',
   };
 
