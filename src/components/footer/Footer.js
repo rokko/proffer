@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import Logo from '../../images/logo.png'
-
+import sfondo from '../../images/footersfondo.webp'
 
 const Footer = (props) => {
 
@@ -14,7 +14,7 @@ const Footer = (props) => {
     }
 
     return (
-        <footer className="site-footer">
+        <footer className="site-footer" style={{ backgroundImage: `url(${sfondo})` }}>
             <div className="upper-footer">
                 <div className="container">
                     <div className="row">
@@ -34,9 +34,12 @@ const Footer = (props) => {
                                     <h3>Contatti</h3>
                                 </div>
                                 <ul>
-                                    <li><span>Telefono:</span> 123456789</li>
-                                    <li><span>Email:</span> prova@prova.it</li>
-                                    <li><span>Orari:</span> 10AM- 5PM</li>
+                                    <li><span>Sede Legale:</span>  Via Sabrata, 9 00198 Roma
+</li>
+                                    <li><span>Email:</span> valepertutti.info@gmail.com</li>
+                                    <li><span>Codice Fiscale:</span> 96539310589</li>
+                                    <li><span>Numero di telefono:</span> 3487303525</li>
+                                    
                                 </ul>
                             </div>
                         </div>
