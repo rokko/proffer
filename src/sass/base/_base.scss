@@ -5,12 +5,28 @@ html {
     font-size: $base-font-size + px;
 }
 
+
+// Importa il font
+@font-face {
+  font-family: 'Lemon-Sans';
+  src: url('../../fonts/LemonSans-Regular.woff2') format('woff2'),  // Modifica il nome del file con il tuo font
+       url('../../fonts//LemonSans-Regular.woff') format('woff');   // Aggiungi tutte le varianti necessarie
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+    font-family: 'QEA';
+    src: url('../../fonts/qea.otf') format('otf'); // Modifica il nome del file con il tuo font
+    font-weight: normal;
+    font-style: normal;
+  }
+
 :root {
     scroll-behavior: unset;
 }
 
 body {
-    font-family: $base-font;
+    font-family: 'QEA';;
     background-color: $body-bg-color;
     font-size: 16px;
     font-size: calc-rem-value(16);
@@ -25,7 +41,9 @@ body {
 p {
     color: $text-color;
     line-height: 1.6em;
+   
 }
+
 
 h1,
 h2,
@@ -33,7 +51,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: $heading-font;
+    font-family: 'Lemon-Sans'o !important;
     font-weight: bold;
     color: $heading-color;
 }
