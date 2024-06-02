@@ -36,6 +36,7 @@ import Aste from '../AboutPage/Aste';
 import DonaMateriali from '../AboutPage/DonaMateriali';
 import DonaOra2 from '../CauseSinglePage/DonaOra2';
 import CosaFacciamo from '../AboutPage/Cosafacciamo';
+import ChiSiamo from '../AboutPage/ChiSiamo';
 
 
 const AllRoute = () => {
@@ -45,6 +46,7 @@ const AllRoute = () => {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Homepage />} />
+          <Route path="/chisiamo" element={<ChiSiamo/>}/>
           <Route path="/comeaiutarci" element={<ComeAiutarci />}/>
           <Route path="/cosa-facciamo" element={<CosaFacciamo/>}/>
           <Route path="/mission" element={<MissionPage />}></Route>

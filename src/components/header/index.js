@@ -78,7 +78,7 @@ const Header = (props) => {
                         <ul className="nav navbar-nav mb-2 mb-lg-0">
                           
                             <li className="menu-item-has-children">
-                                <Link onClick={ClickHandler} to="/">Chi Siamo</Link>
+                                <Link onClick={ClickHandler} to="/chisiamo">Chi Siamo</Link>
                                 <ul className="sub-menu">
                                     <li><Link onClick={ClickHandler} to="/about">Storia</Link></li>
                                     <li><Link onClick={ClickHandler} to="/mission">Mission</Link></li>
