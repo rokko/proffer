@@ -20,7 +20,7 @@ const TeamSection = (props) => {
                             <h2>I nostri volontari</h2>
                         </div>
                         <div className="team-details">
-                            <p>Lorem Ipsum</p>
+                            
                             <Link onClick={ClickHandler} to="/" className="theme-btn-s4">Diventa un volontario</Link>
                         </div>
                     </div>

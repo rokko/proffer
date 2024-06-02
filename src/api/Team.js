@@ -10,45 +10,39 @@ const Team = [
    {
       Id: '1',
       AtImg: atimg1,
-      name: 'Test Test',
+      name: 'Luciano D’angelo',
       slug: 'Test',
-      title: 'Ruolo',
+      title: 'Presidente',
+   },
+   {
+      Id: '2',
+      AtImg: atimg1,
+      name: 'Luigi D’Angelo',
+      slug: 'Test',
+      title: 'Vicepresidente',
    },
    {
       Id: '1',
       AtImg: atimg1,
-      name: 'Test Test',
+      name: 'Loredana Colli',
       slug: 'Test',
-      title: 'Ruolo',
+      title: 'Segretario',
    },
    {
       Id: '1',
       AtImg: atimg1,
-      name: 'Test Test',
+      name: 'Pietro Puglielli',
       slug: 'Test',
-      title: 'Ruolo',
+      title: 'Consigliere',
    },
    {
       Id: '1',
       AtImg: atimg1,
-      name: 'Test Test',
+      name: 'Federico Forconi',
       slug: 'Test',
-      title: 'Ruolo',
+      title: 'Tesoriere',
    },
-   {
-      Id: '1',
-      AtImg: atimg1,
-      name: 'Test Test',
-      slug: 'Test',
-      title: 'Ruolo',
-   },
-   {
-      Id: '1',
-      AtImg: atimg1,
-      name: 'Test Test',
-      slug: 'Test',
-      title: 'Ruolo',
-   },
+  
 
 ]
 
