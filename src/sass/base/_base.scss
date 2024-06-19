@@ -21,12 +21,17 @@ html {
     font-style: normal;
   }
 
+  @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+
+
+
 :root {
     scroll-behavior: unset;
 }
 
 body {
-    font-family: 'QEA';;
+    
     background-color: $body-bg-color;
     font-size: 16px;
     font-size: calc-rem-value(16);
@@ -41,6 +46,7 @@ body {
 p {
     color: $text-color;
     line-height: 1.6em;
+    font-family: 'Lemon-Sans';
    
 }
 
@@ -51,8 +57,9 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Lemon-Sans'o !important;
-    font-weight: bold;
+    font-family: "Patrick Hand", cursive;
+    font-weight: 400;
+    font-style: normal;
     color: $heading-color;
 }
 
@@ -65,6 +72,9 @@ ul {
 a {
     text-decoration: none;
     @include transition-time(0.2s);
+    font-family: "Patrick Hand", cursive;
+    font-weight: 400;
+    font-style: normal;
 }
 
 a:hover {
@@ -318,3 +328,7 @@ img {
   z-index: 99999 !important;
 }
 
+
+.big-text{
+    font-size:30px;
+}

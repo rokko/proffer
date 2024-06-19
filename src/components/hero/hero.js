@@ -42,7 +42,7 @@ const Hero = () => {
 
                                 <h2>Chi siamo? </h2>
                             </div>
-                            <div data-swiper-parallax="400" className="slide-text">
+                            <div data-swiper-parallax="400" className="slide-text big-text">
                                 <p>Siamo una giovane associazione che ha il sogno di regalare l'amore per il basket e la possibilità di giocarlo a chi è meno fortunato.
 
                                 </p>                            </div>
