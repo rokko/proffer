@@ -107,6 +107,7 @@ const Header = (props) => {
                                     <li><Link onClick={ClickHandler} to="/51000">5x1000</Link></li>
                                     <li><Link onClick={ClickHandler} to="/dona-materiali">Dona Materiali</Link></li>
                                     <li><Link onClick={ClickHandler} to="/aste">Aste</Link></li>
+                                    <li><Link onClick={ClickHandler} to="/diventa-volontario">Diventa un volontario</Link></li>
                                     
                                 </ul>
                                
@@ -122,7 +123,7 @@ const Header = (props) => {
                 <img width="48" height="48" src={Youtube} alt="instagram-new"/> 
                 <img width="48" height="48" src={Facebook} alt="instagram-new"/> 
 
-                <div style={{fontFamily:'Patrick Hand' ,width:'250px',fontSize:'20px',display:'flex', cursor:`url(${CursoreCanestro})!important`,flexDirection:'row', justifyContent:'center', backgroundColor:'#78c3e0', color:'white', fontWeight:'bold', borderRadius:'30px', alignItems:'center'}} onClick={handleOpenModal}>DONA ORA</div>
+                <div className="cursoreColCanestro" style={{fontFamily:'Patrick Hand' ,width:'250px',fontSize:'20px',display:'flex', flexDirection:'row', justifyContent:'center', backgroundColor:'#78c3e0', color:'white', fontWeight:'bold', borderRadius:'30px', alignItems:'center'}} onClick={handleOpenModal}>DONA ORA</div>
                 </div>
                                 <div style={{marginLeft:'30px'}}>
                                     <img onClick={()=>changeLanguageByButtonClick('english')}width="40" height="40" src="https://img.icons8.com/color/48/great-britain.png" alt="great-britain"/>

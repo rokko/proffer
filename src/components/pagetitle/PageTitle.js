@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 
 import chisiamo from './imagesCopertina/chisiamo.webp'
+import comeaiutarci from './imagesCopertina/comeaiutarci.webp'
+import trasparenza from './imagesCopertina/trasparenza.webp'
 const PageTitle = (props) => {
 
 const [imagePagine, setImagePagine]= useState('')
@@ -9,6 +11,14 @@ const [imagePagine, setImagePagine]= useState('')
     useEffect(() => {
         if( props.nomepagina==='chi-siamo') {
             setImagePagine(chisiamo)
+            
+        }
+        if( props.nomepagina==='come-aiutarci') {
+            setImagePagine(comeaiutarci)
+            
+        }
+        if( props.nomepagina==='trasparenza') {
+            setImagePagine(trasparenza)
             
         }
         

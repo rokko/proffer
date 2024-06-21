@@ -44,7 +44,6 @@
 
 .section-title-s2 {
 	@extend .section-title;
-	text-align: center;
 	margin-bottom: 40px;
 	
 	@include media-query(767px) {
@@ -54,8 +53,8 @@
 
 .section-title-s3 {
 	@extend .section-title-s2;
-	text-align: center;
 	margin-bottom: 40px;
+	font-size: 22px;
 
 	h2 {
 		margin-bottom: 0.4em;

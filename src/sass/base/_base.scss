@@ -43,6 +43,11 @@ body {
     }
 }
 
+.cursoreColCanestro{
+    cursor: url('../../../public/cursoreCanestro2.png')!important;
+
+}
+
 p {
     color: $text-color;
     line-height: 40px;

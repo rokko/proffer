@@ -21,7 +21,7 @@ const Trasparenza= () => {
     return (
         <Fragment>
             <Navbar hclass={'header-style-1'} Logo={Logo} btnClass={'theme-btn-s1'} />
-            <PageTitle pageTitle={'Trasparenza'} pagesub={'Trasparenza'} />
+            <PageTitle pageTitle={'Trasparenza'} pagesub={'Trasparenza'} nomepagina={'trasparenza'} />
             <About6 />           
             <Footer />
             <Scrollbar />
