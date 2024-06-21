@@ -2,14 +2,13 @@
 #0.5	footer
 --------------------------------------------------------------*/
 .site-footer {
-	@include background-style("../../images/partners/partners-bg.jpg", center center, cover, no-repeat, local);
 	position: relative;
 	font-size: 15px;
 	overflow: hidden;
 
 	&:before {
 		content: "";
-		background-color: transparentize(#000, 0.08);
+		background-color: transparentize(#1b1b1b, 0.08);
 		width: 100%;
 		height: 100%;
 		position: absolute;

@@ -16,7 +16,7 @@ const Footer = (props) => {
     }
 
     return (
-        <footer className="site-footer" style={{ backgroundImage: `url(${sfondo})` }}>
+        <footer className="site-footer" style={{ backgroundColor:'#1b1b1b' }}>
             <div className="upper-footer">
                 <div className="container">
                     <div className="row">
@@ -27,7 +27,7 @@ const Footer = (props) => {
                                         <img src={Logo} alt="" />
                                     </h3>
                                 </div>
-<p>Dove può condurti la passione per la pallacanestro?</p>                       
+<p style={{fontSize:'25px', lineHeight:'40px'}}>Dove può condurti la passione per la pallacanestro?</p>                       
                             </div>
                         </div>
                         <div className="col col-xl-3 col-lg-3 col-md-6 col-12">
@@ -60,7 +60,7 @@ const Footer = (props) => {
                                         <input type="email" className="form-control" placeholder="Email Address *" required />
                                     </div>
                                     <div className="submit clearfix">
-                                        <button type="submit" style={{display:'flex',justifyContent:'center',alignItems:'center'}}><i className="fi flaticon-paper-plane"></i></button>
+                                        <button type="submit" style={{display:'flex',justifyContent:'center',alignItems:'center', backgroundColor:'#78c3e0'}}><i className="fi flaticon-paper-plane"></i></button>
                                     </div>
                                 </form>
                             </div>

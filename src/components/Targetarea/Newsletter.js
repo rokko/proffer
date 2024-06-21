@@ -23,7 +23,7 @@ const NewsLetter = (props) => {
                                 <div class="container">
                                     <form action="" className='form-css'>
                                         <input type="email" name="email" id="email" placeholder="example@example.com" />
-                                        <input type="submit" name="submit" value="Iscriviti" />
+                                        <input style={{backgroundColor:'#78c3e0'}} type="submit" name="submit" value="Iscriviti" />
                                     </form>
                                 </div>                                </div>
                 </div>

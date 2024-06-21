@@ -78,7 +78,7 @@ const Header = (props) => {
                         <ul className="nav navbar-nav mb-2 mb-lg-0">
                           
                             <li className="menu-item-has-children">
-                                <Link onClick={ClickHandler} to="/chisiamo">Chi Siamo</Link>
+                                <Link onClick={ClickHandler} to="/chisiamo" style={{fontSize:'20px'}}>Chi Siamo</Link>
                                 <ul className="sub-menu">
                                     <li><Link onClick={ClickHandler} to="/about">Storia</Link></li>
                                     <li><Link onClick={ClickHandler} to="/mission">Mission</Link></li>
@@ -89,7 +89,7 @@ const Header = (props) => {
                                 </ul>
                             </li>
                             <li className="menu-item-has-children">
-                                <Link onClick={ClickHandler} to="/cosa-facciamo">Cosa Facciamo</Link>
+                                <Link onClick={ClickHandler} to="/cosa-facciamo" style={{fontSize:'20px'}}>Cosa Facciamo</Link>
                                 <ul className="sub-menu">
                                     <li><Link onClick={ClickHandler} to="/ogni-giorno">FEEL THE DREAM
 </Link></li>
@@ -101,7 +101,7 @@ const Header = (props) => {
                                 </ul>
                             </li>
                             <li className="menu-item-has-children">
-                                <Link onClick={ClickHandler} to="/comeaiutarci">Come Aiutarci</Link>
+                                <Link onClick={ClickHandler} to="/comeaiutarci" style={{fontSize:'20px'}}>Come Aiutarci</Link>
                                 <ul className="sub-menu">
                                     <li><Link onClick={ClickHandler} to="/dona-ora">Dona Ora</Link></li>
                                     <li><Link onClick={ClickHandler} to="/51000">5x1000</Link></li>
@@ -122,7 +122,7 @@ const Header = (props) => {
                 <img width="48" height="48" src={Youtube} alt="instagram-new"/> 
                 <img width="48" height="48" src={Facebook} alt="instagram-new"/> 
 
-                <div style={{width:'180px',display:'flex', cursor:`url(${CursoreCanestro})!important`,flexDirection:'row', justifyContent:'center', backgroundColor:'#78c3e0', color:'white', fontWeight:'bold', borderRadius:'30px', alignItems:'center'}} onClick={handleOpenModal}>DONA ORA</div>
+                <div style={{fontFamily:'Patrick Hand' ,width:'250px',fontSize:'20px',display:'flex', cursor:`url(${CursoreCanestro})!important`,flexDirection:'row', justifyContent:'center', backgroundColor:'#78c3e0', color:'white', fontWeight:'bold', borderRadius:'30px', alignItems:'center'}} onClick={handleOpenModal}>DONA ORA</div>
                 </div>
                                 <div style={{marginLeft:'30px'}}>
                                     <img onClick={()=>changeLanguageByButtonClick('english')}width="40" height="40" src="https://img.icons8.com/color/48/great-britain.png" alt="great-britain"/>

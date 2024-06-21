@@ -16,7 +16,7 @@ const Collaborazioni = (props) => {
     }
 
     return (
-        <section className="target-area section-padding" id="about" style={{display:'flex', flexDirection:'column',alignContent:'center', alignItems:'center',justifyContent:'center',  backgroundColor:'#ced4da'}}>
+        <section className="target-area section-padding" id="about" style={{display:'flex', flexDirection:'column',alignContent:'center', alignItems:'center',justifyContent:'center',  backgroundColor:'#efefef!important'}}>
        
                
                     
@@ -25,7 +25,7 @@ const Collaborazioni = (props) => {
                                 <span style={{textAlign:'center'}}>Collaborazioni</span>
                                 
                             </div>
-                            <div className="content" style={{display:'flex', flexDirection:'row', alignContent:'center', alignItems:'center', gap:'10px'}}>
+                            <div className="content" style={{display:'flex', flexDirection:'row', alignContent:'center', alignItems:'center', gap:'50px'}}>
                                 <img width={100} src={avaz} />
                                 <img width={100} src={dondolo} />
                                 <img width={100} src={faro} />

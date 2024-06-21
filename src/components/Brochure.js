@@ -4,6 +4,7 @@ import file from '../images/pdf.pdf'
 import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
 import frecciaSinistra from '../images/frecciaSinistra.png'
 import frecciaDestra from '../images/frecciaDestra.png'
+import './brochure.css'
 
 // Configura il worker di pdf.js
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;

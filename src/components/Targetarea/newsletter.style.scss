@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,600');
 
 $inputHeight: 70px;
-$primaryColor: #F53A54;
+$primaryColor: #78c3e0;
 
 
 .container {
@@ -22,6 +22,7 @@ h1 {
 }
 
 .form-css {
+  font-family: 'Lemon-sans';
   position: relative;
   display: block;
   height: $inputHeight;
@@ -37,7 +38,7 @@ h1 {
     padding: 0;
     border: none;
     outline: none;
-    font-size: 1rem;
+    font-size: 2rem;
     font-weight: 300;
     background: #eee;
     letter-spacing: 0.02em;
@@ -45,7 +46,7 @@ h1 {
     &:not([type=submit]) {
       width: 100%;
       display: block;
-      padding: 0 150px 0 30px;
+      padding: 0 200px 0 30px;
     }
     
     &:not([type=email]) {
