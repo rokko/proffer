@@ -12,7 +12,7 @@ const TeamPage = () => {
     return (
         <Fragment>
             <Navbar hclass={'header-style-1'} Logo={Logo} btnClass={'theme-btn-s1'} />
-            <PageTitle pageTitle={'Team'} pagesub={'Team'} />
+            <PageTitle pageTitle={'Team'} pagesub={'Team'} nomepagina={'team'}/>
             <TeamSection />
             <Instagram />
             <Footer />

@@ -8,8 +8,9 @@ const MissionText = (props) => {
                 <div className="row justify-content-center">
                     <div className="col col-lg-8 col-md-10">
                         <div className="section-title-s3">
-                            <span>#Mission</span>
-                            <p>Proprio come Valerio ha fatto con noi, la nostra mission è quella di regalare l’amore per il basket e per lo sport in generale, a tutte quelle persone che hanno bisogno di sognare e di porsi degli obiettivi, nella speranza di cambiare in meglio le loro vite.
+                        <h2>
+                Mission
+              </h2>                            <p>Proprio come Valerio ha fatto con noi, la nostra mission è quella di regalare l’amore per il basket e per lo sport in generale, a tutte quelle persone che hanno bisogno di sognare e di porsi degli obiettivi, nella speranza di cambiare in meglio le loro vite.
 
                             </p>
                             <p>Per farlo, partiamo dalla riqualificazione e realizzazione di spazi destinati allo sport per bambini e ragazzi che vivono in situazioni difficili e sono meno fortunati di noi.

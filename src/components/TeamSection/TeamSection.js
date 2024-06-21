@@ -16,7 +16,7 @@ const TeamSection = (props) => {
                     <div className="grid"></div>
                     <div className="grid info-grid">
                         <div className="section-title">
-                            <span>#Team</span>
+                           
                             <h2>I nostri volontari</h2>
                         </div>
                         <div className="team-details">

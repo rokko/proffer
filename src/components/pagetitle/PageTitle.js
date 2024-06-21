@@ -4,12 +4,15 @@ import { Link } from 'react-router-dom'
 import chisiamo from './imagesCopertina/chisiamo.webp'
 import comeaiutarci from './imagesCopertina/comeaiutarci.webp'
 import trasparenza from './imagesCopertina/trasparenza.webp'
+import perchelofacciamo from './imagesCopertina/perchelofacciamo.webp'
+import mission from './imagesCopertina/mission.webp'
+import storia from './imagesCopertina/storia.webp'
 const PageTitle = (props) => {
 
 const [imagePagine, setImagePagine]= useState('')
 
     useEffect(() => {
-        if( props.nomepagina==='chi-siamo') {
+        if( props.nomepagina==='chi-siamo'|| props.nomepagina==='team') {
             setImagePagine(chisiamo)
             
         }
@@ -19,6 +22,18 @@ const [imagePagine, setImagePagine]= useState('')
         }
         if( props.nomepagina==='trasparenza') {
             setImagePagine(trasparenza)
+            
+        }
+        if( props.nomepagina==='perche-lo-facciamo') {
+            setImagePagine(perchelofacciamo)
+            
+        }
+        if( props.nomepagina==='mission') {
+            setImagePagine(mission)
+            
+        }
+        if( props.nomepagina==='storia') {
+            setImagePagine(storia)
             
         }
         

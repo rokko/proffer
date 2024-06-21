@@ -8,8 +8,9 @@ const AboutPerche = (props) => {
                 <div className="row justify-content-center">
                     <div className="col col-lg-8 col-md-10">
                         <div className="section-title-s3">
-                            <span>#PercheLoFacciamo</span>
-                            <p>Oltre a voler regalare al mondo ciò che Valerio ci ha donato, crediamo fermamente nel valore educativo a tutto tondo dello sport.
+                        <h2>
+                Perche lo facciamo
+              </h2>                           <p>Oltre a voler regalare al mondo ciò che Valerio ci ha donato, crediamo fermamente nel valore educativo a tutto tondo dello sport.
                             </p>
                             <p>Lo sport, infatti, non è solo un'attività fisica, ma una potente forza capace di trasformare le vite.</p>
                             <p>Ci insegna la disciplina, il rispetto, a conoscere e superare i nostri limiti, a lavorare insieme e a scoprire il nostro potenziale.

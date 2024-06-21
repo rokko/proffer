@@ -21,7 +21,7 @@ const AboutPage= () => {
     return (
         <Fragment>
             <Navbar hclass={'header-style-1'} Logo={Logo} btnClass={'theme-btn-s1'} />
-            <PageTitle pageTitle={'Chi Siamo?'} pagesub={'Chi Siamo?'} />
+            <PageTitle pageTitle={'Home'} pagesub={'Storia'} nomepagina={'storia'} />
             <About4 />
             <MissionSectionStoria />
            
