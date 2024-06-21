@@ -22,7 +22,7 @@ const ChiSiamo= () => {
     return (
         <Fragment>
             <Navbar hclass={'header-style-1'} Logo={Logo} btnClass={'theme-btn-s1'} />
-            <PageTitle pageTitle={'Home'} pagesub={'Chi Siamo?'} />
+            <PageTitle pageTitle={'Home'} pagesub={'Chi Siamo?'} nomepagina={'chi-siamo'} />
             <ChisiamoSection1 />
 
            

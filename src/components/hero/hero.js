@@ -5,9 +5,9 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import { Link } from 'react-router-dom'
-import hero1 from '../../images/chisiamo.jpg'
-import hero2 from '../../images/cosafacciamo.jpg'
-import hero3 from '../../images/comeaiutarci.jpg'
+import hero1 from '../../images/chisiamoscura.webp'
+import hero2 from '../../images/cosafacciamoscura.webp'
+import hero3 from '../../images/comeaiutarciscura.webp'
 import VideoModal from "../ModalVideo";
 
 const ClickHandler = () => {

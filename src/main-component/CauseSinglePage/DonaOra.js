@@ -31,8 +31,8 @@ function DonaOra() {
   };
 
   return (
-    
-    <form style={{backgroundImage:`url(${DonaOraImage}`}} className="form-dona" onSubmit={handleSubmit}>
+    <div style={{width:'100%!important',backgroundImage:`url(${DonaOraImage}`}}>
+    <form  className="form-dona" onSubmit={handleSubmit}>
       <div className="input-group">
         <input
           type="text"
@@ -112,6 +112,7 @@ function DonaOra() {
       </div>
       <button type="submit">Invia</button>
     </form>
+    </div>
   );
 }
 
