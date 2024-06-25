@@ -7,6 +7,8 @@ import trasparenza from './imagesCopertina/trasparenza.webp'
 import perchelofacciamo from './imagesCopertina/perchelofacciamo.webp'
 import mission from './imagesCopertina/mission.webp'
 import storia from './imagesCopertina/storia.webp'
+import cosafacciamo from './imagesCopertina/cosafacciamo.webp'
+
 const PageTitle = (props) => {
 
 const [imagePagine, setImagePagine]= useState('')
@@ -35,6 +37,10 @@ const [imagePagine, setImagePagine]= useState('')
         if( props.nomepagina==='storia') {
             setImagePagine(mission)
             
+        }
+        if(props.nomepagina==='cosa-facciamo') {
+            setImagePagine(cosafacciamo)
+        
         }
         
     })
