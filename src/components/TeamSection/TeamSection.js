@@ -11,24 +11,23 @@ const TeamSection = (props) => {
 
     return (
         <section className="team-section section-padding">
-            <div className="content-area">
-                <div className="first-row clearfix">
-                    <div className="grid"></div>
-                    <div className="grid info-grid">
-                        <div className="section-title">
+            <div className="grid info-grid">
+                        <div className="section-title" style={{textAlign:'center'}}>
                            
                             <h2>I nostri volontari</h2>
                         </div>
-                        <div className="team-details">
-                            
-                            <Link onClick={ClickHandler} to="/" className="theme-btn-s4">Diventa un volontario</Link>
-                        </div>
+                     
                     </div>
+            <div className="content-area" style={{marginTop:'50px'}}>
+                <div className="first-row clearfix" style={{display:'flex', flexDirection:'row', justifyContent:'center', alignContent:'center'}}>
+                    <div className="grid"></div>
+                    
+                   
                     
                     {Team.map((team, aitem) => (
-                        <div className="grid" style={{margin:'5px'}} key={aitem}>
+                        <div className="grid" style={{margin:'5px',maxWidth:'352px', width:'352px'}} key={aitem} >
                             <div >
-                                <img src={team.AtImg} alt="" style={{borderRadius:'50%'}} />
+                                <img src={team.AtImg} alt="" style={{borderRadius:'50%', width:'352px'}} />
                             </div>
                             <div className="member-info">
                                 <h4><Link onClick={ClickHandler} to={`/team-single/${team.slug}`}>{team.name}</Link></h4>
@@ -39,10 +38,7 @@ const TeamSection = (props) => {
                     ))}
                 </div>
             </div>
-            <h2 style={{textAlign:'center', color:'#2d307a'}}>Diventa Volontario</h2>
-            <br/>
-            <br/>
-            <ContactForm/>
+         
         </section>
     )
 }

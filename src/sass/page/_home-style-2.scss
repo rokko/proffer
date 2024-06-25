@@ -237,7 +237,6 @@
 .team-section {
 	.first-row .grid,
 	.sec-row .grid {
-		width: 25%;
 		min-height: 1px;
 		float: left;
 		position: relative;
@@ -260,16 +259,13 @@
 
 	.first-row > .grid:nth-child(2) {
 		text-align: right;
-		padding: 100px 55px 0 0;
 
 		@include media-query(1500px) {
 			width: 50%;
-			padding: 50px 55px 0 0;
 		}
 
 		@include media-query(1150px) {
 			width: 50%;
-			padding: 0 55px 0 15px;
 		}
 
 		@include media-query(991px) {

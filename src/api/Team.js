@@ -1,43 +1,42 @@
-import atimg1 from '../images/team/img-1.jpg'
-import atimg2 from '../images/team/img-2.jpg'
-import atimg3 from '../images/team/img-3.jpg'
-import atimg4 from '../images/team/img-4.jpg'
-import atimg5 from '../images/team/img-5.jpg'
-import atimg6 from '../images/team/img-6.jpg'
+import damiano from '../images/team/damiano.jpg'
+import federico from '../images/team/federico.jpg'
+import loredana from '../images/team/loredana.jpg'
+import luigi from '../images/team/luigi.jpg'
+import pietro from '../images/team/pietro.jpg'
 
 
 const Team = [
    {
       Id: '1',
-      AtImg: atimg1,
-      name: 'Luciano D’angelo',
+      AtImg: damiano,
+      name: 'Damiano D’angelo',
       slug: 'Test',
       title: 'Presidente',
    },
    {
       Id: '2',
-      AtImg: atimg1,
+      AtImg: luigi,
       name: 'Luigi D’Angelo',
       slug: 'Test',
       title: 'Vicepresidente',
    },
    {
       Id: '1',
-      AtImg: atimg1,
+      AtImg: loredana,
       name: 'Loredana Colli',
       slug: 'Test',
       title: 'Segretario',
    },
    {
       Id: '1',
-      AtImg: atimg1,
+      AtImg: pietro,
       name: 'Pietro Puglielli',
       slug: 'Test',
       title: 'Consigliere',
    },
    {
       Id: '1',
-      AtImg: atimg1,
+      AtImg: federico,
       name: 'Federico Forconi',
       slug: 'Test',
       title: 'Tesoriere',
