@@ -27,7 +27,7 @@ const Footer = (props) => {
                                         <img src={Logo} alt="" />
                                     </h3>
                                 </div>
-<p style={{fontSize:'25px', lineHeight:'40px'}}>Dove può condurti la passione per la pallacanestro?</p>                       
+<p style={{fontSize:'25px', lineHeight:'40px', fontStyle:'italic'}}>"Dove può condurti la passione per la pallacanestro?"</p>                       
                             </div>
                         </div>
                         <div className="col col-xl-3 col-lg-3 col-md-6 col-12">
@@ -75,10 +75,7 @@ const Footer = (props) => {
                         <div className="col col-xs-12">
                             <p className="copyright">Copyright &copy; 2024 Valepertutti. All rights reserved Powered By Besteam</p>
                             <div className="extra-link">
-                                <ul>
-                                    <li><Link onClick={ClickHandler} to="/">Privace & Policy</Link></li>
-                                    <li><Link onClick={ClickHandler} to="/">Terms and conditions</Link></li>
-                                </ul>
+                             
                             </div>
                         </div>
                     </div>

@@ -23,7 +23,6 @@ const CosaFacciamo= () => {
             <Navbar hclass={'header-style-1'} Logo={Logo} btnClass={'theme-btn-s1'} />
             <PageTitle pageTitle={'Cosa Facciamo?'} pagesub={'Cosa Facciamo?'} nomepagina={'cosa-facciamo'}/>
             <AboutCosaFacciamo/>
-            <MissionSection2 />
            
             <Footer />
             <Scrollbar />
