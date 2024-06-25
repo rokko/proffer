@@ -119,9 +119,15 @@ const Header = (props) => {
                   
                 </div>
                 <div style={{display:'flex', flexDirection:'row',gap:'10px'}}>
+                    <a style={{width:'48px', height:'48px'}} href="https://www.instagram.com/valepertutti.it/" target='_blank'>
                 <img width="48" height="48" src={Instagram} alt="instagram-new"/> 
+                </a>
+                <a style={{width:'48px', height:'48px'}} href="https://www.youtube.com/@valepertutti1787" target='_blank'>
                 <img width="48" height="48" src={Youtube} alt="instagram-new"/> 
+                </a>
+                <a style={{width:'48px', height:'48px'}} href="https://www.facebook.com/valepertutti.it" target='_blank'>
                 <img width="48" height="48" src={Facebook} alt="instagram-new"/> 
+                </a>
 
                 <div className="cursoreColCanestro" style={{fontFamily:'Patrick Hand' ,width:'250px',fontSize:'20px',display:'flex', flexDirection:'row', justifyContent:'center', backgroundColor:'#78c3e0', color:'white', fontWeight:'bold', borderRadius:'30px', alignItems:'center'}} onClick={handleOpenModal}>DONA ORA</div>
                 </div>
