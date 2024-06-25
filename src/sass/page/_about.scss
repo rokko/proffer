@@ -143,6 +143,7 @@
 		left: 0;
 		top: 0;
 		z-index: -1;
+		border-radius: 20px;
 		opacity: 0;
 		@include transition-time(0.3s);
 
@@ -154,12 +155,16 @@
 			position: absolute;
 			left: 0;
 			top: 0;
+			border-radius: 20px;
+
 		}
 	}
 
 	.grid:hover .overlay,
 	.mission-vision-grids > .grid:nth-child(2) .overlay {
 		opacity: 1;
+		border-radius: 20px;
+
 	}
 
 	.grid:hover,

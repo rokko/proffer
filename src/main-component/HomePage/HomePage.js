@@ -18,12 +18,14 @@ import CauseSection2 from '../../components/CauseSection/index2';
 import NewsLetter from '../../components/Targetarea/Newsletter';
 import Collaborazioni from '../../components/Targetarea/Collaborazioni';
 import FormDonazioni from '../../components/Targetarea/FormDonazioni';
+import VideoArea from '../../components/Targetarea/VideoArea';
 
 const HomePage = () => {
     return (
         <Fragment>
             <Navbar hclass={'header-style-1'} Logo={Logo} btnClass={'theme-btn-s1'}/>
           <Hero />
+          <VideoArea />
             <Targetarea2 />
             
             <CauseSection2 />
