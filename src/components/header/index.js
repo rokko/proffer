@@ -129,7 +129,7 @@ const Header = (props) => {
                 <img width="48" height="48" src={Facebook} alt="instagram-new"/> 
                 </a>
 
-                <div className="cursoreColCanestro" style={{fontFamily:'Patrick Hand' ,width:'250px',fontSize:'20px',display:'flex', flexDirection:'row', justifyContent:'center', backgroundColor:'#78c3e0', color:'white', fontWeight:'bold', borderRadius:'30px', alignItems:'center'}} onClick={handleOpenModal}>DONA ORA</div>
+                <div className="cursoreColCanestro" style={{fontFamily:'Patrick Hand' ,width:'250px',fontSize:'20px',display:'flex', flexDirection:'row', justifyContent:'center', backgroundColor:'#e21d14', color:'white', fontWeight:'bold', borderRadius:'30px', alignItems:'center'}} onClick={handleOpenModal}>DONA ORA</div>
                 </div>
                                 <div style={{marginLeft:'30px'}}>
                                     <img onClick={()=>changeLanguageByButtonClick('english')}width="40" height="40" src="https://img.icons8.com/color/48/great-britain.png" alt="great-britain"/>
