@@ -21,7 +21,7 @@ const Aste= () => {
     return (
         <Fragment>
             <Navbar hclass={'header-style-1'} Logo={Logo} btnClass={'theme-btn-s1'} />
-            <PageTitle pageTitle={'Aste'} pagesub={'Aste'} />
+            <PageTitle pageTitle={'Aste'} pagesub={'Aste'} nomepagina={'aste'} />
             <AboutAste /> 
             <Footer />
             <Scrollbar />

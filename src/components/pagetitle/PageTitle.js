@@ -12,6 +12,7 @@ import feelthedream from './imagesCopertina/feelthedream.webp'
 import feelthegame from './imagesCopertina/feelthegame.webp'
 import feelthecourt from './imagesCopertina/feelthecourt.webp'
 import feelthemoment from './imagesCopertina/feelthemoment.webp'
+import aste from './imagesCopertina/aste.webp'
 
 const PageTitle = (props) => {
 
@@ -57,6 +58,9 @@ const [imagePagine, setImagePagine]= useState('')
         }
         if(props.nomepagina==='feel-the-moment') {
             setImagePagine(feelthemoment)
+        }
+        if(props.nomepagina==='aste'){
+            setImagePagine(aste)
         }
         
     })
