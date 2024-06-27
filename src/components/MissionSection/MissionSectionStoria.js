@@ -22,7 +22,7 @@ Sono 7 giorni di fatica e scoperta, che ci cambiano profondamente e piantano nei
                                 <p>5 luglio: è passato appena un mese, e passiamo una giornata intera a sognare come restituire l’amore per la pallacanestro che Vale ci ha trasmesso. Sogniamo altri campi da basket, sogniamo clinic di formazione in mezzo alle baraccopoli…non ci poniamo limiti. E così, tra lacrime e risate prende forza l’idea di un’associazione che porti avanti i sogni di Valerio. Non ci sono ancora nome, logo, statuto, bilanci e la strada sembra lunghissima…ma sinceramente a noi, non importa.
 </p>
                             </div>
-                            <div className="grid" style={{padding:'20px', fontSize:'25px', display:''}}>
+                            <div className="grid" style={{padding:'20px', fontSize:'25px', display:'', borderRadius:'20px'}}>
                                 <div className="overlay"></div>
                                 
                                 <p>5 luglio: è passato appena un mese, e passiamo una giornata intera a sognare come restituire l’amore per la pallacanestro che Vale ci ha trasmesso. Sogniamo altri campi da basket, sogniamo clinic di formazione in mezzo alle baraccopoli…non ci poniamo limiti. E così, tra lacrime e risate prende forza l’idea di un’associazione che porti avanti i sogni di Valerio. Non ci sono ancora nome, logo, statuto, bilanci e la strada sembra lunghissima…ma sinceramente a noi, non importa.
