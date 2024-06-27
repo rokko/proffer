@@ -37,6 +37,10 @@ import DonaMateriali from '../AboutPage/DonaMateriali';
 import DonaOra2 from '../CauseSinglePage/DonaOra2';
 import CosaFacciamo from '../AboutPage/Cosafacciamo';
 import ChiSiamo from '../AboutPage/ChiSiamo';
+import FeelTheDreamTop from '../AboutPage/FeelTheDreamTop';
+import FeelTheGameTop from '../AboutPage/FeelTheGameTop';
+import FeelTheMomentTop from '../AboutPage/FeelTheMomentTop';
+import FeelTheCourtTop from '../AboutPage/FeelTheCourtTop';
 
 
 
@@ -58,6 +62,10 @@ const AllRoute = () => {
           <Route path="/trasparenza" element={<Trasparenza/>}></Route>
           <Route path="/dona-materiali" element={<DonaMateriali/>}></Route>
           <Route path="/51000" element={<CinqueMille/>}></Route>
+          <Route path="/feelthedream" element={<FeelTheDreamTop/>}></Route>
+          <Route path="/feelthecourt" element={<FeelTheCourtTop/>}></Route>
+          <Route path="/feelthemoment" element={<FeelTheMomentTop/>}></Route>
+          <Route path="/feelthegame" element={<FeelTheGameTop/>}></Route>
           <Route path="/aste" element={<Aste/>}></Route>
           <Route path="home" element={<Homepage />} />
           <Route path="home-2" element={<HomePage2 />} />

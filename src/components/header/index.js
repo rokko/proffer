@@ -91,11 +91,11 @@ const Header = (props) => {
                             <li className="menu-item-has-children">
                                 <Link onClick={ClickHandler} to="/cosa-facciamo" style={{fontSize:'20px'}}>Cosa Facciamo</Link>
                                 <ul className="sub-menu">
-                                    <li><Link onClick={ClickHandler} to="/ogni-giorno">FEEL THE DREAM
+                                    <li><Link onClick={ClickHandler} to="/feelthedream">FEEL THE DREAM
 </Link></li>
-                                    <li><Link onClick={ClickHandler} to="/ogni-giorno">FEEL THE COURT</Link></li>
-                                    <li><Link onClick={ClickHandler} to="/ogni-giorno">FEEL THE GAME</Link></li>
-                                    <li><Link onClick={ClickHandler} to="/ogni-giorno">FEEL THE MOMENT</Link></li>
+                                    <li><Link onClick={ClickHandler} to="/feelthecourt">FEEL THE COURT</Link></li>
+                                    <li><Link onClick={ClickHandler} to="/feelthegame">FEEL THE GAME</Link></li>
+                                    <li><Link onClick={ClickHandler} to="/feelthemoment">FEEL THE MOMENT</Link></li>
 
                                     
                                 </ul>

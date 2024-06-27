@@ -8,6 +8,10 @@ import perchelofacciamo from './imagesCopertina/perchelofacciamo.webp'
 import mission from './imagesCopertina/mission.webp'
 import storia from './imagesCopertina/storia.webp'
 import cosafacciamo from './imagesCopertina/cosafacciamo.webp'
+import feelthedream from './imagesCopertina/feelthedream.webp'
+import feelthegame from './imagesCopertina/feelthegame.webp'
+import feelthecourt from './imagesCopertina/feelthecourt.webp'
+import feelthemoment from './imagesCopertina/feelthemoment.webp'
 
 const PageTitle = (props) => {
 
@@ -41,6 +45,18 @@ const [imagePagine, setImagePagine]= useState('')
         if(props.nomepagina==='cosa-facciamo') {
             setImagePagine(cosafacciamo)
         
+        }
+        if (props.nomepagina==='feel-the-dream') {
+            setImagePagine(feelthedream)
+        }
+        if(props.nomepagina==='feel-the-game') {
+            setImagePagine(feelthegame)
+        }
+        if(props.nomepagina==='feel-the-court') {
+            setImagePagine(feelthecourt)
+        }
+        if(props.nomepagina==='feel-the-moment') {
+            setImagePagine(feelthemoment)
         }
         
     })
