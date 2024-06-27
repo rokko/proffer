@@ -84,7 +84,7 @@ const CauseSection2 = (props) => {
                 <div className="content-area causes-slider">
                     <Slider {...settings}>
                         {Causes.slice(0, 6).map((Cause, citem) => (
-                            <div className="item" key={citem}>
+                            <div className="item" key={citem} style={{borderRadius:'20px', height:'200px'}}>
                                 <div className="inner">
                                     <div className="img-holder">
                                         <img src={Cause.cImg} alt="" />

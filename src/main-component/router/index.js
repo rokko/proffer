@@ -1,5 +1,5 @@
-import React from 'react';
-import { BrowserRouter, Routes, Route, } from "react-router-dom";
+import React, { useEffect } from 'react';
+import { BrowserRouter, Routes, Route, useLocation, } from "react-router-dom";
 
 import Homepage from '../HomePage/HomePage'
 import HomePage2 from '../HomePage2/HomePage2';
@@ -39,7 +39,9 @@ import CosaFacciamo from '../AboutPage/Cosafacciamo';
 import ChiSiamo from '../AboutPage/ChiSiamo';
 
 
+
 const AllRoute = () => {
+
 
   return (
     <div className="App">

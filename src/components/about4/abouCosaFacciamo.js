@@ -7,6 +7,7 @@ import game from './imageCard/game.webp'
 import moment from './imageCard/moment.webp'
 import work from './imageCard/work.webp'
 import altre from './imageCard/altre.webp'
+import { handleScroll } from '../../main-component/genericFunction';
 const AboutCosaFacciamo = (props) => {
 
     return (
@@ -16,7 +17,7 @@ const AboutCosaFacciamo = (props) => {
                     <div className="col col-xs-12">
                         <div className="mission-vision-grids clearfix" style={{display: 'flex', justifyContent: 'space-between', flexDirection:'column', marginTop:'30px'}}>
                    
-                        <NavLink to="/about">
+                        <NavLink onClick={handleScroll} to="/about">
                             <div className="grid" style={{width:'100%', display:'flex', flexDirection:'row', gap:'50px', marginTop:'20px', borderRadius:'20px'}}>
                                 <div className="overlay"></div>
                                 <img src={dream} style={{height:'500px', borderTopLeftRadius:'20px', borderBottomLeftRadius:'20px'}}/>
@@ -26,7 +27,7 @@ const AboutCosaFacciamo = (props) => {
 </p></div>
                             </div>
                             </NavLink>
-                            <NavLink to="/about">
+                            <NavLink onClick={handleScroll} to="/about">
                             <div className="grid" style={{width:'100%', display:'flex', flexDirection:'row', gap:'50px', marginTop:'20px', borderRadius:'20px'}}>
                                 <div className="overlay"></div>
                                 <img src={court} style={{height:'500px', borderTopLeftRadius:'20px', borderBottomLeftRadius:'20px'}}/>
@@ -36,7 +37,7 @@ const AboutCosaFacciamo = (props) => {
 </p></div>
                             </div>
                             </NavLink>
-                            <NavLink to="/about">
+                            <NavLink onClick={handleScroll} to="/about">
                             <div className="grid" style={{width:'100%', display:'flex', flexDirection:'row', gap:'50px', marginTop:'20px', borderRadius:'20px'}}>
                                 <div className="overlay"></div>
                                 <img src={game} style={{height:'500px', borderTopLeftRadius:'20px', borderBottomLeftRadius:'20px'}}/>
@@ -46,7 +47,7 @@ const AboutCosaFacciamo = (props) => {
 </p></div>
                             </div>
                             </NavLink>
-                            <NavLink to="/about">
+                            <NavLink onClick={handleScroll} to="/about">
                             <div className="grid" style={{width:'100%', display:'flex', flexDirection:'row', gap:'50px', marginTop:'20px', borderRadius:'20px'}}>
                                 <div className="overlay"></div>
                                 <img src={moment} style={{height:'500px', borderTopLeftRadius:'20px', borderBottomLeftRadius:'20px'}}/>
@@ -56,7 +57,7 @@ const AboutCosaFacciamo = (props) => {
 </p></div>
                             </div>
                             </NavLink>
-                            <NavLink to="/about">
+                            <NavLink onClick={handleScroll} to="/about">
                             <div className="grid" style={{width:'100%', display:'flex', flexDirection:'row', gap:'50px', marginTop:'20px', borderRadius:'20px'}}>
                                 <div className="overlay"></div>
                                 <img src={altre} style={{height:'500px', borderTopLeftRadius:'20px', borderBottomLeftRadius:'20px'}}/>
@@ -66,7 +67,7 @@ const AboutCosaFacciamo = (props) => {
 </p></div>
                             </div>
                             </NavLink>
-                            <NavLink to="/about">
+                            <NavLink onClick={handleScroll} to="/about">
                             <div className="grid" style={{width:'100%', display:'flex', flexDirection:'row', gap:'50px', marginTop:'20px', borderRadius:'20px'}}>
                                 <div className="overlay"></div>
                                 <img src={work} style={{height:'500px', borderTopLeftRadius:'20px', borderBottomLeftRadius:'20px'}}/>

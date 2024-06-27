@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import aste from './images/cardAste.webp'
 import diventaVolontario from './images/cardDiventaVolontario.webp'
 import cinquepermille from './images/card51000.webp'
+import { handleScroll } from "../../main-component/genericFunction";
 const MissionSection4 = (props) => {
 
     return (
@@ -11,7 +12,7 @@ const MissionSection4 = (props) => {
                 <div className="row">
                     <div className="col col-xs-12">
                     <div className="mission-vision-grids clearfix" style={{display: 'flex', justifyContent: 'space-between', flexDirection:'column'}}>
-                            <NavLink to='/aste'>
+                            <NavLink onClick={handleScroll} to='/aste'>
                             <div className="grid" style={{width:'100%', display:'flex', flexDirection:'row', gap:'50px', marginTop:'20px',borderRadius:'20px'}}>
                                 <div className="overlay"></div>
                                 <img src={aste} style={{height:'500px', borderBottomLeftRadius:'20px', borderTopLeftRadius:'20px'}}/>
@@ -22,7 +23,7 @@ const MissionSection4 = (props) => {
                             </div>
                          
                             </NavLink>
-                            <NavLink to="/51000">
+                            <NavLink  onClick={handleScroll} to="/51000">
                             <div className="grid" style={{width:'100%', display:'flex', flexDirection:'row', gap:'50px', marginTop:'20px',borderRadius:'20px'}}>
                                 <div className="overlay"></div>
                                 <img src={cinquepermille} style={{height:'500px', borderBottomLeftRadius:'20px', borderTopLeftRadius:'20px'}}/>
@@ -34,7 +35,7 @@ const MissionSection4 = (props) => {
                          
                             </NavLink>
                             
-                            <NavLink to="/diventa-volontario">
+                            <NavLink onClick={handleScroll} to="/diventa-volontario">
                             <div className="grid" style={{width:'100%', display:'flex', flexDirection:'row', gap:'50px', marginTop:'20px',borderRadius:'20px'}}>
                                 <div className="overlay"></div>
                                 <img src={diventaVolontario} style={{height:'500px', borderBottomLeftRadius:'20px', borderTopLeftRadius:'20px'}}/>

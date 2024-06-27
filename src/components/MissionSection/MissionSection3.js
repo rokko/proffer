@@ -3,6 +3,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import donaora from './images/CardDonaOra.webp'
 import donamateriali from './images/cardDona.webp'
+import { handleScroll } from "../../main-component/genericFunction";
 const MissionSection = (props) => {
 
     return (
@@ -11,7 +12,7 @@ const MissionSection = (props) => {
                 <div className="row">
                     <div className="col col-xs-12">
                         <div className="mission-vision-grids clearfix" style={{display: 'flex', justifyContent: 'space-between', flexDirection:'column'}}>
-                            <NavLink to="/dona-ora">
+                            <NavLink onClick={handleScroll} to="/dona-ora">
                             <div className="grid" style={{width:'100%', display:'flex', flexDirection:'row', gap:'50px', marginTop:'20px', borderRadius:'20px'}}>
                                 <div className="overlay"></div>
                                 <img src={donaora} style={{height:'500px', borderBottomLeftRadius:'20px', borderTopLeftRadius:'20px'}}/>
@@ -23,7 +24,7 @@ const MissionSection = (props) => {
                        
                             
                             </NavLink>
-                            <NavLink to="/dona-materiali">
+                            <NavLink onClick={handleScroll} to="/dona-materiali">
                             <div className="grid" style={{width:'100%', display:'flex', flexDirection:'row', gap:'50px', marginTop:'20px',borderRadius:'20px'}}>
                                 <div className="overlay"></div>
                                 <img src={donamateriali} style={{height:'500px', borderBottomLeftRadius:'20px', borderTopLeftRadius:'20px'}}/>

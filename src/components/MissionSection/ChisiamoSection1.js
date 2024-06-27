@@ -6,6 +6,7 @@ import cardPerche from './images/cardPerche.webp'
 import cardMission from './images/cardMission.webp'
 import cardTeam from './images/cardTeam.webp'
 import cardTrasparenza from './images/cardTrasparenza.webp'
+import { handleScroll } from "../../main-component/genericFunction";
 const ChisiamoSection1 = (props) => {
 
     return (
@@ -13,8 +14,8 @@ const ChisiamoSection1 = (props) => {
             <div className="container">
                 <div className="row">
                     <div className="col col-xs-12">
-                        <div className="mission-vision-grids clearfix" style={{display: 'flex', justifyContent: 'space-between', flexDirection:'column'}}>
-                            <NavLink to="/about">
+                        <div className="mission-vision-grids clearfix" style={{display: 'flex', justifyContent: 'space-between', flexDirection:'column',marginTop:'30px'}}>
+                            <NavLink onClick={handleScroll} to="/about">
                             <div className="grid" style={{width:'100%', display:'flex', flexDirection:'row', gap:'50px', marginTop:'20px', borderRadius:'20px'}}>
                                 <div className="overlay"></div>
                                 <img src={cardStoria} style={{height:'500px', borderTopLeftRadius:'20px', borderBottomLeftRadius:'20px'}}/>
@@ -24,7 +25,7 @@ const ChisiamoSection1 = (props) => {
 </p></div>
                             </div>
                             </NavLink>
-                            <NavLink to="/mission">
+                            <NavLink onClick={handleScroll} to="/mission">
                             <div className="grid" style={{width:'100%', display:'flex', flexDirection:'row', gap:'50px', marginTop:'20px', borderRadius:'20px'}}>
                                 <div className="overlay"></div>
                                 <img src={cardMission} style={{height:'500px',borderTopLeftRadius:'20px', borderBottomLeftRadius:'20px'}}/>
@@ -35,7 +36,7 @@ const ChisiamoSection1 = (props) => {
                             </div>
                            
                             </NavLink>
-                            <NavLink to="/perche-facciamo">
+                            <NavLink onClick={handleScroll} to="/perche-facciamo">
                             <div className="grid" style={{width:'100%', display:'flex', flexDirection:'row', gap:'50px', marginTop:'20px', borderRadius:'20px'}}>
                                 <div className="overlay"></div>
                                 <img src={cardPerche} style={{height:'500px',borderTopLeftRadius:'20px', borderBottomLeftRadius:'20px'}}/>
@@ -45,7 +46,7 @@ const ChisiamoSection1 = (props) => {
 </p></div>
                             </div>
                             </NavLink>
-                            <NavLink to="/trasparenza">
+                            <NavLink onClick={handleScroll} to="/trasparenza">
                             <div className="grid" style={{width:'100%', display:'flex', flexDirection:'row', gap:'50px', marginTop:'20px', borderRadius:'20px'}}>
                                 <div className="overlay"></div>
                                 <img src={cardTrasparenza} style={{height:'500px',borderTopLeftRadius:'20px', borderBottomLeftRadius:'20px'}}/>
@@ -55,7 +56,7 @@ const ChisiamoSection1 = (props) => {
 </p></div>
                             </div>
                             </NavLink>
-                            <NavLink to="/team">
+                            <NavLink onClick={handleScroll} to="/team">
                             <div className="grid" style={{width:'100%', display:'flex', flexDirection:'row', gap:'50px', marginTop:'20px', borderRadius:'20px'}}>
                                 <div className="overlay"></div>
                                 <img src={cardTeam} style={{height:'500px',borderTopLeftRadius:'20px', borderBottomLeftRadius:'20px'}}/>
