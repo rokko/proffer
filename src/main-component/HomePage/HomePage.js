@@ -19,30 +19,36 @@ import NewsLetter from '../../components/Targetarea/Newsletter';
 import Collaborazioni from '../../components/Targetarea/Collaborazioni';
 import FormDonazioni from '../../components/Targetarea/FormDonazioni';
 import VideoArea from '../../components/Targetarea/VideoArea';
+import AnimatedComponent from '../components/AnimatedComponent';
 
 const HomePage = () => {
     return (
         <Fragment>
-            <Navbar hclass={'header-style-1'} Logo={Logo} btnClass={'theme-btn-s1'}/>
-          <Hero />
-          <VideoArea />
-            <Targetarea2 />
-            
-            <CauseSection2 />
-            <NewsLetter/>
-            <Collaborazioni />
-            <FormDonazioni />
-            {/*
-            <About />
-            <EventsSection />
-            <PartnerSection />
-            <CtaSection />
-            <CtaSectionS2 />
-            <BlogSection />
-    <Instagram />*/}
+            <Navbar hclass={'header-style-1'} Logo={Logo} btnClass={'theme-btn-s1'} />
+            <AnimatedComponent>
+                <Hero />
+            </AnimatedComponent>
+            <AnimatedComponent>
+                <VideoArea />
+            </AnimatedComponent>
+            <AnimatedComponent>
+                <Targetarea2 />
+            </AnimatedComponent>
+            <AnimatedComponent>
+                <CauseSection2 />
+            </AnimatedComponent>
+            <AnimatedComponent>
+                <NewsLetter />
+            </AnimatedComponent>
+            <AnimatedComponent>
+                <Collaborazioni />
+            </AnimatedComponent>
+            <AnimatedComponent>
+                <FormDonazioni />
+            </AnimatedComponent>
             <Footer />
             <Scrollbar />
         </Fragment>
-    )
+    );
 };
 export default HomePage;
