@@ -171,7 +171,7 @@ const AboutCosaFacciamo = (props) => {
                   </div>
                 </div>
               </NavLink>
-              <NavLink onClick={handleScroll} to="/about">
+              <NavLink onClick={handleScroll} to="/altre-iniziative">
                 <div
                   className="grid"
                   style={{
@@ -208,7 +208,7 @@ const AboutCosaFacciamo = (props) => {
                   </div>
                 </div>
               </NavLink>
-              <NavLink onClick={handleScroll} to="/about">
+              <NavLink onClick={handleScroll} to="/work-in-progress">
                 <div
                   className="grid"
                   style={{

@@ -41,6 +41,8 @@ import FeelTheDreamTop from '../AboutPage/FeelTheDreamTop';
 import FeelTheGameTop from '../AboutPage/FeelTheGameTop';
 import FeelTheMomentTop from '../AboutPage/FeelTheMomentTop';
 import FeelTheCourtTop from '../AboutPage/FeelTheCourtTop';
+import AltreIniziativeTop from '../AboutPage/AltreIniziativeTop';
+import WorkInProgressTop from '../AboutPage/WorkInProgressTop';
 
 
 
@@ -55,6 +57,8 @@ const AllRoute = () => {
           <Route path="/chisiamo" element={<ChiSiamo/>}/>
           <Route path="/comeaiutarci" element={<ComeAiutarci />}/>
           <Route path="/cosa-facciamo" element={<CosaFacciamo/>}/>
+          <Route path="/altre-iniziative" element={<AltreIniziativeTop />}/>
+          <Route path="/work-in-progress" element={<WorkInProgressTop/>}/>
           <Route path="/mission" element={<MissionPage />}></Route>
           <Route path="/ogni-giorno" element={<OgniGiorno />}></Route>
           <Route path="/dona-ora" element={<DonaOra2 />}></Route>

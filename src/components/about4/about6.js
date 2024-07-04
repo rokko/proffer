@@ -66,18 +66,23 @@ const About6 = (props) => {
               <div
                 className="grid asinistra"
                 style={{ display: "flex", flexDirection: "row", gap: "10px" }}
-              >
+              > <a href="/organigramma.pdf" target="_blank" rel="noopener noreferrer">
                 <img src={Organigramma} width={120} />
+                </a>
                 <div>
+               
                   <h3 style={{fontSize:'40px'}}>Organigramma</h3>
                   <p>Scopri la nostra organizzazione.</p>
+                  
                 </div>
               </div>
               <div
                 className="grid asinistra"
                 style={{ display: "flex", flexDirection: "row", gap: "10px" }}
               >
+                 <a href="/statuto.pdf" target="_blank" rel="noopener noreferrer">
                 <img src={Statuto} width={120} />
+                </a>
                 <div>
                   <h3 style={{fontSize:'40px'}}>Statuto</h3>
                   <p>Scopri i principi e i nostri scopi sociali.</p>
@@ -86,8 +91,9 @@ const About6 = (props) => {
               <div
                 className="grid "
                 style={{ display: "flex", flexDirection: "row", gap: "10px" }}
-              >
+              ><a href="/bilancio.pdf" target="_blank" rel="noopener noreferrer">
                 <img src={Bilancio} width={120} height={120} />
+                </a>
                 <div>
                   <h3 style={{fontSize:'40px'}}>Bilancio</h3>
                   <p style={{margin:0, lineHeight:'18px'}}>Scarica l’ultimo bilancio dell’associazione.</p>
