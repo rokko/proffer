@@ -1,14 +1,42 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
+import { makeStyles } from "@material-ui/core/styles";
+import Typography from "@material-ui/core/Typography";
+import Grid from "@material-ui/core/Grid";
+import Container from "@material-ui/core/Container";
+import Accordion from "@material-ui/core/Accordion";
+import AccordionSummary from "@material-ui/core/AccordionSummary";
+import AccordionDetails from "@material-ui/core/AccordionDetails";
+import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import court from "./imageCard/court.webp";
 import dream from "./imageCard/dream.webp";
 import game from "./imageCard/game.webp";
 import moment from "./imageCard/moment.webp";
 import work from "./imageCard/work.webp";
 import altre from "./imageCard/altre.webp";
+
 import { handleScroll } from "../../main-component/genericFunction";
+const useStyles = makeStyles((theme) => ({
+  root: {
+    backgroundColor: '#efefef',
+    padding: '20px',
+    marginTop: theme.spacing(4),
+    marginBottom: theme.spacing(4),
+  },
+  sectionTitle: {
+    marginBottom: theme.spacing(2),
+  },
+  accordion: {
+    marginTop: theme.spacing(2),
+    borderRadius: theme.spacing(2),
+  },
+}));
 const AboutCosaFacciamo = (props) => {
+
+
+  const classes = useStyles();
+
   return (
     <section className="mission-vision-section">
       <div className="container">
@@ -249,13 +277,16 @@ const AboutCosaFacciamo = (props) => {
           </div>
         </div>
       </div>
-      <div className="" style={{backgroundColor:'#efefef', padding:'20px'}}>
-        <div className="row justify-content-center">
-          <div className="col col-lg-8 col-md-10" style={{marginTop:'30px'}}>
+      <section className={classes.root}>
+      <Container>
+        <Grid container justify="center">
+          <Grid item xs={12} lg={8} md={10}>
             <div className="section-title-s3">
-              <span>OgniGiorno</span>
+              <Typography variant="h4" component="span" className={classes.sectionTitle}>
+                OgniGiorno
+              </Typography>
 
-              <p>
+              <p >
                 Il nostro impegno non si ferma mai: anche quando non stiamo
                 costruendo nuove strutture sportive o non siamo in missione per
                 realizzare progetti, il nostro lavoro continua incessantemente
@@ -264,68 +295,106 @@ const AboutCosaFacciamo = (props) => {
                 essenziali per il successo delle nostre iniziative.
               </p>
 
-              <h4>
-                <strong>Monitoraggio dei Progetti</strong>
-              </h4>
-              <p>
-                Uno degli aspetti fondamentali del nostro lavoro quotidiano è il
-                monitoraggio continuo dei progetti in corso. Verifichiamo
-                costantemente i progressi, risolviamo eventuali problemi e
-                assicuriamo che ogni attività proceda secondo i piani stabiliti.
-              </p>
+              <Accordion className={classes.accordion}>
+                <AccordionSummary
+                  expandIcon={<ExpandMoreIcon />}
+                  aria-controls="panel1a-content"
+                  id="panel1a-header"
+                >
+                  <Typography variant="h6">Monitoraggio dei Progetti</Typography>
+                </AccordionSummary>
+                <AccordionDetails>
+                  <p >
+                    Uno degli aspetti fondamentali del nostro lavoro quotidiano è il
+                    monitoraggio continuo dei progetti in corso. Verifichiamo
+                    costantemente i progressi, risolviamo eventuali problemi e
+                    assicuriamo che ogni attività proceda secondo i piani stabiliti.
+                  </p>
+                </AccordionDetails>
+              </Accordion>
 
-              <h4>
-                <strong>
-                  Pianificazione e Organizzazione di Nuovi Progetti
-                </strong>
-              </h4>
-              <p>
-                Il futuro è sempre al centro dei nostri pensieri. Ogni giorno
-                lavoriamo per ideare e pianificare nuovi progetti che possano
-                portare beneficio alle comunità che supportiamo. Dalle riunioni
-                di brainstorming alle telefonate con i partner locali, c’è
-                sempre qualcosa di nuovo da fare.
-              </p>
+              <Accordion className={classes.accordion}>
+                <AccordionSummary
+                  expandIcon={<ExpandMoreIcon />}
+                  aria-controls="panel2a-content"
+                  id="panel2a-header"
+                >
+                  <Typography variant="h6">Pianificazione e Organizzazione di Nuovi Progetti</Typography>
+                </AccordionSummary>
+                <AccordionDetails>
+                  <p>
+                    Il futuro è sempre al centro dei nostri pensieri. Ogni giorno
+                    lavoriamo per ideare e pianificare nuovi progetti che possano
+                    portare beneficio alle comunità che supportiamo. Dalle riunioni
+                    di brainstorming alle telefonate con i partner locali, c’è
+                    sempre qualcosa di nuovo da fare.
+                  </p>
+                </AccordionDetails>
+              </Accordion>
 
-              <h4>
-                <strong>Comunicazione</strong>
-              </h4>
-              <p>
-                La comunicazione efficace è alla base del nostro operato.
-                Rispondere alle mail, effettuare telefonate ed organizzare
-                incontri ci consente di mantenere un contatto costante con i
-                nostri partner, i volontari e i sostenitori, garantendo una
-                collaborazione fluida e produttiva. Ogni interazione è
-                un'opportunità per rafforzare la nostra rete e mettere le basi
-                per nuovi progetti.
-              </p>
+              <Accordion className={classes.accordion}>
+                <AccordionSummary
+                  expandIcon={<ExpandMoreIcon />}
+                  aria-controls="panel3a-content"
+                  id="panel3a-header"
+                >
+                  <Typography variant="h6">Comunicazione</Typography>
+                </AccordionSummary>
+                <AccordionDetails>
+                  <p>
+                    La comunicazione efficace è alla base del nostro operato.
+                    Rispondere alle mail, effettuare telefonate ed organizzare
+                    incontri ci consente di mantenere un contatto costante con i
+                    nostri partner, i volontari e i sostenitori, garantendo una
+                    collaborazione fluida e produttiva. Ogni interazione è
+                    un'opportunità per rafforzare la nostra rete e mettere le basi
+                    per nuovi progetti.
+                  </p>
+                </AccordionDetails>
+              </Accordion>
 
-              <h4>
-                <strong>Raccogliere Fondi</strong>
-              </h4>
-              <p>
-                Le raccolte fondi sono cruciali per il finanziamento dei nostri
-                progetti, per questo è fondamentale pianificare e organizzare
-                eventi e campagne di fundraising. Dall'ideazione di nuove
-                iniziative alla gestione degli aspetti logistici, lavoriamo con
-                impegno per coinvolgere sempre più persone e raccogliere i fondi
-                necessari. La creatività e la determinazione sono i nostri
-                alleati in questa missione, ma non è mai facile.
-              </p>
+              <Accordion className={classes.accordion}>
+                <AccordionSummary
+                  expandIcon={<ExpandMoreIcon />}
+                  aria-controls="panel4a-content"
+                  id="panel4a-header"
+                >
+                  <Typography variant="h6">Raccogliere Fondi</Typography>
+                </AccordionSummary>
+                <AccordionDetails>
+                  <p>
+                    Le raccolte fondi sono cruciali per il finanziamento dei nostri
+                    progetti, per questo è fondamentale pianificare e organizzare
+                    eventi e campagne di fundraising. Dall'ideazione di nuove
+                    iniziative alla gestione degli aspetti logistici, lavoriamo con
+                    impegno per coinvolgere sempre più persone e raccogliere i fondi
+                    necessari. La creatività e la determinazione sono i nostri
+                    alleati in questa missione, ma non è mai facile.
+                  </p>
+                </AccordionDetails>
+              </Accordion>
 
-              <h4>
-                <strong>Gestione Amministrativa</strong>
-              </h4>
-              <p>
-                Dietro ogni grande progetto c'è una solida gestione
-                amministrativa. Ci occupiamo della gestione delle risorse, della
-                contabilità e della rendicontazione, assicurando trasparenza e
-                responsabilità in ogni transazione. Questo ci permette di
-                mantenere una gestione finanziaria rigorosa e di garantire che
-                ogni donazione venga utilizzata in modo efficace.
-              </p>
+              <Accordion className={classes.accordion}>
+                <AccordionSummary
+                  expandIcon={<ExpandMoreIcon />}
+                  aria-controls="panel5a-content"
+                  id="panel5a-header"
+                >
+                  <Typography variant="h6">Gestione Amministrativa</Typography>
+                </AccordionSummary>
+                <AccordionDetails>
+                  <p>
+                    Dietro ogni grande progetto c'è una solida gestione
+                    amministrativa. Ci occupiamo della gestione delle risorse, della
+                    contabilità e della rendicontazione, assicurando trasparenza e
+                    responsabilità in ogni transazione. Questo ci permette di
+                    mantenere una gestione finanziaria rigorosa e di garantire che
+                    ogni donazione venga utilizzata in modo efficace.
+                  </p>
+                </AccordionDetails>
+              </Accordion>
 
-              <p>
+              <p style={{marginTop:'20px'}} >
                 Per noi, ogni giorno è una nuova opportunità per fare la
                 differenza. Che si tratti di monitorare un progetto in corso,
                 pianificare nuove iniziative o organizzare raccolte fondi,
@@ -333,9 +402,10 @@ const AboutCosaFacciamo = (props) => {
                 di Valerio e per creare un futuro migliore attraverso lo sport.
               </p>
             </div>
-          </div>
-        </div>
-      </div>
+          </Grid>
+        </Grid>
+      </Container>
+    </section>
     </section>
   );
 };
