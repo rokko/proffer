@@ -16,13 +16,14 @@ import Footer from '../../components/footer/Footer';
 import Logo from '../../images/logo.png'
 import MissionSection2 from '../../components/MissionSection/MissionSection2';
 import About51000 from '../../components/about4/about5PerMille';
+import DonaOra2 from '../CauseSinglePage/DonaOra2';
 
 const DonaOraTop= () => {
     return (
         <Fragment>
             <Navbar hclass={'header-style-1'} Logo={Logo} btnClass={'theme-btn-s1'} />
-            <PageTitle pageTitle={'5x1000'} pagesub={'5x1000'} />
-            <About51000 />
+            <PageTitle pageTitle={'Dona'} pagesub={'Dona Ora'} nomepagina={'dona-ora'}/>
+            <DonaOra2 />
            
             <Footer />
             <Scrollbar />

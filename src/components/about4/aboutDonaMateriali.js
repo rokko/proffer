@@ -9,8 +9,7 @@ const AboutDonaMateriali = (props) => {
                 <div className="row justify-content-center">
                     <div className="col col-lg-8 col-md-10">
                         <div className="section-title-s3">
-                            <span>#DonaMateriali</span>
-                            <h2>Dona  <span>quello che puoi </span>.</h2>
+                            <h2>Dona quello che puoi</h2>
                             <p>Sappiamo che esistono numerose altre associazioni e che tutte sono fondamentali e necessarie.
                             </p>
                             <p>Ma oltre alle donazioni economiche, puoi supportarci donando materiali utili per i nostri progetti. Attrezzature sportive, abbigliamento, materiali didattici, giochi: quanto spesso finiamo per averne troppi? Per noi, sono sempre ben accetti e possono fare una grande differenza nella vita dei giovani che beneficiano delle nostre iniziative.

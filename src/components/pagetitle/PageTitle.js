@@ -16,6 +16,8 @@ import aste from './imagesCopertina/aste.webp'
 import workinpgrossecard from './imagesCopertina/workinprogress.webp'
 import altreiniziative from './imagesCopertina/altreiniziative.webp'
 import cinquepermillecard from './imagesCopertina/51000.webp'
+import donaora from './imagesCopertina/donaora.webp'
+import donamateriali from './imagesCopertina/donamateriale.webp'
 const PageTitle = (props) => {
 
 const [imagePagine, setImagePagine]= useState('')
@@ -72,6 +74,12 @@ const [imagePagine, setImagePagine]= useState('')
         }
         if(props.nomepagina==='5x1000'){
             setImagePagine(cinquepermillecard)
+        }
+        if(props.nomepagina==='dona-ora'){
+            setImagePagine(donaora)
+        }
+        if(props.nomepagina==='dona-materiali'){
+            setImagePagine(donamateriali)
         }
         
         

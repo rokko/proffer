@@ -22,7 +22,7 @@ const DonaMateriali= () => {
     return (
         <Fragment>
             <Navbar hclass={'header-style-1'} Logo={Logo} btnClass={'theme-btn-s1'} />
-            <PageTitle pageTitle={'Dona Materiali'} pagesub={'Dona Materiali'} />
+            <PageTitle pageTitle={'Dona Materiali'} pagesub={'Dona Materiali'} nomepagina={'dona-materiali'} />
             <AboutDonaMateriali/>
              <ContactForm />
             <Footer />
