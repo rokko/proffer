@@ -45,6 +45,7 @@ import AltreIniziativeTop from '../AboutPage/AltreIniziativeTop';
 import WorkInProgressTop from '../AboutPage/WorkInProgressTop';
 import CinqueMilleTop from '../AboutPage/51000Top';
 import DonaOraTop from '../AboutPage/DonaOraTop';
+import DiventaVolontarioTop from '../AboutPage/DiventaVolontarioTop';
 
 
 
@@ -57,6 +58,7 @@ const AllRoute = () => {
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="/chisiamo" element={<ChiSiamo/>}/>
+          <Route path="/diventa-volontario" element={<DiventaVolontarioTop />}/>
           <Route path="/comeaiutarci" element={<ComeAiutarci />}/>
           <Route path="/cosa-facciamo" element={<CosaFacciamo/>}/>
           <Route path="/altre-iniziative" element={<AltreIniziativeTop />}/>

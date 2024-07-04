@@ -5,7 +5,7 @@ import luigi from '../images/team/luigi.jpg'
 import pietro from '../images/team/pietro.jpg'
 
 
-const Team = [
+ const Team = [
    {
       Id: '1',
       AtImg: damiano,
@@ -45,4 +45,6 @@ const Team = [
 
 ]
 
-export default Team;
+
+export default Team
+
