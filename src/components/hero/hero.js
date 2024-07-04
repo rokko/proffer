@@ -9,6 +9,7 @@ import hero1 from '../../images/chisiamoscura.webp'
 import hero2 from '../../images/cosafacciamoscura.webp'
 import hero3 from '../../images/comeaiutarciscura.webp'
 import VideoModal from "../ModalVideo";
+import AnimatedComponent from "../../main-component/components/AnimatedComponent";
 
 const ClickHandler = () => {
     window.scrollTo(10, 0);
@@ -39,13 +40,15 @@ const Hero = () => {
                             <div data-swiper-parallax="300" className="slide-title">
                                 <br/>
                                 <br/>
-
+                                <AnimatedComponent>
                                 <h2>Chi siamo? </h2>
+                                </AnimatedComponent>
                             </div>
+                            <AnimatedComponent>
                             <div data-swiper-parallax="400" className="slide-text big-text">
                                 <p>Siamo una giovane associazione che ha il sogno di regalare l'amore per il basket e la possibilità di giocarlo a chi è meno fortunato.
 
-                                </p>                            </div>
+                                </p>                            </div></AnimatedComponent>
                            
                         </div>
                     </div>
@@ -55,13 +58,14 @@ const Hero = () => {
                         <div className="container">
                             <div data-swiper-parallax="300" className="slide-title">
                             <br/>
-                                <br/>
-                                <h2>Cosa facciamo?</h2>
+                                <br/><AnimatedComponent>
+                                <h2>Cosa facciamo?</h2></AnimatedComponent>
                             </div>
+                            <AnimatedComponent>
                             <div data-swiper-parallax="400" className="slide-text">
                            <p> Creiamo e sosteniamo realtà sportive, riqualificando spazi e fornendo formazione e attrezzature.</p>
 
-</div>
+</div></AnimatedComponent>
                             
                         </div>
                     </div>
@@ -72,15 +76,19 @@ const Hero = () => {
                             <div data-swiper-parallax="300" className="slide-title">
                             <br/>
                                 <br/>
+                                <AnimatedComponent>
                                 <h2>Come aiutarci</h2>
+                                </AnimatedComponent>
                             </div>
+                            <AnimatedComponent>
                             <div data-swiper-parallax="400" className="slide-text">
                            <p> Puoi sostenere i nostri progetti, puoi aiutarci economicamente, con il tuo tempo o donando materiali.</p>
 
-</div>
+</div></AnimatedComponent>
                            
                             
                         </div>
+                        
                     </div>
                 </SwiperSlide>
                 ...
