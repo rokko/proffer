@@ -43,6 +43,7 @@ import FeelTheMomentTop from '../AboutPage/FeelTheMomentTop';
 import FeelTheCourtTop from '../AboutPage/FeelTheCourtTop';
 import AltreIniziativeTop from '../AboutPage/AltreIniziativeTop';
 import WorkInProgressTop from '../AboutPage/WorkInProgressTop';
+import CinqueMilleTop from '../AboutPage/51000Top';
 
 
 
@@ -65,7 +66,7 @@ const AllRoute = () => {
           <Route path="/perche-facciamo" element={<PercheFacciamo/>}></Route>
           <Route path="/trasparenza" element={<Trasparenza/>}></Route>
           <Route path="/dona-materiali" element={<DonaMateriali/>}></Route>
-          <Route path="/51000" element={<CinqueMille/>}></Route>
+          <Route path="/51000" element={<CinqueMilleTop/>}></Route>
           <Route path="/feelthedream" element={<FeelTheDreamTop/>}></Route>
           <Route path="/feelthecourt" element={<FeelTheCourtTop/>}></Route>
           <Route path="/feelthemoment" element={<FeelTheMomentTop/>}></Route>

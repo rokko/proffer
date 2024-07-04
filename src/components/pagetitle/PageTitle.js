@@ -15,7 +15,7 @@ import feelthemoment from './imagesCopertina/feelthemoment.webp'
 import aste from './imagesCopertina/aste.webp'
 import workinpgrossecard from './imagesCopertina/workinprogress.webp'
 import altreiniziative from './imagesCopertina/altreiniziative.webp'
-
+import cinquepermillecard from './imagesCopertina/51000.webp'
 const PageTitle = (props) => {
 
 const [imagePagine, setImagePagine]= useState('')
@@ -70,6 +70,10 @@ const [imagePagine, setImagePagine]= useState('')
         if(props.nomepagina==='altre-iniziative'){
             setImagePagine(altreiniziative)
         }
+        if(props.nomepagina==='5x1000'){
+            setImagePagine(cinquepermillecard)
+        }
+        
         
     })
     const ClickHandler = () => {
