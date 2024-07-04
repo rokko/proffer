@@ -13,6 +13,8 @@ import feelthegame from './imagesCopertina/feelthegame.webp'
 import feelthecourt from './imagesCopertina/feelthecourt.webp'
 import feelthemoment from './imagesCopertina/feelthemoment.webp'
 import aste from './imagesCopertina/aste.webp'
+import workinpgrossecard from './imagesCopertina/workinprogress.webp'
+import altreiniziative from './imagesCopertina/altreiniziative.webp'
 
 const PageTitle = (props) => {
 
@@ -61,6 +63,12 @@ const [imagePagine, setImagePagine]= useState('')
         }
         if(props.nomepagina==='aste'){
             setImagePagine(aste)
+        }
+        if(props.nomepagina==='work-in-progress'){
+            setImagePagine(workinpgrossecard)
+        }
+        if(props.nomepagina==='altre-iniziative'){
+            setImagePagine(altreiniziative)
         }
         
     })

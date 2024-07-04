@@ -7,64 +7,23 @@ const AltreIniziative = (props) => {
         <div className="row justify-content-center">
           <div className="col col-lg-8 col-md-10">
             <div className="section-title-s3">
+
+
               <h2>
-                Dove può condurre e spingerti la passione per la pallacanestro?
+              Altre Iniziative
               </h2>
               <p>
-                Se lo è sempre chiesto Valerio D’Angelo, ragazzo romano con gli
-                occhi grandi e luminosi, e un sorriso un po’ buffo, che ha
-                girato il mondo e incontrato tutti gli idoli della sua vita come
-                Ginobili, Kobe Bryant, Nowitzki, Garnett, Ray Allen, Bodiroga, i
-                fratelli Gasol.
+              Oltre alle nostre iniziative principali, ogni tanto ci piace uscire dagli schemi.
               </p>
               <p>
-                Valerio era una mente eccelsa, nel lavoro e nelle passioni. Ha
-                soprattutto scritto libri (<a href="https://www.lagiornatatipo.it/basket-i-feel-this-game/" target="_blank">scopri di più</a>), giocato
-                a basket, girato il mondo, spiccato il volo dalla sua Ostia
-                verso Dublino, Londra, Los Angeles. Perché mentre la
-                pallacanestro ha sempre rappresentato il suo “paese delle
-                meraviglie”, nella vita di tutti i giorni, da ingegnere
-                informatico, da ragazzo dotato di un’intelligenza straordinaria,
-                è diventato manager di alcune delle aziende più famose al mondo
-                come Google, Facebook e Whatsapp.
+              Che sia una cena tutti insieme, un minitorneo di basket o la collaborazione con un nuovo partner che condivida i nostri valori.
+
               </p>
               <p>
-                Spesso, quando si parla delle persone, si tende a minimizzare i
-                difetti e ad esaltare i pregi, ma con Valerio non è così.
+              In questa pagina puoi trovare tutto ciò, ma soprattutto puoi contattarci per eventuali progetti o collaborazioni future! (form)
+
               </p>
-              <p>
-                Valerio ha scoperto di avere un destino infame a 26 anni. Non si
-                è mai fatto crollare il mondo addosso e ha sempre cercato di
-                godersi ogni attimo della vita. Lo ha fatto costruendosi una
-                straordinaria carriera lavorativa, lo ha fatto coltivando una
-                passione smisurata per la pallacanestro, lo ha fatto con le sue
-                incredibili collezioni di canotte (oltre 200…), di cimeli e di
-                memorabilia. Lo ha fatto infondendo positività nelle persone.
-              </p>
-              <p>
-                Ha vissuto 8 anni tra l’illusione di essersi messo tutto alle
-                spalle e l’angoscia di ritrovarsi quel maledetto baratro dietro
-                l’angolo. Che puntualmente si è ripresentato quando sembrava
-                essere sparito per sempre.
-              </p>
-              <p>
-                Quella di Valerio è la più stronza e tristemente fedele storia
-                sulla ingiustizia della vita, un bastardo copione che è andato a
-                colpire un ragazzo intraprendente, coraggioso, bravo, preparato,
-                talentuoso e meravigliosamente sorridente.
-              </p>
-              <p>
-                Valerio se ne è andato a 34 anni, ma ha contaminato le persone
-                che ha conosciuto, con la sua splendida voglia di fare, creare,
-                sognare, realizzarsi nella vita, lasciando un'eredità
-                importante.
-              </p>
-              <p>Legacy, così la chiamano in America.</p>
-              <p>
-                Il 20 settembre 2022 nasce VALE PER TUTTI e noi, tramite questa
-                associazione, vogliamo contaminare il mondo con la legacy di
-                Valerio. O almeno, ci proveremo.
-              </p>
+              
             </div>
           </div>
         </div>

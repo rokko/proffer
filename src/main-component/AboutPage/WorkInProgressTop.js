@@ -22,7 +22,7 @@ const WorkInProgressTop= () => {
     return (
         <Fragment>
             <Navbar hclass={'header-style-1'} Logo={Logo} btnClass={'theme-btn-s1'} />
-            <PageTitle pageTitle={'Cosa Facciamo'} pagesub={'Work In Progress'} nomepagina={'storia'} />
+            <PageTitle pageTitle={'Cosa Facciamo'} pagesub={'Work In Progress'} nomepagina={'work-in-progress'} />
             <WorkInProgress />
            
             <Footer />
