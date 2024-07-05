@@ -10,8 +10,7 @@ const FormDonazioni = (props) => {
     }
 
     return (
-        <section className="target-area section-padding" id="about">
-            <div className="container">
+     
                 <div className="row">
                     
               
@@ -36,8 +35,7 @@ const FormDonazioni = (props) => {
                             </div>
                         </div>
                     
-                </div>
-        </section>
+           
     )
 }
 
