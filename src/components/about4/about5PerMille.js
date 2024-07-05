@@ -24,13 +24,14 @@ const About51000 = (props) => {
                         <p>Senza entrare in dettagli complicati, immagina di poter fare una magia che aiuta molte persone, senza dover tirar fuori neanche un centesimo dal portafoglio!</p>
                         <p>Ecco il 5x1000 è un po' così. È una misura fiscale che ti permette di donare una parte delle tasse che devi già pagare, ad una buona causa (per esempio a noi, diciamo così per dire).</p>
                         <p>Ti bastano 3 semplici mosse, una specie di terzo tempo:</p>
-                        <h5>Step 1:</h5>
+                        <h5><strong>Step 1</strong>:</h5>
                         <p>Mentre compili il modulo 730 del CU o del Modello Unico, cerca la sezione “Scelta per la destinazione del cinque per mille dell’IRPEF”</p>
-                        <h5>Step 2:</h5>
+                        <h5><strong>Step 2:</strong></h5>
                         <p>Firmare nel primo riquadro dedicato al "Sostegno degli Enti del Terzo settore iscritti nel RUNTS"</p>
-                        <h5>Tiro (che se no è passi):</h5>
+                        <h5><strong>Tiro (che se no è passi):</strong></h5>
                         <p>Inserire il codice fiscale di “Vale per Tutti”: {codiceFiscale}</p>
-                        <button onClick={copyToClipboard} className="copy-button">
+                        <button onClick={copyToClipboard} className="copy-button" style={{borderRadius:'20px'
+                        }}>
                             {copied ? 'Codice Copiato!' : 'Copia Codice Fiscale'}
                         </button>
                         <br/>                        <br/>
