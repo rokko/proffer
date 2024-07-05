@@ -22,7 +22,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: '#efefef',
     padding: '20px',
     marginTop: theme.spacing(4),
-    marginBottom: theme.spacing(4),
+   
   },
   sectionTitle: {
     marginBottom: theme.spacing(2),
@@ -277,12 +277,16 @@ const AboutCosaFacciamo = (props) => {
           </div>
         </div>
       </div>
-      <section className={classes.root}>
+      <section className={classes.root} id="abouCosaFacciamo">
       <Container>
         <Grid container justify="center">
           <Grid item xs={12} lg={8} md={10}>
             <div className="section-title-s3">
-              <Typography variant="h4" component="span" className={classes.sectionTitle}>
+            <br/>
+
+            <br/>
+           
+            <Typography variant="h4" component="span" className={classes.sectionTitle}>
                 OgniGiorno
               </Typography>
 
