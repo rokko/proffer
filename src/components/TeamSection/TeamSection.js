@@ -30,7 +30,7 @@ const TeamSection = (props) => {
                                 <img src={team.AtImg} alt="" style={{borderRadius:'50%', width:'352px'}} />
                             </div>
                             <div className="member-info">
-                                <h4><Link onClick={ClickHandler} to={`/team-single/${team.slug}`}>{team.name}</Link></h4>
+                                <h4>{team.name}</h4>
                                 <p>{team.title}</p>
                                 
                             </div>

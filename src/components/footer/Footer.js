@@ -56,8 +56,8 @@ const Footer = (props) => {
                              
                                 <p>Iscriviti alla newsletter per rimanere aggiornato.</p>
                                 <form onSubmit={SubmitHandler}>
-                                    <div className="input-1">
-                                        <input type="email" className="form-control" placeholder="Email Address *" required />
+                                    <div className="input-1" style={{colore:'white'}}>
+                                        <input type="email" className="form-control" placeholder="Email Address *" required style={{color:'white'}} />
                                     </div>
                                     <div className="submit clearfix">
                                         <button type="submit" style={{display:'flex',justifyContent:'center',alignItems:'center', backgroundColor:'#78c3e0'}}><i className="fi flaticon-paper-plane"></i></button>

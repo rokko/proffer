@@ -37,6 +37,10 @@ body{
 
 }
 
+.form-control::placeholder {
+  color: white;
+}
+
 .checkoutWrapper {
   .checkoutCard {
     margin-bottom: 20px;
