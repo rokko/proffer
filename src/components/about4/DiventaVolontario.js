@@ -29,7 +29,7 @@ const DiventaVolontario = (props) => {
             </div>
           
             <div className="content-area" style={{marginTop:'50px'}}>
-                <div className="first-row clearfix" style={{display:'flex', flexDirection:'row', justifyContent:'center', alignContent:'center'}}>
+                <div className="first-row clearfix" style={{display:'flex', flexDirection:'row', justifyContent:'center', alignContent:'center',flexWrap:'wrap'}}>
                     <div className="grid"></div>
                     
                    
