@@ -4,6 +4,7 @@ import Navbar from '../../components/Navbar/Navbar';
 import Logo from '../../images/logo.png'
 import Footer from '../../components/footer/Footer';
 import FormDonazioni from '../../components/Targetarea/FormDonazioni';
+import DonaOra from './DonaOra';
 
 function DonaOra2() {
   const [formData, setFormData] = useState({
@@ -34,6 +35,7 @@ function DonaOra2() {
   };
 
   return (
+    <>
     <section className="about-page-section section-padding">
     <div className="container">
       <div className="row justify-content-center">
@@ -50,8 +52,7 @@ Quest’ultima è veramente speciale: Roma non è nata in un giorno, e poter con
 
 Unisciti a noi nella missione di trasformare la passione per il basket in uno strumento di cambiamento sociale.<br/> Dona ora e aiuta a costruire un futuro migliore per tanti giovani.<br/>
 </p>
-    
-    <FormDonazioni />
+  
     
 
     </div>
@@ -59,6 +60,10 @@ Unisciti a noi nella missione di trasformare la passione per il basket in uno st
     </div>
     </div>
     </section>
+      <div style={{display:'flex', justifyContent:'center', alignItems:'center'}}>
+      <DonaOra />
+      </div>
+     </>
   );
 }
 
