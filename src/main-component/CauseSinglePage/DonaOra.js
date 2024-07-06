@@ -42,7 +42,7 @@ function DonaOra() {
       alignItems: 'center'
     }}>
       <form style={{
-        width: '100%',
+        width: '40%',
         maxWidth: '1200px',
         padding: '20px',
         background: 'rgba(255, 255, 255, 0.9)', // Sfondo bianco semitrasparente per contrastare con l'immagine
