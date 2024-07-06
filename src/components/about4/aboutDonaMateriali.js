@@ -4,7 +4,7 @@ import ContactForm from '../ContactForm';
 const AboutDonaMateriali = (props) => {
 
     return (
-        <section className="about-page-section section-padding">
+        <section className="about-page-section section-padding" style={{ marginBottom: '-20px'}}>
             <div className="container">
                 <div className="row justify-content-center">
                     <div className="col col-lg-8 col-md-10">

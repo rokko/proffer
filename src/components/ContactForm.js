@@ -12,7 +12,7 @@ function ContactForm() {
     // Integration with backend or email service goes here
   };
   return (
-    <form onSubmit={handleSubmit}  style={{backgroundColor:'#2d307a', color:'white'}} className="form-container">
+    <form onSubmit={handleSubmit}  style={{backgroundColor:'#2d307a', color:'white', marginTop:'-60px', marginBottom:'60px'}} className="form-container">
       <div>
         <label style={{color:'white'}}htmlFor="name" className="form-label">Nome:</label>
         <input
