@@ -30,6 +30,19 @@ html {
     scroll-behavior: unset;
 }
 
+.form-control::placeholder {
+    color: white;
+    opacity: 1; /* Per assicurarsi che il colore sia completamente visibile */
+  }
+  
+  .form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: white;
+  }
+  
+  .form-control::-ms-input-placeholder { /* Microsoft Edge */
+    color: white;
+  }
+
 body {
     
     background-color: $body-bg-color;
