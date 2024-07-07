@@ -31,6 +31,7 @@ function PdfViewer() {
     justifyContent: 'center',
     maxHeight: '1000px', // Imposta l'altezza massima qui
     overflow: 'hidden',
+    borderRadius:'20px',
     
   };
 
