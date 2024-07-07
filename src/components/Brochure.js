@@ -31,12 +31,13 @@ function PdfViewer() {
     justifyContent: 'center',
     maxHeight: '1000px', // Imposta l'altezza massima qui
     overflow: 'hidden',
+    
   };
 
   return (
     <div style={{display:'flex', flexDirection:'row',alignContent:'center', alignItems:'center',justifyContent:'center',gap:'3rem'}}>
       
-      <button onClick={goToPrevPage} style={{backgroundColor:'white', width:'100px'}}><img src={frecciaSinistra} /></button>
+      <button onClick={goToPrevPage} style={{ backgroundColor: 'transparent',width:'100px'}}><img src={frecciaSinistra} /></button>
       <Document file={file} onLoadSuccess={onDocumentLoadSuccess}>
         <div style={pageStyle}>
           {/* Renderizza la pagina corrente */}
@@ -45,7 +46,7 @@ function PdfViewer() {
           {pageNumber + 1 <= numPages && <Page pageNumber={pageNumber + 1} />}
         </div>
       </Document>
-      <button onClick={goToNextPage} style={{backgroundColor:'white', width:'100px'}}><img src={frecciaDestra}/></button>
+      <button onClick={goToNextPage} style={{ backgroundColor: 'transparent', width:'100px'}}><img src={frecciaDestra}/></button>
     
      
     </div>
