@@ -11,7 +11,7 @@ const FormDonazioni = (props) => {
 
     return (
      
-                <div className="row">
+                <div className="row" style={{marginBottom:'-20px'}}>
                     
               
                    
