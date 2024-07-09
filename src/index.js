@@ -13,11 +13,14 @@ import './sass/style.scss';
 import { PersistGate } from "redux-persist/integration/react";
 import { store, persistor } from "./store/index";
 import { Provider } from "react-redux";
+import IubendaScript from './IubendaScript';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <Provider store={store}>
+        <IubendaScript/>
         <PersistGate loading={null} persistor={persistor}>
+            
             <App />
         </PersistGate>
     </Provider>

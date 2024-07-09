@@ -1,6 +1,7 @@
 import React from "react";
 import Volontari from "../../api/volontari";
 import { Link } from "react-router-dom";
+import ContactForm from "../ContactForm";
 
 const DiventaVolontario = (props) => {
     return (
@@ -47,6 +48,9 @@ const DiventaVolontario = (props) => {
                         </div>
                     ))}
                 </div>
+            </div>
+            <div style={{marginTop:'50px'}}>
+            <ContactForm/>
             </div>
          
         </section>
