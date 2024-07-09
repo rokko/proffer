@@ -18,7 +18,9 @@ const MissionSection = (props) => {
                                 <img src={donaora} style={{height:'500px', borderBottomLeftRadius:'20px', borderTopLeftRadius:'20px'}}/>
                                 <div style={{display:'flex', flexDirection:'column', justifyContent:'center', paddingRight:'20px'}}   >
                                 <h3 style={{fontSize:'50px'}}>Dona Ora</h3>
-                                <p style={{fontSize:'25px'}}>Aiutaci a portare avanti i nostri sogni e i nostri progetti. <br/><span style={{fontWeight:'bold'}}>Dona Ora.</span>
+                                <p style={{fontSize:'25px'}}>Aiutaci a portare avanti i nostri sogni e i nostri progetti. <br/>    <button style={{backgroundColor:'rgb(120, 195, 224)', borderRadius:'20px'}}>
+                      <span style={{ fontWeight: "bold" }}>Dona ora.</span>
+                      </button>
 </p></div>
                             </div>
                        
@@ -30,7 +32,9 @@ const MissionSection = (props) => {
                                 <img src={donamateriali} style={{height:'500px', borderBottomLeftRadius:'20px', borderTopLeftRadius:'20px'}}/>
                                 <div style={{display:'flex', flexDirection:'column', justifyContent:'center', paddingRight:'20px'}}   >
                                 <h3 style={{fontSize:'50px'}}>Dona Materiali</h3>
-                                <p style={{fontSize:'25px'}}>Non sai più cosa fare con i giocattoli per casa?. <br/><span style={{fontWeight:'bold'}}>Scopri di più!</span>
+                                <p style={{fontSize:'25px'}}>Non sai più cosa fare con i giocattoli per casa?. <br/>    <button style={{backgroundColor:'rgb(120, 195, 224)', borderRadius:'20px'}}>
+                      <span style={{ fontWeight: "bold" }}>Scopri di più.</span>
+                      </button>
 </p></div>
                             </div>
                            

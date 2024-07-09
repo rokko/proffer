@@ -83,7 +83,9 @@ const AboutCosaFacciamo = (props) => {
                     <h3 style={{ fontSize: "50px" }}>Feel The Dream</h3>
                     <p style={{ fontSize: "25px" }}>
                       Aiutaci a SOGNARE <br />
+                      <button style={{backgroundColor:'rgb(120, 195, 224)', borderRadius:'20px'}}>
                       <span style={{ fontWeight: "bold" }}>Scopri di più.</span>
+                      </button>
                     </p>
                   </div>
                 </div>
@@ -120,8 +122,9 @@ const AboutCosaFacciamo = (props) => {
                     <h3 style={{ fontSize: "50px" }}>Feel The Court</h3>
                     <p style={{ fontSize: "25px" }}>
                       Aiutaci a COSTRUIRE <br />
+                      <button style={{backgroundColor:'rgb(120, 195, 224)', borderRadius:'20px'}}>
                       <span style={{ fontWeight: "bold" }}>Scopri di più.</span>
-                    </p>
+                      </button>                    </p>
                   </div>
                 </div>
               </NavLink>
@@ -157,8 +160,9 @@ const AboutCosaFacciamo = (props) => {
                     <h3 style={{ fontSize: "50px" }}>Feel The Game</h3>
                     <p style={{ fontSize: "25px" }}>
                       Aiutaci a TRASMETTERE <br />
+                      <button style={{backgroundColor:'rgb(120, 195, 224)', borderRadius:'20px'}}>
                       <span style={{ fontWeight: "bold" }}>Scopri di più.</span>
-                    </p>
+                      </button>                    </p>
                   </div>
                 </div>
               </NavLink>
@@ -194,8 +198,9 @@ const AboutCosaFacciamo = (props) => {
                     <h3 style={{ fontSize: "50px" }}>Feel The Moment</h3>
                     <p style={{ fontSize: "25px" }}>
                       Aiutaci a VIVERE <br />
+                      <button style={{backgroundColor:'rgb(120, 195, 224)', borderRadius:'20px'}}>
                       <span style={{ fontWeight: "bold" }}>Scopri di più.</span>
-                    </p>
+                      </button>                    </p>
                   </div>
                 </div>
               </NavLink>
@@ -231,8 +236,9 @@ const AboutCosaFacciamo = (props) => {
                     <h3 style={{ fontSize: "50px" }}>Altre Iniziative</h3>
                     <p style={{ fontSize: "25px" }}>
                       Non abbiamo paura di uscire dagli schemi <br />
+                      <button style={{backgroundColor:'rgb(120, 195, 224)', borderRadius:'20px'}}>
                       <span style={{ fontWeight: "bold" }}>Scopri di più.</span>
-                    </p>
+                      </button>                    </p>
                   </div>
                 </div>
               </NavLink>
@@ -268,8 +274,9 @@ const AboutCosaFacciamo = (props) => {
                     <h3 style={{ fontSize: "50px" }}>Work in progress</h3>
                     <p style={{ fontSize: "25px" }}>
                       Prova a sbirciare cosa bolle in cantiere! <br />
+                      <button style={{backgroundColor:'rgb(120, 195, 224)', borderRadius:'20px'}}>
                       <span style={{ fontWeight: "bold" }}>Scopri di più.</span>
-                    </p>
+                      </button>                    </p>
                   </div>
                 </div>
               </NavLink>

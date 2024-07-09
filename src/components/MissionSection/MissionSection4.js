@@ -18,7 +18,11 @@ const MissionSection4 = (props) => {
                                 <img src={aste} style={{height:'500px', borderBottomLeftRadius:'20px', borderTopLeftRadius:'20px'}}/>
                                 <div style={{display:'flex', flexDirection:'column', justifyContent:'center', paddingRight:'20px'}}   >
                                 <h3 style={{fontSize:'50px'}}>Aste</h3>
-                                <p style={{fontSize:'25px'}}>Nel corso dei suoi viaggi, Vale ha raccolto molti cimeli sportivi. <br/><span style={{fontWeight:'bold'}}>Scopri di più!</span>
+                                <p style={{fontSize:'25px'}}>Nel corso dei suoi viaggi, Vale ha raccolto molti cimeli sportivi. <br/>    <button style={{backgroundColor:'rgb(120, 195, 224)', borderRadius:'20px'}}>
+                                <button style={{backgroundColor:'rgb(120, 195, 224)', borderRadius:'20px'}}>
+                      <span style={{ fontWeight: "bold" }}>Scopri di più.</span>
+                      </button>
+                      </button>
 </p></div>
                             </div>
                          
@@ -29,7 +33,9 @@ const MissionSection4 = (props) => {
                                 <img src={cinquepermille} style={{height:'500px', borderBottomLeftRadius:'20px', borderTopLeftRadius:'20px'}}/>
                                 <div style={{display:'flex', flexDirection:'column', justifyContent:'center', paddingRight:'20px'}}   >
                                 <h3 style={{fontSize:'50px'}}>5X1000</h3>
-                                <p style={{fontSize:'25px'}}>Per te è solo una firma, per noi molto di più. <br/><span style={{fontWeight:'bold'}}>Scopri come aiutarci!</span>
+                                <p style={{fontSize:'25px'}}>Per te è solo una firma, per noi molto di più. <br/>    <button style={{backgroundColor:'rgb(120, 195, 224)', borderRadius:'20px'}}>
+                      <span style={{ fontWeight: "bold" }}>Scopri come aiutarci.</span>
+                      </button>
 </p></div>
                             </div>
                          
@@ -41,7 +47,9 @@ const MissionSection4 = (props) => {
                                 <img src={diventaVolontario} style={{height:'500px', borderBottomLeftRadius:'20px', borderTopLeftRadius:'20px'}}/>
                                 <div style={{display:'flex', flexDirection:'column', justifyContent:'center', paddingRight:'20px'}}   >
                                 <h3 style={{fontSize:'50px'}}>Diventa Volontario</h3>
-                                <p style={{fontSize:'25px'}}>Condividi la nostra Vision e aiutaci a realizzare i Nostri obiettivi. <br/><span style={{fontWeight:'bold'}}>Compila il form!</span>
+                                <p style={{fontSize:'25px'}}>Condividi la nostra Vision e aiutaci a realizzare i Nostri obiettivi. <br/>    <button style={{backgroundColor:'rgb(120, 195, 224)', borderRadius:'20px'}}>
+                      <span style={{ fontWeight: "bold" }}>Compila il form.</span>
+                      </button>
 </p></div>
                             </div>
                          
