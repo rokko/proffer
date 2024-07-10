@@ -18,7 +18,7 @@ import altreiniziative from './imagesCopertina/altreiniziative.webp'
 import cinquepermillecard from './imagesCopertina/51000.webp'
 import donaora from './imagesCopertina/donaora.webp'
 import donamateriali from './imagesCopertina/donamateriale.webp'
-import diventavolontario from './imagesCopertina/diventavolontario.webp'
+import diventavolontario from './imagesCopertina/diventaunvolontario.webp'
 
 const PageTitle = (props) => {
 
