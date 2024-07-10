@@ -52,7 +52,7 @@ const Volontari =[
     {
        Id: '1',
        AtImg: julie,
-       name: 'Juliette',
+       name: 'Juliette Valdarnini',
        slug: 'Test',
        title: 'Volontario',
     },
