@@ -10,7 +10,7 @@ const TeamSection = (props) => {
     }
 
     return (
-        <section className="team-section section-padding">
+        <section className="team-section section-padding" style={{backgroundColor:'white!important'}}>
             <div className="grid info-grid">
                         <div className="section-title" style={{textAlign:'center'}}>
                            
@@ -18,8 +18,8 @@ const TeamSection = (props) => {
                         </div>
                      
                     </div>
-            <div className="content-area" style={{marginTop:'50px'}}>
-                <div className="first-row clearfix" style={{display:'flex', flexDirection:'row', justifyContent:'center', alignContent:'center'}}>
+            <div className="content-area" style={{marginTop:'50px', backgroundColor:'white!important'}}>
+                <div className="first-row clearfix" style={{ backgroundColor:'white!important',display:'flex', flexDirection:'row', justifyContent:'center', alignContent:'center'}}>
                     <div className="grid"></div>
                     
                    
@@ -27,7 +27,7 @@ const TeamSection = (props) => {
                     {Team.map((team, aitem) => (
                         <div className="grid" style={{margin:'5px',maxWidth:'352px', width:'352px'}} key={aitem} >
                             <div >
-                                <img src={team.AtImg} alt="" style={{borderRadius:'50%', width:'352px'}} />
+                                <img src={team.AtImg} alt="" style={{borderRadius:'100%', width:'352px'}} />
                             </div>
                             <div className="member-info">
                                 <h4>{team.name}</h4>
