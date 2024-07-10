@@ -75,7 +75,7 @@ function DonaOra() {
   return (
     <div style={{
       width: '100%',
-      height: '100vh',
+      height: '80vh',
       backgroundImage: `url(${DonaOraImage})`,
       backgroundSize: 'cover',
       backgroundPosition: 'center',
@@ -94,6 +94,7 @@ function DonaOra() {
       }}>
         {step === 1 && (
           <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', marginBottom: '20px' }}>
+            <h3>Scegli la tua donazione</h3>
              <select
               name="tipoPagamento"
               value={formData.tipoPagamento}
@@ -103,6 +104,14 @@ function DonaOra() {
               <option value="singola">Singola</option>
               <option value="periodica">Periodica Mensile</option>
             </select>
+            <input
+              type="number"
+              name="importo"
+              value={formData.importo}
+              onChange={handleChange}
+              placeholder="Importo"
+              style={{ padding: '10px', border: '1px solid #ccc', borderRadius: '4px', boxSizing: 'border-box' }}
+            />
            
         
             <button type="button" onClick={nextStep} style={{
@@ -120,94 +129,59 @@ function DonaOra() {
           </div>
         )}
         {step === 2 && (
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', marginBottom: '20px' }}>
-           
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', marginBottom: '20px' }}>
+              <h3>I tuoi dati</h3>
             <input
-              type="number"
-              name="importo"
-              value={formData.importo}
-              onChange={handleChange}
-              placeholder="Importo"
-              style={{ padding: '10px', border: '1px solid #ccc', borderRadius: '4px', boxSizing: 'border-box' }}
-            />
-            <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-              <button type="button" onClick={prevStep} style={{
-                padding: '15px',
-                backgroundColor: '#6c757d',
-                color: 'white',
-                border: 'none',
-                borderRadius: '4px',
-                cursor: 'pointer',
-                fontSize: '16px'
-              }}>
-                Indietro
-              </button>
-              <button type="button" onClick={nextStep} style={{
-                padding: '15px',
-                backgroundColor: '#007bff',
-                color: 'white',
-                border: 'none',
-                borderRadius: '4px',
-                cursor: 'pointer',
-                fontSize: '16px'
-              }}>
-                Avanti
-              </button>
-            </div>
-          </div>
+               type="text"
+               name="nome"
+               value={formData.nome}
+               onChange={handleChange}
+               placeholder="Nome"
+               style={{ padding: '10px', border: formErrors.nome ? '1px solid red' : '1px solid #ccc', borderRadius: '4px', boxSizing: 'border-box' }}
+             />
+             <input
+               type="text"
+               name="cognome"
+               value={formData.cognome}
+               onChange={handleChange}
+               placeholder="Cognome"
+               style={{ padding: '10px', border: formErrors.cognome ? '1px solid red' : '1px solid #ccc', borderRadius: '4px', boxSizing: 'border-box' }}
+             />
+             <input
+               type="email"
+               name="email"
+               value={formData.email}
+               onChange={handleChange}
+               placeholder="Email"
+               style={{ padding: '10px', border: formErrors.email ? '1px solid red' : '1px solid #ccc', borderRadius: '4px', boxSizing: 'border-box' }}
+             />
+             <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+               <button type="button" onClick={prevStep} style={{
+                 padding: '15px',
+                 backgroundColor: '#6c757d',
+                 color: 'white',
+                 border: 'none',
+                 borderRadius: '4px',
+                 cursor: 'pointer',
+                 fontSize: '16px'
+               }}>
+                 Indietro
+               </button>
+               <button type="submit" style={{
+                 padding: '15px',
+                 backgroundColor: '#007bff',
+                 color: 'white',
+                 border: 'none',
+                 borderRadius: '4px',
+                 cursor: 'pointer',
+                 fontSize: '16px'
+               }}>
+                 Dona Ora
+               </button>
+             </div>
+           </div>
         )}
-        {step === 3 && (
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', marginBottom: '20px' }}>
-           <input
-              type="text"
-              name="nome"
-              value={formData.nome}
-              onChange={handleChange}
-              placeholder="Nome"
-              style={{ padding: '10px', border: formErrors.nome ? '1px solid red' : '1px solid #ccc', borderRadius: '4px', boxSizing: 'border-box' }}
-            />
-            <input
-              type="text"
-              name="cognome"
-              value={formData.cognome}
-              onChange={handleChange}
-              placeholder="Cognome"
-              style={{ padding: '10px', border: formErrors.cognome ? '1px solid red' : '1px solid #ccc', borderRadius: '4px', boxSizing: 'border-box' }}
-            />
-            <input
-              type="email"
-              name="email"
-              value={formData.email}
-              onChange={handleChange}
-              placeholder="Email"
-              style={{ padding: '10px', border: formErrors.email ? '1px solid red' : '1px solid #ccc', borderRadius: '4px', boxSizing: 'border-box' }}
-            />
-            <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-              <button type="button" onClick={prevStep} style={{
-                padding: '15px',
-                backgroundColor: '#6c757d',
-                color: 'white',
-                border: 'none',
-                borderRadius: '4px',
-                cursor: 'pointer',
-                fontSize: '16px'
-              }}>
-                Indietro
-              </button>
-              <button type="submit" style={{
-                padding: '15px',
-                backgroundColor: '#007bff',
-                color: 'white',
-                border: 'none',
-                borderRadius: '4px',
-                cursor: 'pointer',
-                fontSize: '16px'
-              }}>
-                Dona Ora
-              </button>
-            </div>
-          </div>
-        )}
+      
       </form>
     </div>
   );

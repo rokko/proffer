@@ -16,6 +16,8 @@ const FormDonazioni = (props) => {
               
                    
                             <div className="section-title">
+                            <br/>
+                            <br/>
                             
                                 <span style={{textAlign:'center'}}>Dona Ora</span>
                                 <br/>

@@ -138,7 +138,7 @@ const Header = (props) => {
                                     <img onClick={()=>changeLanguageByButtonClick('english')}width="40" height="40" src="https://img.icons8.com/color/48/great-britain.png" alt="great-britain"/>
                                 </div>
             </nav>
-            <Modal open={isModalOpen} onClose={handleCloseModal}>
+            <Modal style={{width:'80%'}} open={isModalOpen} onClose={handleCloseModal}>
         <DonaOra />
       </Modal>
         </header>

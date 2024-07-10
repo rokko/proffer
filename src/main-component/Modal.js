@@ -13,7 +13,9 @@ const modalStyle = {
   maxHeight: '90%',
   overflowY: 'auto',
   borderRadius: '5px',
-  boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)'
+  boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
+  width:'100%',
+  heigh:'80vh'
 };
 
 const overlayStyle = {
@@ -34,7 +36,7 @@ function Modal({ open, children, onClose }) {
       <div style={overlayStyle} onClick={onClose} />
       <div style={modalStyle}>
         {children}
-        <button onClick={onClose} style={{ marginTop: '20px' }}>Chiudi</button>
+    
       </div>
     </>
   );
