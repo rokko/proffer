@@ -81,10 +81,14 @@ const CauseSection2 = (props) => {
                     <span style={{marginTop:'10px', textAlign:'center'}}>Ultime Notizie</span>
                   
                 </div>
-                <div className="content-area causes-slider">
+                <div className="content-area causes-slider" style={{ borderRadius:'20px'}}>
                     <Slider {...settings}>
+                     
+
                         {Causes.slice(0, 6).map((Cause, citem) => (
+                           
                             <div className="item" key={citem} style={{borderRadius:'20px', height:'200px'}}>
+                                   <Link onClick={ClickHandler} to={`/cause-single/${Cause.slug}`}>
                                 <div className="inner">
                                     <div className="img-holder">
                                         <img src={Cause.cImg} alt="" />
@@ -104,7 +108,9 @@ const CauseSection2 = (props) => {
                                         </div>
                                     </div>
                                 </div>
+                                </Link>
                             </div>
+                         
                         ))}
                     </Slider>
                 </div>
