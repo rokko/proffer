@@ -23,19 +23,7 @@ const About51000 = (props) => {
                         <h4>Cos'è il 5x1000</h4>
                         <p>Senza entrare in dettagli complicati, immagina di poter fare una magia che aiuta molte persone, senza dover tirar fuori neanche un centesimo dal portafoglio!</p>
                         <p>Ecco il 5x1000 è un po' così. È una misura fiscale che ti permette di donare una parte delle tasse che devi già pagare, ad una buona causa (per esempio a noi, diciamo così per dire).</p>
-                        <p>Ti bastano 3 semplici mosse, una specie di terzo tempo:</p>
-                        <h5><strong>Step 1</strong>:</h5>
-                        <p>Mentre compili il modulo 730 del CU o del Modello Unico, cerca la sezione “Scelta per la destinazione del cinque per mille dell’IRPEF”</p>
-                        <h5><strong>Step 2:</strong></h5>
-                        <p>Firmare nel primo riquadro dedicato al "Sostegno degli Enti del Terzo settore iscritti nel RUNTS"</p>
-                        <h5><strong>Tiro (che se no è passi):</strong></h5>
-                        <p>Inserire il codice fiscale di “Vale per Tutti”: {codiceFiscale}</p>
-                        <button onClick={copyToClipboard} className="copy-button" style={{borderRadius:'20px'
-                        }}>
-                            {copied ? 'Codice Copiato!' : 'Copia Codice Fiscale'}
-                        </button>
-                        <br/>                        <br/>
-
+                        <p>Ti bastano 3 semplici mosse, una specie di terzo tempo.</p>
                         <p>Destinare il 5x1000 della tua dichiarazione dei redditi alla nostra associazione è un gesto semplice ma di grande impatto, che ci permette di finanziare progetti e attività a favore di bambini e ragazzi in difficoltà.</p>
                         <p>Per te è solo una firma, per noi molto di più!</p>
                     </div>
