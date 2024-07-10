@@ -6,13 +6,8 @@ function DonaOra() {
     nome: '',
     cognome: '',
     email: '',
-    cellulare: '',
-    codiceFiscale: '',
     tipoPagamento: 'singola', // Default value
     importo: '',
-    numeroCarta: '',
-    scadenzaCarta: '',
-    cvv: ''
   });
 
   const [step, setStep] = useState(1); // Stato per gestire gli step del form
@@ -20,13 +15,9 @@ function DonaOra() {
     nome: false,
     cognome: false,
     email: false,
-    cellulare: false,
-    codiceFiscale: false,
     tipoPagamento: false,
     importo: false,
-    numeroCarta: false,
-    scadenzaCarta: false,
-    cvv: false
+  
   });
 
   const handleChange = (e) => {
@@ -57,15 +48,11 @@ function DonaOra() {
   };
 
   const nextStep = () => {
-    // Verifica che tutti i campi obbligatori siano compilati correttamente prima di procedere
-    const requiredFields = ['nome', 'cognome', 'email', 'tipoPagamento', 'importo'];
-    const isValid = requiredFields.every(field => formData[field].trim() !== '' && !formErrors[field]);
+   
     
-    if (isValid) {
+    
       setStep(prevStep => prevStep + 1);
-    } else {
-      alert("Per favore, compila correttamente tutti i campi obbligatori prima di procedere.");
-    }
+   
   };
 
   const prevStep = () => {
