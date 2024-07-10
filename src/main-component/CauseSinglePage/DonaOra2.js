@@ -34,6 +34,19 @@ function DonaOra2() {
     console.log(formData);
   };
 
+  const [copied, setCopied] = useState(false);
+
+  const codiceFiscale = "IT65U0306909606100000189567";
+
+  const copyToClipboard = () => {
+      navigator.clipboard.writeText(codiceFiscale).then(() => {
+          setCopied(true);
+          setTimeout(() => {
+              setCopied(false);
+          }, 2000); // Nasconde il messaggio dopo 2 secondi
+      });
+  };
+
   return (
     <>
     <section className="about-page-section section-padding">
@@ -43,17 +56,42 @@ function DonaOra2() {
           <div className="section-title-s3">
  
       <h1 style={{ textAlign: 'center' }}>Dona ora</h1>
-      <p>La tua donazione è fondamentale per continuare il nostro lavoro.<br/> Ogni contributo, grande o piccolo, ci permette di portare avanti progetti che fanno la differenza nella vita di molti bambini e ragazzi.<br/> Grazie al tuo sostegno, possiamo costruire nuovi campi da basket, riqualificare spazi esistenti e offrire corsi di formazione per il personale locale.<br/>
-
-
+ <p>La tua donazione è fondamentale per continuare il nostro lavoro.<br/> Ogni contributo, grande o piccolo, ci permette di portare avanti progetti che fanno la differenza nella vita di molti bambini e ragazzi. <br/>Grazie al tuo sostegno, possiamo costruire nuovi campi da basket, riqualificare spazi esistenti e offrire corsi di formazione per il personale locale.
+<br/>
 Puoi decidere di fare una donazione singola, o di attivare quella mensile.<br/>
+
 
 Quest’ultima è veramente speciale: Roma non è nata in un giorno, e poter contare sul tuo aiuto nel lungo periodo ci permettere di progettarci ancora meglio!<br/>
 
-Unisciti a noi nella missione di trasformare la passione per il basket in uno strumento di cambiamento sociale.<br/> Dona ora e aiuta a costruire un futuro migliore per tanti giovani.<br/>
-</p>
+
+Per donare, puoi compilare il form e utilizzare PayPal, oppure tramite bonifico, specificando nella causale “donazione” o “erogazione liberale”<br/>
+
+
+Unisciti a noi nella missione di trasformare la passione per il basket in uno strumento di cambiamento sociale. <br/>
+
+Dona ora e aiuta a costruire un futuro migliore per tanti giovani.<br/>
+
+
+P.S.
+In Italia DONARE è detraibile dalle tasse (lo sappiamo, sembra incredibile?!)<br/>
+
+
+Per le persone fisiche, le donazioni liberali sono <br/>
+
+
+    * detraibili dall’Irpef per il 30% dell’importo, nel limite massimo di € 30.000 per periodo d’imposta<br/>
+
+
+    * deducibili dal reddito dell’erogatore nel limite del 10% del reddito dichiarato (per aziende e persone fisiche, l’eccedenza può essere riportata fino al 4° anno successivo).<br/>
+
+
+Per le aziende, le donazioni sono detraibili senza limite assoluto ma entro il 10% del reddito complessivo dichiarato.</p>
   
-    
+   <p> IBAN IT65U0306909606100000189567 </p>
+   <button onClick={copyToClipboard} className="copy-button" style={{borderRadius:'20px'
+                        }}>
+                            {copied ? 'IBAN Copiato!' : 'Copia IBAN negli appunti'}
+                        </button>
 
     </div>
     </div>
