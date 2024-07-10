@@ -58,7 +58,7 @@ function DonaOra() {
 
   const nextStep = () => {
     // Verifica che tutti i campi obbligatori siano compilati correttamente prima di procedere
-    const requiredFields = ['nome', 'cognome', 'email', 'cellulare', 'codiceFiscale'];
+    const requiredFields = ['nome', 'cognome', 'email', 'tipoPagamento', 'importo'];
     const isValid = requiredFields.every(field => formData[field].trim() !== '' && !formErrors[field]);
     
     if (isValid) {
@@ -74,7 +74,7 @@ function DonaOra() {
 
   return (
     <div style={{
-      width: '100vw',
+      width: '100%',
       height: '100vh',
       backgroundImage: `url(${DonaOraImage})`,
       backgroundSize: 'cover',
@@ -94,46 +94,17 @@ function DonaOra() {
       }}>
         {step === 1 && (
           <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', marginBottom: '20px' }}>
-            <input
-              type="text"
-              name="nome"
-              value={formData.nome}
+             <select
+              name="tipoPagamento"
+              value={formData.tipoPagamento}
               onChange={handleChange}
-              placeholder="Nome"
-              style={{ padding: '10px', border: formErrors.nome ? '1px solid red' : '1px solid #ccc', borderRadius: '4px', boxSizing: 'border-box' }}
-            />
-            <input
-              type="text"
-              name="cognome"
-              value={formData.cognome}
-              onChange={handleChange}
-              placeholder="Cognome"
-              style={{ padding: '10px', border: formErrors.cognome ? '1px solid red' : '1px solid #ccc', borderRadius: '4px', boxSizing: 'border-box' }}
-            />
-            <input
-              type="email"
-              name="email"
-              value={formData.email}
-              onChange={handleChange}
-              placeholder="Email"
-              style={{ padding: '10px', border: formErrors.email ? '1px solid red' : '1px solid #ccc', borderRadius: '4px', boxSizing: 'border-box' }}
-            />
-            <input
-              type="text"
-              name="cellulare"
-              value={formData.cellulare}
-              onChange={handleChange}
-              placeholder="Cellulare"
-              style={{ padding: '10px', border: formErrors.cellulare ? '1px solid red' : '1px solid #ccc', borderRadius: '4px', boxSizing: 'border-box' }}
-            />
-            <input
-              type="text"
-              name="codiceFiscale"
-              value={formData.codiceFiscale}
-              onChange={handleChange}
-              placeholder="Codice Fiscale"
-              style={{ padding: '10px', border: formErrors.codiceFiscale ? '1px solid red' : '1px solid #ccc', borderRadius: '4px', boxSizing: 'border-box' }}
-            />
+              style={{ padding: '10px', border: '1px solid #ccc', borderRadius: '4px', boxSizing: 'border-box' }}
+            >
+              <option value="singola">Singola</option>
+              <option value="periodica">Periodica Mensile</option>
+            </select>
+           
+        
             <button type="button" onClick={nextStep} style={{
               padding: '15px',
               backgroundColor: '#007bff',
@@ -150,15 +121,7 @@ function DonaOra() {
         )}
         {step === 2 && (
           <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', marginBottom: '20px' }}>
-            <select
-              name="tipoPagamento"
-              value={formData.tipoPagamento}
-              onChange={handleChange}
-              style={{ padding: '10px', border: '1px solid #ccc', borderRadius: '4px', boxSizing: 'border-box' }}
-            >
-              <option value="singola">Singola</option>
-              <option value="periodica">Periodica Mensile</option>
-            </select>
+           
             <input
               type="number"
               name="importo"
@@ -195,29 +158,29 @@ function DonaOra() {
         )}
         {step === 3 && (
           <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', marginBottom: '20px' }}>
-            <input
+           <input
               type="text"
-              name="numeroCarta"
-              value={formData.numeroCarta}
+              name="nome"
+              value={formData.nome}
               onChange={handleChange}
-              placeholder="Numero Carta"
-              style={{ padding: '10px', border: '1px solid #ccc', borderRadius: '4px', boxSizing: 'border-box' }}
+              placeholder="Nome"
+              style={{ padding: '10px', border: formErrors.nome ? '1px solid red' : '1px solid #ccc', borderRadius: '4px', boxSizing: 'border-box' }}
             />
             <input
               type="text"
-              name="scadenzaCarta"
-              value={formData.scadenzaCarta}
+              name="cognome"
+              value={formData.cognome}
               onChange={handleChange}
-              placeholder="Scadenza MM/AA"
-              style={{ padding: '10px', border: '1px solid #ccc', borderRadius: '4px', boxSizing: 'border-box' }}
+              placeholder="Cognome"
+              style={{ padding: '10px', border: formErrors.cognome ? '1px solid red' : '1px solid #ccc', borderRadius: '4px', boxSizing: 'border-box' }}
             />
             <input
-              type="text"
-              name="cvv"
-              value={formData.cvv}
+              type="email"
+              name="email"
+              value={formData.email}
               onChange={handleChange}
-              placeholder="CVV"
-              style={{ padding: '10px', border: '1px solid #ccc', borderRadius: '4px', boxSizing: 'border-box' }}
+              placeholder="Email"
+              style={{ padding: '10px', border: formErrors.email ? '1px solid red' : '1px solid #ccc', borderRadius: '4px', boxSizing: 'border-box' }}
             />
             <div style={{ display: 'flex', justifyContent: 'space-between' }}>
               <button type="button" onClick={prevStep} style={{
@@ -240,7 +203,7 @@ function DonaOra() {
                 cursor: 'pointer',
                 fontSize: '16px'
               }}>
-                Invia
+                Dona Ora
               </button>
             </div>
           </div>
