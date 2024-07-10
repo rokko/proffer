@@ -12,7 +12,7 @@ function IubendaScript() {
         "enableLgpd": true,
         "enableUspr": true,
         "fadpApplies": true,
-        "floatingPreferencesButtonDisplay": "bottom-right",
+        "floatingPreferencesButtonDisplay": "bottom-left",
         "perPurposeConsent": true,
         "siteId": 3678883,
         "usprApplies": true,
