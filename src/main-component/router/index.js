@@ -46,6 +46,7 @@ import WorkInProgressTop from '../AboutPage/WorkInProgressTop';
 import CinqueMilleTop from '../AboutPage/51000Top';
 import DonaOraTop from '../AboutPage/DonaOraTop';
 import DiventaVolontarioTop from '../AboutPage/DiventaVolontarioTop';
+import MobileBlocker from '../../components/mobileBlocker';
 
 
 
@@ -54,6 +55,7 @@ const AllRoute = () => {
 
   return (
     <div className="App">
+      <MobileBlocker>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Homepage />} />
@@ -101,6 +103,7 @@ const AllRoute = () => {
         <Route path='contact' element={<ContactPage />} /> 
         </Routes>
       </BrowserRouter>
+      </MobileBlocker>
 
     </div>
   );
