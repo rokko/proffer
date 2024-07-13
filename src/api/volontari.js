@@ -21,13 +21,7 @@ const Volontari =[
        slug: 'Test',
        title: 'Volontario',
     },
-    {
-       Id: '1',
-       AtImg: gimmo,
-       name: 'Gianmarco Mignona',
-       slug: 'Test',
-       title: 'Volontario',
-    },
+
     {
        Id: '1',
        AtImg: michi,
