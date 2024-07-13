@@ -1,5 +1,5 @@
-import React, { useState } from 'react'
-
+import React, { useState } from 'react';
+import mod5100 from '../../images/modulo5x1000.png';
 const About51000 = (props) => {
     const [copied, setCopied] = useState(false);
 
@@ -28,6 +28,7 @@ const About51000 = (props) => {
                         <p>Per te è solo una firma, per noi molto di più!</p>
                     </div>
                 </div>
+                <img src={mod5100} alt="5x1000" />
             </div>
         </div>
     </section>
