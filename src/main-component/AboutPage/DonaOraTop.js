@@ -22,7 +22,7 @@ const DonaOraTop= () => {
     return (
         <Fragment>
             <Navbar hclass={'header-style-1'} Logo={Logo} btnClass={'theme-btn-s1'} />
-            <PageTitle pageTitle={'Dona'} pagesub={'Dona Ora'} nomepagina={'dona-ora'}/>
+            <PageTitle pageTitle={'Dona Ora'} pagesub={'Dona Ora'} nomepagina={'dona-ora'}/>
             <DonaOra2 />
            
             <Footer />
