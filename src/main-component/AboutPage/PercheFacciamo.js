@@ -21,7 +21,7 @@ const PercheFacciamo= () => {
     return (
         <Fragment>
             <Navbar hclass={'header-style-1'} Logo={Logo} btnClass={'theme-btn-s1'} />
-            <PageTitle pageTitle={'Perche lo facciamo?'} pagesub={'Perchè lo facciamo?'} nomepagina={'perche-lo-facciamo'}/>
+            <PageTitle pageTitle={'Perche lo facciamo'} pagesub={'Perchè lo facciamo'} nomepagina={'perche-lo-facciamo'}/>
             <AboutPerche />
            
             <Footer />

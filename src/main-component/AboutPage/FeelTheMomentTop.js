@@ -23,7 +23,7 @@ const FeelTheMomentTop= () => {
     return (
         <Fragment>
             <Navbar hclass={'header-style-1'} Logo={Logo} btnClass={'theme-btn-s1'} />
-            <PageTitle pageTitle={'Cosa Facciamo?'} pagesub={'Feel the Moment'} nomepagina={'feel-the-moment'} />
+            <PageTitle pageTitle={'Feel The Moment'} pagesub={'Feel the Moment'} nomepagina={'feel-the-moment'} />
             <FeelTheMoment/>
             <Footer />
             <Scrollbar />

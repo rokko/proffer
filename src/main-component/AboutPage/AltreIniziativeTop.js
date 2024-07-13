@@ -22,7 +22,7 @@ const AltreIniziativeTop= () => {
     return (
         <Fragment>
             <Navbar hclass={'header-style-1'} Logo={Logo} btnClass={'theme-btn-s1'} />
-            <PageTitle pageTitle={'Cosa Facciamo?'} pagesub={'Altre iniziative'} nomepagina={'altre-iniziative'} />
+            <PageTitle pageTitle={'Altre iniziative'} pagesub={'Altre iniziative'} nomepagina={'altre-iniziative'} />
             <AltreIniziative />
            
             <Footer />

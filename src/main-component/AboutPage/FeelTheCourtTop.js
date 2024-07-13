@@ -23,7 +23,7 @@ const FeelTheCourtTop= () => {
     return (
         <Fragment>
             <Navbar hclass={'header-style-1'} Logo={Logo} btnClass={'theme-btn-s1'} />
-            <PageTitle pageTitle={'Cosa Facciamo?'} pagesub={'Feel the Court'} nomepagina={'feel-the-court'} />
+            <PageTitle pageTitle={'Feel The Court'} pagesub={'Feel the Court'} nomepagina={'feel-the-court'} />
             <FeelTheCourt/>
             <Footer />
             <Scrollbar />
