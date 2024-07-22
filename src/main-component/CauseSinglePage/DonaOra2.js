@@ -79,10 +79,10 @@ In Italia DONARE è detraibile dalle tasse (lo sappiamo, sembra incredibile?!)<b
 Per le persone fisiche, le donazioni liberali sono <br/>
 
 
-    * detraibili dall’Irpef per il 30% dell’importo, nel limite massimo di € 30.000 per periodo d’imposta<br/>
+    - detraibili dall’Irpef per il 30% dell’importo, nel limite massimo di € 30.000 per periodo d’imposta<br/>
 
 
-    * deducibili dal reddito dell’erogatore nel limite del 10% del reddito dichiarato (per aziende e persone fisiche, l’eccedenza può essere riportata fino al 4° anno successivo).<br/>
+    - deducibili dal reddito dell’erogatore nel limite del 10% del reddito dichiarato (per aziende e persone fisiche, l’eccedenza può essere riportata fino al 4° anno successivo).<br/>
 
 
 Per le aziende, le donazioni sono detraibili senza limite assoluto ma entro il 10% del reddito complessivo dichiarato.</p>

@@ -59,7 +59,7 @@ const Hero = () => {
                             <div data-swiper-parallax="300" className="slide-title">
                             <br/>
                                 <br/><AnimatedComponent>
-                                <h2>Cosa facciamo?</h2></AnimatedComponent>
+                                <h2>Cosa facciamo</h2></AnimatedComponent>
                             </div>
                             <AnimatedComponent>
                             <div data-swiper-parallax="400" className="slide-text">
