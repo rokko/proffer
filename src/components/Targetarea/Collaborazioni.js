@@ -26,12 +26,13 @@ const Collaborazioni = (props) => {
                                 
                             </div>
                             <div className="content" style={{display:'flex', flexDirection:'row', alignContent:'center', alignItems:'center', gap:'50px'}}>
-                                <img width={100} src={avaz} />
-                                <img width={100} src={dondolo} />
+                               
                                 <img width={100} src={faro} />
+                                <img width={100} src={westin} />
+                                <img width={100} src={avaz} />
                                 <img width={100} src={iotifo} />
                                 <img width={100} src={lagiornata} />
-                                <img width={100} src={westin} />
+                              
 
                                
                                 </div>

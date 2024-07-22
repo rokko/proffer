@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import DonaOraImage from '../../images/sfondoDonaOra.jpg';
+import DonaOraImage from '../../images/nuovoDonaOra.webp';
 
 function DonaOra() {
   const [formData, setFormData] = useState({
