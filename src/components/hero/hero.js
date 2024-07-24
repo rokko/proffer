@@ -41,7 +41,9 @@ const Hero = () => {
                                 <br/>
                                 <br/>
                                 <AnimatedComponent>
+                                    <Link to="/chisiamo">
                                 <h2>Chi siamo? </h2>
+                                </Link>
                                 </AnimatedComponent>
                             </div>
                             <AnimatedComponent>
@@ -59,7 +61,9 @@ const Hero = () => {
                             <div data-swiper-parallax="300" className="slide-title">
                             <br/>
                                 <br/><AnimatedComponent>
-                                <h2>Cosa facciamo</h2></AnimatedComponent>
+                                    <Link to="/cosa-facciamo">
+                                <h2>Cosa facciamo</h2>
+                                </Link></AnimatedComponent>
                             </div>
                             <AnimatedComponent>
                             <div data-swiper-parallax="400" className="slide-text">
@@ -77,7 +81,9 @@ const Hero = () => {
                             <br/>
                                 <br/>
                                 <AnimatedComponent>
+                                    <Link to="/comeaiutarci">
                                 <h2>Come aiutarci</h2>
+                                </Link>
                                 </AnimatedComponent>
                             </div>
                             <AnimatedComponent>
