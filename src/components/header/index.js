@@ -80,24 +80,24 @@ const Header = (props) => {
                             <li className="menu-item-has-children">
                                 <Link onClick={ClickHandler} to="/chisiamo" style={{fontSize:'20px'}}>Chi Siamo</Link>
                                 <ul className="sub-menu">
-                                    <li><Link onClick={ClickHandler} to="/about">Storia</Link></li>
-                                    <li><Link onClick={ClickHandler} to="/mission">Mission</Link></li>
-                                    <li><Link onClick={ClickHandler} to="/perche-facciamo">Perchè lo facciamo</Link></li>
-                                    <li><Link onClick={ClickHandler} to="/team">Team</Link></li>
-                                    <li><Link onClick={ClickHandler} to="/trasparenza">Trasparenza</Link></li>
+                                    <li><Link onClick={ClickHandler} to="/about"><a style={{fontSize:'16px'}}>Storia</a></Link></li>
+                                    <li><Link onClick={ClickHandler} to="/mission"><a style={{fontSize:'16px'}}>Mission</a></Link></li>
+                                    <li><Link onClick={ClickHandler} to="/perche-facciamo"><a style={{fontSize:'16px'}}>Perchè lo facciamo</a></Link></li>
+                                    <li><Link onClick={ClickHandler} to="/team"><a style={{fontSize:'16px'}}>Team</a></Link></li>
+                                    <li><Link onClick={ClickHandler} to="/trasparenza"><a style={{fontSize:'16px'}}>Trasparenza</a></Link></li>
                 
                                 </ul>
                             </li>
                             <li className="menu-item-has-children">
                                 <Link onClick={ClickHandler} to="/cosa-facciamo" style={{fontSize:'20px'}}>Cosa Facciamo</Link>
-                                <ul className="sub-menu">
-                                    <li><Link onClick={ClickHandler} to="/feelthedream">FEEL THE DREAM
+                                <ul className="sub-menu" >
+                                    <li><Link onClick={ClickHandler} to="/feelthedream"><a style={{fontSize:'16px'}}>FEEL THE DREAM </a>
 </Link></li>
-                                    <li><Link onClick={ClickHandler} to="/feelthecourt">FEEL THE COURT</Link></li>
-                                    <li><Link onClick={ClickHandler} to="/feelthegame">FEEL THE GAME</Link></li>
-                                    <li><Link onClick={ClickHandler} to="/feelthemoment">FEEL THE MOMENT</Link></li>
-                                    <li><Link onClick={ClickHandler} to="/work-in-progress">WORK IN PROGRESS</Link></li>
-                                    <li><Link onClick={ClickHandler} to="/altre-iniziative">ALTRE INIZIATIVE</Link></li>
+                                    <li><Link onClick={ClickHandler} to="/feelthecourt"><a style={{fontSize:'16px'}}>FEEL THE COURT</a></Link></li>
+                                    <li><Link onClick={ClickHandler} to="/feelthegame"><a style={{fontSize:'16px'}}>FEEL THE GAME</a></Link></li>
+                                    <li><Link onClick={ClickHandler} to="/feelthemoment"><a style={{fontSize:'16px'}}>FEEL THE MOMENT</a></Link></li>
+                                    <li><Link onClick={ClickHandler} to="/work-in-progress"><a style={{fontSize:'16px'}}>WORK IN PROGRESS</a></Link></li>
+                                    <li><Link onClick={ClickHandler} to="/altre-iniziative"><a style={{fontSize:'16px'}}>ALTRE INIZIATIVE</a></Link></li>
 
 
                                     
@@ -106,11 +106,11 @@ const Header = (props) => {
                             <li className="menu-item-has-children">
                                 <Link onClick={ClickHandler} to="/comeaiutarci" style={{fontSize:'20px'}}>Come Aiutarci</Link>
                                 <ul className="sub-menu">
-                                    <li><Link onClick={ClickHandler} to="/dona-ora">Dona Ora</Link></li>
-                                    <li><Link onClick={ClickHandler} to="/51000">5x1000</Link></li>
-                                    <li><Link onClick={ClickHandler} to="/dona-materiali">Dona Materiali</Link></li>
-                                    <li><Link onClick={ClickHandler} to="/aste">Aste</Link></li>
-                                    <li><Link onClick={ClickHandler} to="/diventa-volontario">Diventa un volontario</Link></li>
+                                    <li><Link onClick={ClickHandler} to="/dona-ora"><a style={{fontSize:'16px'}}>Dona Ora</a></Link></li>
+                                    <li><Link onClick={ClickHandler} to="/51000"><a style={{fontSize:'16px'}}>5x1000</a></Link></li>
+                                    <li><Link onClick={ClickHandler} to="/dona-materiali"><a style={{fontSize:'16px'}}>Dona Materiali</a></Link></li>
+                                    <li><Link onClick={ClickHandler} to="/aste"><a style={{fontSize:'16px'}}>Aste</a></Link></li>
+                                    <li><Link onClick={ClickHandler} to="/diventa-volontario"><a style={{fontSize:'16px'}}>Diventa un volontario</a></Link></li>
                                     
                                 </ul>
                                
