@@ -10,7 +10,7 @@ const AltreIniziative = (props) => {
 
 
               <h2>
-              Altre Iniziative
+              Altre iniziative
               </h2>
               <p>
               Oltre alle nostre iniziative principali, ogni tanto ci piace uscire dagli schemi.
