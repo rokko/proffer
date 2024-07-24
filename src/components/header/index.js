@@ -14,6 +14,7 @@ import Facebook from '../../images/facebook.png'
 import Youtube from '../../images/youtube.png'
 import Instagram from '../../images/instagram.png'
 import CursoreCanestro from '../../images/cursoreCanestro.png'
+import dona from './dona.png'
 
 
 
@@ -132,8 +133,8 @@ const Header = (props) => {
                 <img width="48" height="48" src={Facebook} alt="instagram-new"/> 
                 </a>
 
-                <div className="cursoreColCanestro" style={{fontFamily:'Patrick Hand' ,width:'250px',fontSize:'20px',display:'flex', flexDirection:'row', justifyContent:'center', backgroundColor:'#e21d14', color:'white', fontWeight:'bold', borderRadius:'30px', alignItems:'center'}} onClick={handleOpenModal}>DONA ORA</div>
                 </div>
+                <img width="250" height={48} src={dona} style={{marginLeft:'20px'}} onClick={handleOpenModal} alt="great-britain"/>
                                 <div style={{marginLeft:'30px'}}>
                                     <img onClick={()=>changeLanguageByButtonClick('english')}width="40" height="40" src="https://img.icons8.com/color/48/great-britain.png" alt="great-britain"/>
                                 </div>
