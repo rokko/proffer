@@ -16,7 +16,7 @@ const VideoArea = (props) => {
                     
                   
                             <div className="section-title">
-                                <span style={{textAlign:'center'}}>I FEEL THIS GAME : IL NOSTRO PRIMO CAMPO A NAIROBI</span>
+                                <span style={{textAlign:'center'}}>I FEEL THIS GAME : IL PRIMO CAMPO DEDICATO A VALERIO</span>
                                 
                             </div>
                             <iframe style={{borderRadius:'60px',marginTop:'20px'}} width="1070" height="729" src="https://www.youtube.com/embed/0v8O2ot4lNg?si=4QZvMA84wDP4t_5F" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
