@@ -20,7 +20,7 @@ const AltreIniziative = (props) => {
 
               </p>
               <p>
-              In questa pagina puoi trovare tutto ciò, ma soprattutto puoi contattarci per eventuali progetti o collaborazioni future! (form)
+              In questa pagina puoi trovare tutto ciò, ma soprattutto puoi contattarci per eventuali progetti o collaborazioni future!
 
               </p>
               
