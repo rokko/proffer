@@ -21,7 +21,7 @@ const ComeAiutarci= () => {
     return (
         <Fragment>
             <Navbar hclass={'header-style-1'} Logo={Logo} btnClass={'theme-btn-s1'} />
-            <PageTitle pageTitle={'Come Aiutarci'} pagesub={'Come Aiutarci?'} nomepagina={'come-aiutarci'}/>
+            <PageTitle pageTitle={'Come Aiutarci'} pagesub={'Come Aiutarci'} nomepagina={'come-aiutarci'}/>
             <MissionSection3 />
             <MissionSection4 />
 
