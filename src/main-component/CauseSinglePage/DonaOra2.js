@@ -57,7 +57,7 @@ function DonaOra2() {
  
       <h1 style={{ textAlign: 'center' }}>Dona ora</h1>
  <p>La tua donazione è fondamentale per continuare il nostro lavoro.<br/> Ogni contributo, grande o piccolo, ci permette di portare avanti progetti che fanno la differenza nella vita di molti bambini e ragazzi. <br/>Grazie al tuo sostegno, possiamo costruire nuovi campi da basket, riqualificare spazi esistenti e offrire corsi di formazione per il personale locale.
-<br/>
+<br/><br/>
 Puoi decidere di fare una donazione singola, o di attivare quella mensile.<br/>
 
 
@@ -67,25 +67,25 @@ Quest’ultima è veramente speciale: Roma non è nata in un giorno, e poter con
 Per donare, puoi compilare il form e utilizzare PayPal, oppure tramite bonifico, specificando nella causale “donazione” o “erogazione liberale”<br/>
 
 
-Unisciti a noi nella missione di trasformare la passione per il basket in uno strumento di cambiamento sociale. <br/>
+Unisciti a noi nella missione di trasformare la passione per il basket in uno strumento di cambiamento sociale.<br/> <br/>
 
 Dona ora e aiuta a costruire un futuro migliore per tanti giovani.<br/>
 
 
 P.S.
-In Italia DONARE è detraibile dalle tasse (lo sappiamo, sembra incredibile?!)<br/>
+In Italia DONARE è detraibile dalle tasse (lo sappiamo, sembra incredibile?!)<br/><br/>
 
 
-Per le persone fisiche, le donazioni liberali sono <br/>
+<strong>Per le persone fisiche</strong>, le donazioni liberali sono <br/>
 
 
     - detraibili dall’Irpef per il 30% dell’importo, nel limite massimo di € 30.000 per periodo d’imposta<br/>
 
 
-    - deducibili dal reddito dell’erogatore nel limite del 10% del reddito dichiarato (per aziende e persone fisiche, l’eccedenza può essere riportata fino al 4° anno successivo).<br/>
+    - deducibili dal reddito dell’erogatore nel limite del 10% del reddito dichiarato (per aziende e persone fisiche, l’eccedenza può essere riportata fino al 4° anno successivo).<br/><br/>
 
 
-Per le aziende, le donazioni sono detraibili senza limite assoluto ma entro il 10% del reddito complessivo dichiarato.</p>
+<strong>Per le aziende</strong>, le donazioni sono detraibili senza limite assoluto ma entro il 10% del reddito complessivo dichiarato.</p>
   
    <p> IBAN IT65U0306909606100000189567 </p>
    <button onClick={copyToClipboard} className="copy-button" style={{borderRadius:'20px'
