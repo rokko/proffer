@@ -1,5 +1,6 @@
 import React from 'react'
-
+import perche1 from './perche1.webp'
+import perche2 from './perche2.webp'
 const AboutPerche = (props) => {
 
     return (
@@ -17,6 +18,7 @@ const AboutPerche = (props) => {
                             </p>
                             <p>Ed è meraviglioso che tutto ciò, avviene giocando, ovvero attraverso un linguaggio universale e fondamentale nello sviluppo della persona.
                             </p>
+                            <img src={perche1} alt='perche1' />
                             <p>Infine, il nostro impegno nasce anche da una triste consapevolezza acquisita nei primi progetti.</p>
                             <p>Purtroppo, infatti, nei luoghi in cui operiamo, quando non sono a scuola, bambini e bambine passano la maggior parte del loro tempo per strada, dove sono esposti a pericoli e influenze negative.
                             </p>
@@ -24,6 +26,7 @@ const AboutPerche = (props) => {
                             </p>
                             <p>Per noi, lo sport è molto più di un gioco. È un mezzo per costruire comunità più forti, per educare alla vita e per dare speranza a chi ne ha più bisogno. È un'eredità che vogliamo trasmettere, un sogno che vogliamo condividere con il mondo intero.
                             </p>
+                            <img src={perche2} alt='perche2' />
                         </div>
                     </div>
                 </div>
