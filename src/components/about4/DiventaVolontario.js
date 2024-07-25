@@ -49,7 +49,7 @@ const DiventaVolontario = (props) => {
                     ))}
                 </div>
             </div>
-            <div style={{marginTop:'50px'}}>
+            <div style={{marginTop:'150px'}}>
             <ContactForm/>
             </div>
          
