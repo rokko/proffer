@@ -42,11 +42,11 @@ const [imagePagine, setImagePagine]= useState('')
             
         }
         if( props.nomepagina==='mission') {
-            setImagePagine(storia)
+            setImagePagine(mission)
             
         }
         if( props.nomepagina==='storia') {
-            setImagePagine(mission)
+            setImagePagine(storia)
             
         }
         if(props.nomepagina==='cosa-facciamo') {

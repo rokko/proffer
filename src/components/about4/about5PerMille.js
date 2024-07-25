@@ -28,7 +28,7 @@ const About51000 = (props) => {
                         <p>Per te è solo una firma, per noi molto di più!</p>
                     </div>
                 </div>
-                <img src={mod5100} alt="5x1000" />
+                <img src={mod5100} alt="5x1000"  style={{width:'70%'}}/>
             </div>
         </div>
     </section>
