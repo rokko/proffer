@@ -1,5 +1,5 @@
 import React from "react";
-
+import storiaImg from './storia.webp'
 const About4 = (props) => {
   return (
     <section className="about-page-section section-padding">
@@ -65,6 +65,7 @@ const About4 = (props) => {
                 associazione, vogliamo contaminare il mondo con la legacy di
                 Valerio. O almeno, ci proveremo.
               </p>
+              <img src={storiaImg} alt="" />
             </div>
           </div>
         </div>
