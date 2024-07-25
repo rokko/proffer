@@ -19,7 +19,7 @@ import cinquepermillecard from './imagesCopertina/51000.webp'
 import donaora from './imagesCopertina/donaora.webp'
 import donamateriali from './imagesCopertina/donamateriale.webp'
 import diventavolontario from './imagesCopertina/diventaunvolontario.webp'
-
+import diventaVolontario2 from './imagesCopertina/diventaVolontario2.webp'
 const PageTitle = (props) => {
 
 const [imagePagine, setImagePagine]= useState('')
@@ -84,7 +84,7 @@ const [imagePagine, setImagePagine]= useState('')
             setImagePagine(donamateriali)
         }
         if(props.nomepagina==='diventa-volontario'){
-            setImagePagine(diventavolontario)
+            setImagePagine(diventaVolontario2)
         }
         
         
