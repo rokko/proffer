@@ -22,7 +22,7 @@ const DiventaVolontarioTop= () => {
     return (
         <Fragment>
             <Navbar hclass={'header-style-1'} Logo={Logo} btnClass={'theme-btn-s1'} />
-            <PageTitle pageTitle={'Cosa Facciamo'} pagesub={'Diventa Volontario'} nomepagina={'diventa-volontario'}/>
+            <PageTitle pageTitle={'Diventa Volontario'} pagesub={'Diventa Volontario'} nomepagina={'diventa-volontario'}/>
             <DiventaVolontario/>
            
             <Footer />
