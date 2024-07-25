@@ -1,5 +1,6 @@
 import React from 'react'
-
+import mission1 from './mission1.webp'
+import mission2 from './mission2.webp'
 const MissionText = (props) => {
 
     return (
@@ -15,6 +16,7 @@ const MissionText = (props) => {
                             </p>
                             <p>Per farlo, partiamo dalla riqualificazione e realizzazione di spazi destinati allo sport per bambini e ragazzi che vivono in situazioni difficili e sono meno fortunati di noi.
 </p>
+<img src={mission1} alt='mission1' />
                             <p>Il secondo passo è offrire corsi di formazione per il personale locale, così da mettere a disposizione tutti gli ingredienti necessari per la nascita di nuove realtà sportive.
                             </p>
                             <p>Le nostre iniziative si svilupperanno in Italia, in Africa o in qualsiasi altra parte del mondo. Tutto ciò è e sarà possibile solo grazie alle donazioni di chi sceglierà di sostenerci.
@@ -23,6 +25,7 @@ const MissionText = (props) => {
                             <p>I nostri progetti saranno dinamici, ambiziosi e senza confini, un po' come Valerio stesso.
 
                             </p>
+                            <img src={mission2} alt='mission2' />
                             
                         </div>
                     </div>
