@@ -1,4 +1,5 @@
 import React from "react";
+import ContactForm from "../ContactForm";
 
 const AltreIniziative = (props) => {
   return (
@@ -25,6 +26,11 @@ const AltreIniziative = (props) => {
               </p>
               
             </div>
+            <br/>
+            <br/>
+            <br/>
+
+            <ContactForm/>
           </div>
         </div>
       </div>
