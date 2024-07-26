@@ -20,17 +20,17 @@ const Footer = (props) => {
             <div className="upper-footer">
                 <div className="container">
                     <div className="row">
-                        <div className="col col-xl-3 col-lg-3 col-md-6 col-12">
+                        <div className="col col-xl-4 col-lg-3 col-md-6 col-12">
                             <div className="widget about-widget">
                                 <div className="widget-title">
                                     <h3>
-                                        <img src={Logo} alt="" />
+                                        <img src={Logo} style={{width:'200px'}} alt="" />
                                     </h3>
                                 </div>
 <p style={{fontSize:'25px', lineHeight:'40px', fontStyle:'italic'}}>"Dove può condurti la passione per la pallacanestro?"</p>                       
                             </div>
                         </div>
-                        <div className="col col-xl-3 col-lg-3 col-md-6 col-12">
+                        <div className="col col-xl-4 col-lg-3 col-md-6 col-12">
                             <div className="widget contact-widget service-link-widget">
                                 <div className="widget-title">
                                     <h3>Contatti</h3>
@@ -46,7 +46,7 @@ const Footer = (props) => {
                             </div>
                         </div>
                        
-                        <div className="col col-xl-3 col-lg-3 col-md-6 col-12">
+                        <div className="col col-xl-4 col-lg-3 col-md-6 col-12">
                             <div className="widget newsletter-widget">
                             <img width="48" height="48" src={Instagram} alt="instagram-new"/> 
                 <img width="48" height="48" src={Youtube} alt="instagram-new"/> 
@@ -54,7 +54,7 @@ const Footer = (props) => {
                             <br/><br/>
 
                              
-                                <p>Iscriviti alla newsletter per rimanere aggiornato.</p>
+                                <h3 style={{color:'white', fontSize:'1.25rem'}}>Iscriviti alla newsletter per rimanere aggiornato.</h3>
                                 <form onSubmit={SubmitHandler}>
                                     <div className="input-1" style={{colore:'white'}}>
                                         <input type="email" className="form-control" placeholder="Email Address *" required style={{color:'white', opacity:'1'}} />
