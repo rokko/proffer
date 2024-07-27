@@ -7,6 +7,13 @@ import slid4 from './slider1/Foto Page Storia slider 1 (4).jpg'
 import slid5 from './slider1/Foto Page Storia slider 1 (5).jpg'
 import slid6 from './slider1/Foto Page Storia slider 1 (6).jpg'
 import slid7 from './slider1/Foto Page Storia slider 1 (7).jpg'
+
+import slid8 from './slider2/foto1.jpeg'
+import slid9 from './slider2/foto2.jpg'
+import slid10 from './slider2/foto3.jpg'
+import slid11 from './slider2/foto4.jpg'
+import slid12 from './slider2/foto5.jpeg'
+
 import { Carousel } from "react-responsive-carousel";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
@@ -53,6 +60,9 @@ const About4 = (props) => {
 
   const images=[
     slid1, slid2, slid3, slid4, slid5, slid6, slid7
+  ]
+  const images2=[
+    slid8, slid9, slid10, slid11, slid12
   ]
 
 
@@ -117,6 +127,16 @@ const About4 = (props) => {
                 colpire un ragazzo intraprendente, coraggioso, bravo, preparato,
                 talentuoso e meravigliosamente sorridente.
               </p>
+
+              <Slider {...settings}>
+                {images2.map((image, index) => (
+                  <div key={index} style={{display:"flex", alignContent:'center',alignItems:'center', justifyContent:'center'}}>
+                    <img src={image} alt={image} />
+                  </div>
+                ))}
+              </Slider>
+
+
          
               <p>
                 Valerio se ne è andato a 34 anni, ma ha contaminato le persone
