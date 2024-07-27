@@ -1,6 +1,61 @@
 import React from "react";
 import storiaImg from './storia.webp'
+import slid1 from './slider1/Foto Page Storia slider 1 (1).jpg'
+import slid2 from './slider1/Foto Page Storia slider 1 (2).jpg'
+import slid3 from './slider1/Foto Page Storia slider 1 (3).jpg'
+import slid4 from './slider1/Foto Page Storia slider 1 (4).jpg'
+import slid5 from './slider1/Foto Page Storia slider 1 (5).jpg'
+import slid6 from './slider1/Foto Page Storia slider 1 (6).jpg'
+import slid7 from './slider1/Foto Page Storia slider 1 (7).jpg'
+import { Carousel } from "react-responsive-carousel";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
+
+
+
+const SampleNextArrow = (props) => {
+  const { className, style, onClick } = props;
+  return (
+      <div
+          className={className}
+          style={{ ...style, display: "block" ,backgroundColor:'rgba(0,0,0,0.5)'}}
+          onClick={onClick}
+      />
+  );
+}
+
+const SamplePrevArrow = (props) => {
+  const { className, style, onClick } = props;
+  return (
+      <div
+          className={className}
+          style={{ ...style, display: "block" ,backgroundColor:'rgba(0,0,0,0.5)'}}
+          onClick={onClick}
+      />
+  );
+}
+
+const settings = {
+  dots: true,
+  infinite: true,
+  speed: 10,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  autoplay: true, // Abilita l'autoplay
+  autoplaySpeed: 2000, 
+  nextArrow: <SampleNextArrow />,
+  prevArrow: <SamplePrevArrow />
+};
+
+
 const About4 = (props) => {
+
+  const images=[
+    slid1, slid2, slid3, slid4, slid5, slid6, slid7
+  ]
+
+
   return (
     <section className="about-page-section section-padding">
       <div className="container">
@@ -17,6 +72,15 @@ const About4 = (props) => {
                 Ginobili, Kobe Bryant, Nowitzki, Garnett, Ray Allen, Bodiroga, i
                 fratelli Gasol.
               </p>
+          
+              <Slider {...settings}>
+                {images.map((image, index) => (
+                  <div key={index} style={{display:"flex", alignContent:'center',alignItems:'center', justifyContent:'center'}}>
+                    <img src={image} alt={image} />
+                  </div>
+                ))}
+              </Slider>
+            
               <p>
                 Valerio era una mente eccelsa, nel lavoro e nelle passioni. Ha
                 soprattutto scritto libri (<a href="https://www.lagiornatatipo.it/basket-i-feel-this-game/" target="_blank">scopri di più</a>), giocato
@@ -53,6 +117,7 @@ const About4 = (props) => {
                 colpire un ragazzo intraprendente, coraggioso, bravo, preparato,
                 talentuoso e meravigliosamente sorridente.
               </p>
+         
               <p>
                 Valerio se ne è andato a 34 anni, ma ha contaminato le persone
                 che ha conosciuto, con la sua splendida voglia di fare, creare,
