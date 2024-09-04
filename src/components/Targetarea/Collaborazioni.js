@@ -15,30 +15,51 @@ const Collaborazioni = (props) => {
         window.scrollTo(10, 0);
     }
 
-    return (
-        <section className="target-area section-padding" id="about" style={{display:'flex', flexDirection:'column',alignContent:'center', alignItems:'center',justifyContent:'center',  backgroundColor:'#efefef!important'}}>
-       
-               
-                    
-                   
-                            <div className="section-title">
-                                <span style={{textAlign:'center'}}>Collaborazioni</span>
-                                
-                            </div>
-                            <div className="content" style={{display:'flex', flexDirection:'row', alignContent:'center', alignItems:'center', gap:'50px'}}>
-                               
-                                <img width={100} src={faro} />
-                                <img width={100} src={westin} />
-                                <img width={100} src={avaz} />
-                                <img width={100} src={iotifo} />
-                                <img width={100} src={lagiornata} />
-                              
+    const isMobile = window.innerWidth <= 768;
 
-                               
-                                </div>
-                     
-                   
-               
+    return (
+        <section className="target-area section-padding" id="about" style={{ display: 'flex', flexDirection: 'column', alignContent: 'center', alignItems: 'center', justifyContent: 'center', backgroundColor: '#efefef!important' }}>
+
+
+
+
+            <div className="section-title">
+                <span style={{ textAlign: 'center' }}>Collaborazioni</span>
+
+            </div>
+            {!isMobile &&
+                <div className="content" style={{ display: 'flex', flexDirection: 'row', alignContent: 'center', alignItems: 'center', gap: '50px' }}>
+
+                    <img width={100} src={faro} />
+                    <img width={100} src={westin} />
+                    <img width={100} src={avaz} />
+                    <img width={100} src={iotifo} />
+                    <img width={100} src={lagiornata} />
+
+
+
+                </div>}
+            {isMobile &&
+                <div style={{ display: 'flex', flexDirection: 'column', justifyContent:'center', alignContent:'center',gap:'20px' }}>
+                    <div className="content" style={{ display: 'flex', flexDirection: 'row', alignContent: 'center', alignItems: 'center', gap: '50px' }}>
+
+                        <img width={100} src={faro} />
+                        <img width={100} src={westin} />
+                        <img width={100} src={avaz} />
+
+
+
+                    </div>
+                    <div className="content" style={{ display: 'flex', flexDirection: 'row', justifyContent:'center',alignContent: 'center', alignItems: 'center', gap: '50px' }}>
+
+                    <img width={100} src={iotifo} />
+                    <img width={100} src={lagiornata} />
+                    </div>
+                </div>
+            }
+
+
+
         </section>
     )
 }

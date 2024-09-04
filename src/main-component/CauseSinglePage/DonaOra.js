@@ -66,6 +66,7 @@ function DonaOra() {
     setStep(prevStep => prevStep - 1);
   };
 
+  const isMobile = window.innerWidth <= 768;
   return (
     <div style={{
       width: '100%',
@@ -79,7 +80,7 @@ function DonaOra() {
       alignItems: 'center'
     }}>
       <form onSubmit={handleSubmit} style={{
-        width: '40%',
+        width:isMobile?'350px':'40%',
         maxWidth: '1200px',
         padding: '20px',
         background: 'rgba(255, 255, 255, 1)',
