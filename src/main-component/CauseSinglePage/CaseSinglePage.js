@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useState } from 'react';
 import Navbar from '../../components/Navbar/Navbar';
 import { Link } from 'react-router-dom'
 import PageTitle from '../../components/pagetitle/PageTitle'
@@ -11,17 +11,38 @@ import DonaOra from './DonaOra';
 
 const CauseSinglePage = (props) => {
     const { slug } = useParams()
+    var numeroArticolo = 0
 
     const caseDetails = Causes.find(item => item.slug === slug)
     console.log(caseDetails)
-    const convertNewlinesToBreaks = (text) => {
-        return text.split('\n').map((line, index) => (
-            <p key={index}>
-                {line}
-                <br />
+    const convertTextAndLinks = (text) => {
+        // RegEx per rilevare i link
+        const urlRegex = /(https?:\/\/[^\s]+)/g;
+      
+        // Dividiamo il testo in base ai link
+        return text.split(urlRegex).map((part, index) => {
+          // Se il frammento corrisponde al pattern di un URL, lo rendiamo un link cliccabile
+          if (urlRegex.test(part)) {
+            numeroArticolo = numeroArticolo+1
+            return (
+              <a key={index} href={part} target="_blank" rel="noopener noreferrer">
+                Articolo Approfondimento {numeroArticolo}
+                <br/>
+              </a>
+            );
+          }
+          // Se non è un link, restituisci solo il testo, ignorando i frammenti vuoti
+          if (part.trim() === '') {
+            return null; // Ignora i frammenti vuoti
+          }
+          return part.split('\n').map((line, i) => (
+            <p key={i}>
+              {line}
+              <br />
             </p>
-        ));
-    };
+          ));
+        });
+      };
     const ClickHandler = () => {
         window.scrollTo(10, 0);
     }
@@ -29,12 +50,12 @@ const CauseSinglePage = (props) => {
     return (
         <Fragment>
             <Navbar hclass={'header-style-1'} Logo={Logo} btnClass={'theme-btn-s1'} />
-            <PageTitle pageTitle={caseDetails.cTitle} pagesub={'Progetto'} />
             <section className="case-single-section section-padding">
                 <div className="container">
-                <div className="section-title-s3">
+                <div className="section-title-s3" style={{marginTop:'30px'}}>
                 
-                <h2>{caseDetails.cTitle} </h2>
+                <h2 style={{marginBottom:'-40px'}}>
+                {caseDetails.cTitle} </h2>
                 </div>
                         <div className="col col-xl-8 col-lg-7 col-12">
                             <div className="img-holder details-img">
@@ -43,12 +64,13 @@ const CauseSinglePage = (props) => {
                         </div>
                         <div >
                             <div className="case-info-area section-title-s3 .testo-paragraph">
-                               {convertNewlinesToBreaks(caseDetails.testo)}
+                               {convertTextAndLinks(caseDetails.testo)}
                                
                                
                                 
                                 
                             </div>
+                            {caseDetails.fotoArticolo2 && <img src={caseDetails.fotoArticolo2} alt="" />}
                         </div>
 
                     <div className="row donate-area-bottom">
@@ -60,14 +82,14 @@ const CauseSinglePage = (props) => {
                         </div>
                         <div className="col col-lg-4 col-12">
                             <div className="case-single-sidebar">
-                                <div className="widget contact-widget" style={{marginTop:'34px'}}>
+                                <div className="widget contact-widget" style={{marginTop:'34px' , backgroundColor:'#78C3E0'}}>
                                     <div>
                                         <p>Numero di telefono:</p>
-                                        <h4>+39 347654321</h4>
+                                        <h4>+39 3487303525</h4>
                                     </div>
                                     <div>
                                         <p>Email:</p>
-                                        <h4>prova@gmail.com</h4>
+                                        <h4>valepertutti.info@gmail.com</h4>
                                     </div>
                                 </div>
 

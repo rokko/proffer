@@ -311,15 +311,14 @@
 	}
 
 	.contact-widget {
-		@include background-style("../../images/m-1.jpg", center center, cover, no-repeat, local);
+		background-color:#78C3E0;
 		padding: 65px 40px;
 		position: relative;
 		text-align: center;
 
 		&:before {
 			content: "";
-			background: $theme-primary-color;
-			width: 100%;
+			background-color:#78C3E0;			width: 100%;
 			height: 100%;
 			position: absolute;
 			left: 0;
