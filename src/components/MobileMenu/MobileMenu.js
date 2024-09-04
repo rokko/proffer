@@ -8,156 +8,110 @@ import './style.css';
 const menus = [
     {
         id: 1,
-        title: 'Home',
-        link: '/home',
+        title: 'Chi Siamo',
+        link: '/chisiamo',
         submenu: [
             {
                 id: 11,
-                title: 'Home style 1',
-                link: '/home'
+                title: 'Storia',
+                link: '/about'
             },
             {
                 id: 12,
-                title: 'Home style 2',
-                link: '/home-2'
+                title: 'Mission',
+                link: '/mission'
             },
             {
                 id: 13,
-                title: 'Home style 3',
-                link: '/home-3'
+                title: 'Perchè lo facciamo',
+                link: '/perche-facciamo'
+            },
+            {
+                id: 13,
+                title: 'Team',
+                link: '/team'
+            },
+            {
+                id: 13,
+                title: 'Trasparenza',
+                link: '/trasparenza'
             }
         ]
     },
 
     {
         id: 3,
-        title: 'Pages',
-        link: '/',
+        title: 'Cosa Facciamo',
+        link: '/cosa-facciamo',
         submenu: [
             {
                 id: 31,
-                title: 'About',
-                link: '/about'
+                title: 'Feel The Dream',
+                link: '/feelthedream'
             },
             {
                 id: 3222,
-                title: 'Contact',
-                link: '/contact'
+                title: 'Feel The Court',
+                link: '/feelthecourt'
             },
             {
                 id: 322,
-                title: 'Testimonials',
-                link: '/testimonials'
+                title: 'Feel The Game',
+                link: '/feelthegame'
             },
             {
                 id: 34,
-                title: 'Team',
-                link: '/team'
+                title: 'Feel The Moment',
+                link: '/feelthemoment'
             },
             {
                 id: 3454,
-                title: 'Team Single',
-                link: '/team-single/Michel-Troat'
+                title: 'Work in progress',
+                link: '/work-in-progress'
             },
             {
                 id: 36,
-                title: '404',
-                link: '/404'
+                title: 'Altre Iniziative',
+                link: '/altre-iniziative'
             },
-            {
-                id: 37,
-                title: 'Events',
-                link: '/event'
-            },
-            {
-                id: 37,
-                title: 'Events Single',
-                link: '/event-single/Help-The-Poor'
-            },
+           
         ]
     },
     {
         id: 4,
-        title: 'Shop',
-        link: '/shop',
+        title: 'Come Aiutarci',
+        link: '/comeaiutarci',
         submenu: [
             {
                 id: 41,
-                title: 'Shop',
-                link: '/shop',
+                title: 'Dona Ora',
+                link: '/dona-ora',
             },
             {
                 id: 42,
-                title: 'Shop Single',
-                link: '/product-single/Ninja-Hoodi'
+                title: '5x1000',
+                link: '/51000'
             },
             {
                 id: 43,
-                title: 'Cart',
-                link: '/cart'
+                title: 'Dona Materiali',
+                link: '/dona-materiali'
             },
             {
                 id: 44,
-                title: 'Checkout',
-                link: '/checkout'
+                title: 'Aste',
+                link: '/aste'
             },
+            {
+                id: 44,
+                title: 'Diventa un volontario',
+                link: '/diventa-volontario'
+            }
         ]
     },
-    {
-        id: 7,
-        title: 'Causes',
-        link: '/causes',
-        submenu: [
-            {
-                id: 71,
-                title: 'Causes',
-                link: '/causes'
-            },
-            {
-                id: 74,
-                title: 'Case Single',
-                link: '/cause-single/Childrens-voices'
-            },
-        ]
-    },
-
-    {
-        id: 5,
-        title: 'Blog',
-        link: '/blog',
-        submenu: [
-            {
-                id: 51,
-                title: 'Blog',
-                link: '/blog'
-            },
-            {
-                id: 52,
-                title: 'Blog Left sidebar',
-                link: '/blog-left-sidebar'
-            },
-            {
-                id: 53,
-                title: 'Blog full width',
-                link: '/blog-fullwidth'
-            },
-            {
-                id: 54,
-                title: 'Blog single',
-                link: '/blog-single/Canna-Law-Blog-is-a-forum-for-discussing-the-practical'
-            },
-            {
-                id: 55,
-                title: 'Blog single Left sidebar',
-                link: '/blog-single-left-sidebar/Canna-Law-Blog-is-a-forum-for-discussing-the-practical'
-            },
-            {
-                id: 56,
-                title: 'Blog single full width',
-                link: '/blog-single-fullwidth/Canna-Law-Blog-is-a-forum-for-discussing-the-practical'
-            },
-        ]
-    }
+   
+        
+    
 ]
 
 const MobileMenu = () => {

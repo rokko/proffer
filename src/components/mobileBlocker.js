@@ -20,13 +20,7 @@ const MobileBlocker = ({ children }) => {
     };
   }, []);
 
-  if (isMobile) {
-    return (
-      <div style={{ textAlign: 'center', padding: '20px', fontSize: '18px', color: 'red' }}>
-        La visualizzazione di questa pagina è bloccata sui dispositivi mobili.
-      </div>
-    );
-  }
+ 
 
   return children;
 };
