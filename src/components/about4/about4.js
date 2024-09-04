@@ -1,24 +1,27 @@
 import React from "react";
 import storiaImg from './storia.webp'
-import slid1 from './slider1/Foto Page Storia slider 1 (1).jpg'
-import slid2 from './slider1/Foto Page Storia slider 1 (2).jpg'
-import slid3 from './slider1/Foto Page Storia slider 1 (3).jpg'
-import slid4 from './slider1/Foto Page Storia slider 1 (4).jpg'
-import slid5 from './slider1/Foto Page Storia slider 1 (5).jpg'
-import slid6 from './slider1/Foto Page Storia slider 1 (6).jpg'
-import slid7 from './slider1/Foto Page Storia slider 1 (7).jpg'
+import slid1 from './slider1/Foto Page Storia slider 1 (1).webp'
+import slid2 from './slider1/Foto Page Storia slider 1 (2).webp'
+import slid3 from './slider1/Foto Page Storia slider 1 (3).webp'
+import slid4 from './slider1/Foto Page Storia slider 1 (4).webp'
+import slid5 from './slider1/Foto Page Storia slider 1 (5).webp'
+import slid6 from './slider1/Foto Page Storia slider 1 (6).webp'
+import slid7 from './slider1/Foto Page Storia slider 1 (7).webp'
 
-import slid8 from './slider2/foto1.jpeg'
-import slid9 from './slider2/foto2.jpg'
-import slid10 from './slider2/foto3.jpg'
-import slid11 from './slider2/foto4.jpg'
-import slid12 from './slider2/foto5.jpeg'
+import slid8 from './slider2/Foto Page Storia slider 2 (1).webp'
+import slid9 from './slider2/Foto Page Storia slider 2 (2).webp'
+import slid10 from './slider2/Foto Page Storia slider 2 (3).webp'
+import slid11 from './slider2/Foto Page Storia slider 2 (4).webp'
+import slid12 from './slider2/Foto Page Storia slider 2 (5).webp'
 
 import { Carousel } from "react-responsive-carousel";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 
+
+import frecciaSinistra from '../../images/frecciaSinistra.png'
+import frecciaDestra from '../../images/frecciaDestra.png'
 
 
 const SampleNextArrow = (props) => {
@@ -50,9 +53,8 @@ const settings = {
   slidesToShow: 1,
   slidesToScroll: 1,
   autoplay: true, // Abilita l'autoplay
-  autoplaySpeed: 2000, 
-  nextArrow: <SampleNextArrow />,
-  prevArrow: <SamplePrevArrow />
+  autoplaySpeed: 5000, 
+  
 };
 
 
@@ -91,7 +93,7 @@ const About4 = (props) => {
                 ))}
               </Slider>
             
-              <p>
+              <p style={{marginTop:'50px'}}>
                 Valerio era una mente eccelsa, nel lavoro e nelle passioni. Ha
                 soprattutto scritto libri (<a href="https://www.lagiornatatipo.it/basket-i-feel-this-game/" target="_blank">scopri di più</a>), giocato
                 a basket, girato il mondo, spiccato il volo dalla sua Ostia
@@ -138,7 +140,7 @@ const About4 = (props) => {
 
 
          
-              <p>
+              <p style={{marginTop:'50px'}}>
                 Valerio se ne è andato a 34 anni, ma ha contaminato le persone
                 che ha conosciuto, con la sua splendida voglia di fare, creare,
                 sognare, realizzarsi nella vita, lasciando un'eredità

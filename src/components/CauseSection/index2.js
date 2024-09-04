@@ -95,7 +95,7 @@ const CauseSection2 = (props) => {
                                     </div>
                                     <div className="overlay">
                                         <div className="overlay-content">
-                                           
+                                          
                                             <h3><Link onClick={ClickHandler} to={`/cause-single/${Cause.slug}`}>{Cause.cTitle}</Link></h3>
                                             <div className="goal-raised">
                                               
