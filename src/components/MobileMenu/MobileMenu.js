@@ -4,7 +4,12 @@ import ListItem from "@mui/material/List";
 import Collapse from "@mui/material/Collapse";
 import { Link } from "react-router-dom";
 import './style.css';
-
+import Facebook from '../../images/facebook.png'
+import Youtube from '../../images/youtube.png'
+import Instagram from '../../images/instagram.png'
+import dona from './dona.png'
+import Modal from '../../main-component/Modal';
+import DonaOra from '../../main-component/CauseSinglePage/DonaOra';
 const menus = [
     {
         id: 1,
@@ -108,13 +113,20 @@ const menus = [
                 link: '/diventa-volontario'
             }
         ]
+        
     },
+ 
    
         
     
 ]
 
 const MobileMenu = () => {
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+    const handleOpenModal = () => setIsModalOpen(true);
+    const handleCloseModal = () => setIsModalOpen(false);
+    
 
     const [openId, setOpenId] = useState(0);
     const [menuActive, setMenuState] = useState(false);
@@ -144,7 +156,7 @@ const MobileMenu = () => {
                                                 <Fragment>
                                                     {item.submenu.map((submenu, i) => {
                                                         return (
-                                                            <ListItem key={i}>
+                                                            <ListItem key={i} >
                                                                 <Link onClick={ClickHandler} className="active"
                                                                     to={submenu.link}>{submenu.title}</Link>
                                                             </ListItem>
@@ -160,6 +172,23 @@ const MobileMenu = () => {
                             </ListItem>
                         )
                     })}
+<div style={{display:'flex',justifyContent:'center'}}>
+<img width="250" height={48} src={dona}  onClick={handleOpenModal} alt="great-britain" />
+</div>
+
+                      <div style={{ display: 'flex', flexDirection: 'row', marginTop:'30px',gap: '10px', width:'100%',justifyContent:'center',alignContent:'center', alignItems:'center' }}>
+                    <a style={{ width: '48px', height: '48px' }} href="https://www.instagram.com/valepertutti.it/" target='_blank'>
+                        <img width="48" height="48" src={Instagram} alt="instagram-new" />
+                    </a>
+                    <a style={{ width: '48px', height: '48px' }} href="https://www.youtube.com/@valepertutti1787" target='_blank'>
+                        <img width="48" height="48" src={Youtube} alt="instagram-new" />
+                    </a>
+                    <a style={{ width: '48px', height: '48px' }} href="https://www.facebook.com/valepertutti.it" target='_blank'>
+                        <img width="48" height="48" src={Facebook} alt="instagram-new" />
+                    </a>
+                
+
+                </div>
                 </ul>
 
             </div>
@@ -171,6 +200,9 @@ const MobileMenu = () => {
                     <span className="icon-bar last-angle"></span>
                 </button>
             </div>
+            <Modal style={{ width: '80%' }} open={isModalOpen} onClose={handleCloseModal}>
+                <DonaOra />
+            </Modal>
         </div>
     )
 }
