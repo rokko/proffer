@@ -13,7 +13,15 @@ const CauseSinglePage = (props) => {
     const { slug } = useParams()
 
     const caseDetails = Causes.find(item => item.slug === slug)
-
+    console.log(caseDetails)
+    const convertNewlinesToBreaks = (text) => {
+        return text.split('\n').map((line, index) => (
+            <p key={index}>
+                {line}
+                <br />
+            </p>
+        ));
+    };
     const ClickHandler = () => {
         window.scrollTo(10, 0);
     }
@@ -24,18 +32,21 @@ const CauseSinglePage = (props) => {
             <PageTitle pageTitle={caseDetails.cTitle} pagesub={'Progetto'} />
             <section className="case-single-section section-padding">
                 <div className="container">
-                <h3>Titolo del progetto </h3>
+                <div className="section-title-s3">
+                
+                <h2>{caseDetails.cTitle} </h2>
+                </div>
                         <div className="col col-xl-8 col-lg-7 col-12">
                             <div className="img-holder details-img">
-                                <img src={caseDetails.cImg} alt="" />
+                                <img src={caseDetails.fotoArticolo} alt="" />
                             </div>
                         </div>
                         <div >
-                            <div className="case-info-area">
+                            <div className="case-info-area section-title-s3 .testo-paragraph">
+                               {convertNewlinesToBreaks(caseDetails.testo)}
                                
                                
                                 
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas non felis varius, lacinia nisi vel, scelerisque dui. Donec suscipit condimentum ornare. Ut massa velit, maximus in placerat nec, feugiat at urna. Etiam arcu massa, interdum dapibus mattis sed, auctor a ante. Proin non porttitor tortor, id facilisis purus. Nullam blandit erat nec ipsum volutpat vehicula. Sed convallis vehicula hendrerit. Aenean velit urna, pretium at hendrerit non, ullamcorper sed ipsum.</p>
                                 
                             </div>
                         </div>
@@ -49,7 +60,7 @@ const CauseSinglePage = (props) => {
                         </div>
                         <div className="col col-lg-4 col-12">
                             <div className="case-single-sidebar">
-                                <div className="widget contact-widget">
+                                <div className="widget contact-widget" style={{marginTop:'34px'}}>
                                     <div>
                                         <p>Numero di telefono:</p>
                                         <h4>+39 347654321</h4>
@@ -69,7 +80,7 @@ const CauseSinglePage = (props) => {
                                                 </div>
                                                 <div className="details">
                                                     <h4><Link onClick={ClickHandler} to={`/cause-single/${Cause.slug}`}>{Cause.cTitle}</Link></h4>
-                                                    <span className="g-r">${Cause.Goal} raised of ${Cause.Raised}</span>
+                                                   
                                                 </div>
                                             </div>
                                         ))}

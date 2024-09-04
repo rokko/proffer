@@ -55,7 +55,7 @@ function DonaOra2() {
         <div className="col col-lg-8 col-md-10">
           <div className="section-title-s3">
  
-      <h1 style={{ textAlign: 'center' }}>Dona ora</h1>
+      <h1 style={{ textAlign: 'left' }}>Dona ora</h1>
  <p>La tua donazione è fondamentale per continuare il nostro lavoro.<br/> Ogni contributo, grande o piccolo, ci permette di portare avanti progetti che fanno la differenza nella vita di molti bambini e ragazzi. <br/>Grazie al tuo sostegno, possiamo costruire nuovi campi da basket, riqualificare spazi esistenti e offrire corsi di formazione per il personale locale.
 <br/><br/>
 Puoi decidere di fare una donazione singola, o di attivare quella mensile.<br/>

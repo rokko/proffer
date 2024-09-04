@@ -95,14 +95,10 @@ const CauseSection2 = (props) => {
                                     </div>
                                     <div className="overlay">
                                         <div className="overlay-content">
-                                            <div className="progress">
-                                                <div className="progress-bar" style={{ width: `${Cause.process}%` }}>
-                                                    <span className="progress-value">{Cause.process}%</span>
-                                                </div>
-                                            </div>
+                                           
                                             <h3><Link onClick={ClickHandler} to={`/cause-single/${Cause.slug}`}>{Cause.cTitle}</Link></h3>
                                             <div className="goal-raised">
-                                                <span>${Cause.Goal} raised of ${Cause.Raised}</span>
+                                              
                                                 <Link onClick={ClickHandler} to={`/cause-single/${Cause.slug}`} className="donate-btn"><i className="fi flaticon-heart-1"></i>Donate</Link>
                                             </div>
                                         </div>
