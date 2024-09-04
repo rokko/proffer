@@ -192,6 +192,7 @@ function DonaOra() {
               }}>
                 Indietro
               </button>
+              <a href='https://www.paypal.com/ncp/payment/P8EUAH2ZXMWTW' target='_blank'>
               <button type="submit" style={{
                 padding: '15px',
                 backgroundColor: '#78c3e0',
@@ -203,6 +204,7 @@ function DonaOra() {
               }}>
                 Dona Ora
               </button>
+              </a>
             </div>
           </div>
         )}

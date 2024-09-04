@@ -25,6 +25,11 @@ const PageTitle = (props) => {
 const [imagePagine, setImagePagine]= useState('')
 
     useEffect(() => {
+        if (isMobile) {
+            setImagePagine(chisiamo)
+
+        }
+        else{
         if( props.nomepagina==='chi-siamo'|| props.nomepagina==='team') {
             setImagePagine(chisiamo)
             
@@ -86,14 +91,17 @@ const [imagePagine, setImagePagine]= useState('')
         if(props.nomepagina==='diventa-volontario'){
             setImagePagine(diventaVolontario2)
         }
+    }
         
         
     })
     const ClickHandler = () => {
         window.scrollTo(10, 0);
     }
+    const isMobile = window.innerWidth <= 768;
     
     return (
+       
         <section className="page-title" style={{backgroundImage: `url(${imagePagine})`}}>
             <div className="page-title-container" >
                 <div className="page-title-wrapper">
@@ -111,6 +119,8 @@ const [imagePagine, setImagePagine]= useState('')
                 </div>
             </div>
         </section>
+        
+      
     )
 }
 

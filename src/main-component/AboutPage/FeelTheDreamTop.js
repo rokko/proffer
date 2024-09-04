@@ -23,7 +23,7 @@ const FeelTheDreamTop= () => {
         <Fragment>
             <Navbar hclass={'header-style-1'} Logo={Logo} btnClass={'theme-btn-s1'} />
             <PageTitle pageTitle={'Feel The Dream'} pagesub={'Feel the Dream'} nomepagina={'feel-the-dream'} />
-            <FeelTheDream/>Z
+            <FeelTheDream/>
             <Footer />
             <Scrollbar />
         </Fragment>

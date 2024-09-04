@@ -8,7 +8,7 @@ const TeamSection = (props) => {
     const ClickHandler = () => {
         window.scrollTo(10, 0);
     }
-
+const isMobile = window.innerWidth <= 768;
     return (
         <section className="team-section section-padding" style={{backgroundColor:'white!important'}}>
             <div className="grid info-grid">
