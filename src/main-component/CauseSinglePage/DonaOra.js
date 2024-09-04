@@ -10,6 +10,13 @@ function DonaOra() {
     importo: '',
   });
 
+
+  const [selectedTaglio, setSelectedTaglio] = useState({
+    taglio5: false,
+    taglio10: false,
+    taglio25: false,
+  });
+
   const [step, setStep] = useState(1); // Stato per gestire gli step del form
   const [formErrors, setFormErrors] = useState({
     nome: false,
@@ -17,7 +24,7 @@ function DonaOra() {
     email: false,
     tipoPagamento: false,
     importo: false,
-  
+
   });
 
   const handleChange = (e) => {
@@ -48,11 +55,11 @@ function DonaOra() {
   };
 
   const nextStep = () => {
-   
-    
-    
-      setStep(prevStep => prevStep + 1);
-   
+
+
+
+    setStep(prevStep => prevStep + 1);
+
   };
 
   const prevStep = () => {
@@ -75,14 +82,14 @@ function DonaOra() {
         width: '40%',
         maxWidth: '1200px',
         padding: '20px',
-        background: 'rgba(255, 255, 255, 0.9)',
+        background: 'rgba(255, 255, 255, 1)',
         boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
         borderRadius: '8px'
       }}>
         {step === 1 && (
           <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', marginBottom: '20px' }}>
-            <h3>Scegli la tua donazione</h3>
-             <select
+            <h3>SOSTIENI I NOSTRI PROGETTI</h3>
+            <select
               name="tipoPagamento"
               value={formData.tipoPagamento}
               onChange={handleChange}
@@ -91,19 +98,49 @@ function DonaOra() {
               <option value="singola">Singola</option>
               <option value="periodica">Periodica Mensile</option>
             </select>
+            <div style={{ display: 'flex', flexDirection: 'row', gap: '10px' }}>
+              <div onClick={() => {
+                setSelectedTaglio({ taglio5: !selectedTaglio.taglio5, taglio10: false, taglio25: false })
+                setFormData(prevState => ({
+                  ...prevState,
+                  ['importo']: 5
+                }))
+              }} style={{ background: selectedTaglio.taglio5 ? '#78c3e0' : 'white', color: selectedTaglio.taglio5 ? 'white' : 'black', padding: '10px', width: '100px', height: '100px', borderRadius: '4px', border: '1px solid #ccc', display: 'flex', alignContent: 'center', alignItems: 'center', justifyContent: 'center', fontSize: '35px' }}>
+                5 €
+              </div>
+              <div onClick={() => {
+                setSelectedTaglio({ taglio5: false, taglio10: !selectedTaglio.taglio10, taglio25: false })
+                setFormData(prevState => ({
+                  ...prevState,
+                  ['importo']: 10
+                }))
+              }} style={{ background: selectedTaglio.taglio10 ? '#78c3e0' : 'white', color: selectedTaglio.taglio10 ? 'white' : 'black', padding: '10px', width: '100px', height: '100px', borderRadius: '4px', border: '1px solid #ccc', display: 'flex', alignContent: 'center', alignItems: 'center', justifyContent: 'center', fontSize: '35px' }}>
+                10 €
+              </div>
+              <div onClick={() => {
+                setSelectedTaglio({ taglio5: false, taglio10: false, taglio25: !selectedTaglio.taglio25 })
+                setFormData(prevState => ({
+                  ...prevState,
+                  ['importo']: 25
+                }))
+              }} style={{ background: selectedTaglio.taglio25 ? '#78c3e0' : 'white', color: selectedTaglio.taglio25 ? 'white' : 'black', padding: '10px', width: '100px', height: '100px', borderRadius: '4px', border: '1px solid #ccc', display: 'flex', alignContent: 'center', alignItems: 'center', justifyContent: 'center', fontSize: '35px' }}>
+                25 €
+              </div>
+
+            </div>
             <input
               type="number"
               name="importo"
               value={formData.importo}
               onChange={handleChange}
-              placeholder="Importo"
+              placeholder="Inserisci importo personalizzato"
               style={{ padding: '10px', border: '1px solid #ccc', borderRadius: '4px', boxSizing: 'border-box' }}
             />
-           
-        
+
+
             <button type="button" onClick={nextStep} style={{
               padding: '15px',
-              backgroundColor: '#007bff',
+              backgroundColor: '#78c3e0',
               color: 'white',
               border: 'none',
               borderRadius: '4px',
@@ -111,64 +148,64 @@ function DonaOra() {
               fontSize: '16px',
               display: Object.values(formErrors).every(error => !error) ? 'block' : 'none' // Mostra solo se tutti i campi sono compilati correttamente
             }}>
-              Avanti
+              Vai al prossimo STEP
             </button>
           </div>
         )}
         {step === 2 && (
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', marginBottom: '20px' }}>
-              <h3>I tuoi dati</h3>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', marginBottom: '20px' }}>
+            <h3>I tuoi dati</h3>
             <input
-               type="text"
-               name="nome"
-               value={formData.nome}
-               onChange={handleChange}
-               placeholder="Nome"
-               style={{ padding: '10px', border: formErrors.nome ? '1px solid red' : '1px solid #ccc', borderRadius: '4px', boxSizing: 'border-box' }}
-             />
-             <input
-               type="text"
-               name="cognome"
-               value={formData.cognome}
-               onChange={handleChange}
-               placeholder="Cognome"
-               style={{ padding: '10px', border: formErrors.cognome ? '1px solid red' : '1px solid #ccc', borderRadius: '4px', boxSizing: 'border-box' }}
-             />
-             <input
-               type="email"
-               name="email"
-               value={formData.email}
-               onChange={handleChange}
-               placeholder="Email"
-               style={{ padding: '10px', border: formErrors.email ? '1px solid red' : '1px solid #ccc', borderRadius: '4px', boxSizing: 'border-box' }}
-             />
-             <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-               <button type="button" onClick={prevStep} style={{
-                 padding: '15px',
-                 backgroundColor: '#6c757d',
-                 color: 'white',
-                 border: 'none',
-                 borderRadius: '4px',
-                 cursor: 'pointer',
-                 fontSize: '16px'
-               }}>
-                 Indietro
-               </button>
-               <button type="submit" style={{
-                 padding: '15px',
-                 backgroundColor: '#007bff',
-                 color: 'white',
-                 border: 'none',
-                 borderRadius: '4px',
-                 cursor: 'pointer',
-                 fontSize: '16px'
-               }}>
-                 Dona Ora
-               </button>
-             </div>
-           </div>
+              type="text"
+              name="nome"
+              value={formData.nome}
+              onChange={handleChange}
+              placeholder="Nome"
+              style={{ padding: '10px', border: formErrors.nome ? '1px solid red' : '1px solid #ccc', borderRadius: '4px', boxSizing: 'border-box' }}
+            />
+            <input
+              type="text"
+              name="cognome"
+              value={formData.cognome}
+              onChange={handleChange}
+              placeholder="Cognome"
+              style={{ padding: '10px', border: formErrors.cognome ? '1px solid red' : '1px solid #ccc', borderRadius: '4px', boxSizing: 'border-box' }}
+            />
+            <input
+              type="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              placeholder="Email"
+              style={{ padding: '10px', border: formErrors.email ? '1px solid red' : '1px solid #ccc', borderRadius: '4px', boxSizing: 'border-box' }}
+            />
+            <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+              <button type="button" onClick={prevStep} style={{
+                padding: '15px',
+                backgroundColor: '#6c757d',
+                color: 'white',
+                border: 'none',
+                borderRadius: '4px',
+                cursor: 'pointer',
+                fontSize: '16px'
+              }}>
+                Indietro
+              </button>
+              <button type="submit" style={{
+                padding: '15px',
+                backgroundColor: '#78c3e0',
+                color: 'white',
+                border: 'none',
+                borderRadius: '4px',
+                cursor: 'pointer',
+                fontSize: '16px'
+              }}>
+                Dona Ora
+              </button>
+            </div>
+          </div>
         )}
-      
+
       </form>
     </div>
   );

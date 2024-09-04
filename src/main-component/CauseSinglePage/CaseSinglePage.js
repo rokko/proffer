@@ -50,7 +50,7 @@ const CauseSinglePage = (props) => {
     return (
         <Fragment>
             <Navbar hclass={'header-style-1'} Logo={Logo} btnClass={'theme-btn-s1'} />
-            <section className="case-single-section section-padding">
+            <section className="case-single-section " style={{padding:'120px'}}>
                 <div className="container">
                 <div className="section-title-s3" style={{marginTop:'30px'}}>
                 
