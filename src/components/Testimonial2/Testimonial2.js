@@ -14,7 +14,7 @@ const Testimonial2 = (props) => {
         slidesToShow: 2,
         slidesToScroll: 1,
         autoplay: false,
-
+     
         responsive: [
             {
                 breakpoint: 1500,
