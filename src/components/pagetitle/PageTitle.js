@@ -25,11 +25,7 @@ const PageTitle = (props) => {
 const [imagePagine, setImagePagine]= useState('')
 
     useEffect(() => {
-        if (isMobile) {
-            setImagePagine(chisiamo)
-
-        }
-        else{
+       
         if( props.nomepagina==='chi-siamo'|| props.nomepagina==='team') {
             setImagePagine(chisiamo)
             
@@ -91,7 +87,7 @@ const [imagePagine, setImagePagine]= useState('')
         if(props.nomepagina==='diventa-volontario'){
             setImagePagine(diventaVolontario2)
         }
-    }
+    
         
         
     })
@@ -102,7 +98,7 @@ const [imagePagine, setImagePagine]= useState('')
     
     return (
        
-        <section className="page-title" style={{backgroundImage: `url(${imagePagine})`}}>
+        <section className="page-title" style={{backgroundImage: `url(${imagePagine})` , backgroundSize:'cover'}}>
             <div className="page-title-container" >
                 <div className="page-title-wrapper">
                     <div className="container">
