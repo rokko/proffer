@@ -50,7 +50,8 @@ function DonaOra() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(formData);
+    window.location.href = "https://www.paypal.com/ncp/payment/P8EUAH2ZXMWTW"; 
+
     // Qui puoi gestire l'invio dei dati, come salvarli o inviarli a un API
   };
 
@@ -193,7 +194,7 @@ function DonaOra() {
                 Indietro
               </button>
               <a href='https://www.paypal.com/ncp/payment/P8EUAH2ZXMWTW' target='_blank'>
-              <button type="submit" style={{
+              <button style={{
                 padding: '15px',
                 backgroundColor: '#78c3e0',
                 color: 'white',
