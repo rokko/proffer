@@ -25,6 +25,16 @@ const Header = (props) => {
 
     const [isModalOpen, setIsModalOpen] = useState(false);
 
+    const handleTranslate = () => {
+        console.log('ciao')
+        const translateElement = document.querySelector('.goog-te-combo');
+        if (translateElement) {
+            translateElement.value = 'en'; // Imposta la lingua su inglese
+            translateElement.dispatchEvent(new Event('change'));
+        }
+    };
+
+
     const handleOpenModal = () => setIsModalOpen(true);
     const handleCloseModal = () => setIsModalOpen(false);
     useEffect(() => {
@@ -125,26 +135,26 @@ const Header = (props) => {
 
                 </div>
                 {!isMobile &&
-                <div style={{ display: 'flex', flexDirection: 'row', gap: '10px' }}>
-                    <a style={{ width: '48px', height: '48px' }} href="https://www.instagram.com/valepertutti.it/" target='_blank'>
-                        <img width="48" height="48" src={Instagram} alt="instagram-new" />
-                    </a>
-                    <a style={{ width: '48px', height: '48px' }} href="https://www.youtube.com/@valepertutti1787" target='_blank'>
-                        <img width="48" height="48" src={Youtube} alt="instagram-new" />
-                    </a>
-                    <a style={{ width: '48px', height: '48px' }} href="https://www.facebook.com/valepertutti.it" target='_blank'>
-                        <img width="48" height="48" src={Facebook} alt="instagram-new" />
-                    </a>
-                
+                    <div style={{ display: 'flex', flexDirection: 'row', gap: '10px' }}>
+                        <a style={{ width: '48px', height: '48px' }} href="https://www.instagram.com/valepertutti.it/" target='_blank'>
+                            <img width="48" height="48" src={Instagram} alt="instagram-new" />
+                        </a>
+                        <a style={{ width: '48px', height: '48px' }} href="https://www.youtube.com/@valepertutti1787" target='_blank'>
+                            <img width="48" height="48" src={Youtube} alt="instagram-new" />
+                        </a>
+                        <a style={{ width: '48px', height: '48px' }} href="https://www.facebook.com/valepertutti.it" target='_blank'>
+                            <img width="48" height="48" src={Facebook} alt="instagram-new" />
+                        </a>
 
-                </div>}
-                {!isMobile &&<>
-                <img width="250" height={48} src={dona} style={{ marginLeft: '20px' }} onClick={handleOpenModal} alt="great-britain" />
-                <div style={{ marginLeft: '30px' }}>
-                    <img onClick={() => changeLanguageByButtonClick('english')} width="40" height="40" src="https://img.icons8.com/color/48/great-britain.png" alt="great-britain" />
-                </div>
+
+                    </div>}
+                {!isMobile && <>
+                    <img width="250" height={48} src={dona} style={{ marginLeft: '20px' }} onClick={handleOpenModal} alt="great-britain" />
+                    <div style={{ marginLeft: '30px' }}>
+                        <img onClick={() => handleTranslate()} width="40" height="40" src="https://img.icons8.com/color/48/great-britain.png" alt="great-britain" />
+                    </div>
                 </>
-}
+                }
             </nav>
             <Modal style={{ width: '80%' }} open={isModalOpen} onClose={handleCloseModal}>
                 <DonaOra />
