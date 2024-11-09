@@ -4,7 +4,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Link } from 'react-router-dom';
 import Causes from '../../api/cause'
-
+import frecciaSinistra from '../../images/frecciaSinistra.png'
+import frecciaDestra from '../../images/frecciaDestra.png'
 const CauseSection2 = (props) => {
     const ClickHandler = () => {
         window.scrollTo(10, 0);
@@ -19,8 +20,8 @@ const CauseSection2 = (props) => {
         slidesToScroll: 1,
         centerPadding:'220px',
         autoplay: true,
-        prevArrow: <img style={{fontSize:'40px',marginLeft:'1000px'}} src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAACrElEQVR4nO1ZTW/TQBC1WsqBY4FTkxtFmYlyQiA48SsQCP4HRfwAyh2qgDjCAaUCxEfhwIFbOmuqSqDwAyicoO058Y60aJxWEU2QvfbEToVH2kPsyH5vd3bm7XMQVFFFFbnDdYL5yDSuMMFdJnhhDXyzBvYtQRQPA/tM2JN78p+IGpedC+bKBx4265bgvjX4kw06n2EN/LAEq45ateKBb587aw08tgQDX+BjRAgGlrDtts6fKQQ8G7xpDezlBT5OBHd5s3FjasDd1oUFS/hEGziPp9YjeZc2+FNM+H7a4Hk0NuSdWuAXCgbv4kH40fXwZG4CRaQN/3tftHOBZ4O3ygLPhyOE65nAO9M4bQl/l03AGtjLVGKlzpcNnkeptJalw2ZvUoRdJrjNBl4rEeh7dWyRBzle9tx9unri8Fl6JGA13ex3gvks2mYS+JhAvBIqBHZSCcBYVSqBl99scFNrL0Sf8VIigVgSK4GX61rgeTjupCCALz0f2hkDL2lI8EwZvGMD62kI9GZw5t3B+JpIwEMqvzoKPks4atXSai1prMkEUtZ/zZOUC5v1lAT6/wEBU3AKhc06E3xQS6Fjv4nZu4zC+uQyik9LKqPg3cgKJLGSSEBMJ1UpIcpUiUAUNi8mEhDBJKbTDIq576ndPJGuanKa4I0KAQP3UoGPV4FaNZUDjRZ4wr7rLi+lJjBcBWxr5a7C7D/wAh+vQhcXZ+JQT7ib2TcVr7JsAmzwWpAnxKssMXUeBnlDGpLonhIIvNPQWiNz1+BGYeAJ3qqZu0fs9XYRaeO0Zn5SiFc5jepkCX/l3rCevumaNBgF4H2p81K2CwH/F5Hu8pLIDjGd/IHDjsgD7w47FSIumBPTSXwbkdZy8JCT3fADHgyGpzz4cnBvRVTlTHxmraKK4PjHH2UAkUkNcEE1AAAAAElFTkSuQmCC" alt="circled-left--v2"></img>,
-        nextArrow: <img style={{width:'48px'}} src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAACrElEQVR4nO1ZTW/TQBC1WsqBY4FTkxtFmYlyQiA48SsQCP4HRfwAyh2qgDjCAaUCxEfhwIFbOmuqSqDwAyicoO058Y60aJxWEU2QvfbEToVH2kPsyH5vd3bm7XMQVFFFFbnDdYL5yDSuMMFdJnhhDXyzBvYtQRQPA/tM2JN78p+IGpedC+bKBx4265bgvjX4kw06n2EN/LAEq45ateKBb587aw08tgQDX+BjRAgGlrDtts6fKQQ8G7xpDezlBT5OBHd5s3FjasDd1oUFS/hEGziPp9YjeZc2+FNM+H7a4Hk0NuSdWuAXCgbv4kH40fXwZG4CRaQN/3tftHOBZ4O3ygLPhyOE65nAO9M4bQl/l03AGtjLVGKlzpcNnkeptJalw2ZvUoRdJrjNBl4rEeh7dWyRBzle9tx9unri8Fl6JGA13ex3gvks2mYS+JhAvBIqBHZSCcBYVSqBl99scFNrL0Sf8VIigVgSK4GX61rgeTjupCCALz0f2hkDL2lI8EwZvGMD62kI9GZw5t3B+JpIwEMqvzoKPks4atXSai1prMkEUtZ/zZOUC5v1lAT6/wEBU3AKhc06E3xQS6Fjv4nZu4zC+uQyik9LKqPg3cgKJLGSSEBMJ1UpIcpUiUAUNi8mEhDBJKbTDIq576ndPJGuanKa4I0KAQP3UoGPV4FaNZUDjRZ4wr7rLi+lJjBcBWxr5a7C7D/wAh+vQhcXZ+JQT7ib2TcVr7JsAmzwWpAnxKssMXUeBnlDGpLonhIIvNPQWiNz1+BGYeAJ3qqZu0fs9XYRaeO0Zn5SiFc5jepkCX/l3rCevumaNBgF4H2p81K2CwH/F5Hu8pLIDjGd/IHDjsgD7w47FSIumBPTSXwbkdZy8JCT3fADHgyGpzz4cnBvRVTlTHxmraKK4PjHH2UAkUkNcEE1AAAAAElFTkSuQmCC" alt="circled-left--v2"></img>,
+        prevArrow: <img style={{marginLeft:'20px'}} src={frecciaSinistra}></img>,
+        nextArrow: <img  src={frecciaDestra}></img>,
 
 
         responsive: [
