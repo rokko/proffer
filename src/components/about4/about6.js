@@ -29,7 +29,7 @@ const About6 = (props) => {
                 Anche perché, senza di voi, nulla di quello che facciamo sarebbe
                 possibile.
               </p>
-              <h3>Donazioni</h3>
+              <h2>Donazioni</h2>
               <p>
                 Ogni euro donato alla nostra associazione viene gestito con la
                 massima cura e responsabilità. Siamo consapevoli dell'importanza
@@ -39,7 +39,7 @@ const About6 = (props) => {
                 costantemente monitorati e valutati per garantirne il successo e
                 la sostenibilità.
               </p>
-              <h3>Comunicazione</h3>
+              <h2>Comunicazione</h2>
               <p>
                 Ci impegniamo a mantenere una comunicazione aperta e onesta con
                 tutti i nostri sostenitori e incoraggiamo la partecipazione ai
@@ -49,7 +49,7 @@ const About6 = (props) => {
                 costante con la nostra comunità, coinvolgendola attivamente
                 nelle nostre attività e decisioni.
               </p>
-              <h3>Rendicontazione</h3>
+              <h2>Rendicontazione</h2>
               <p>
                 Ogni anno, pubblichiamo un rapporto dettagliato sulle nostre
                 attività, includendo informazioni finanziarie complete e

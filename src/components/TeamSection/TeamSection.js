@@ -14,7 +14,7 @@ const isMobile = window.innerWidth <= 768;
             <div className="grid info-grid">
                         <div className="section-title" style={{textAlign:'center'}}>
                            
-                            <h2>I nostri volontari</h2>
+                            <h2>Il nostro consiglio direttivo</h2>
                         </div>
                      
                     </div>
@@ -37,7 +37,13 @@ const isMobile = window.innerWidth <= 768;
                         </div>
                     ))}
                 </div>
+                <div style={{display:'flex', flexDirection:'column', marginTop:'100px',justifyContent:'center', alignContent:'center', alignItems:'center'}}>
+            <a href='/diventa-volontario'><h3 >Diventa un volontario</h3></a>
+         
+ 
             </div>
+            </div>
+      
          
         </section>
     )

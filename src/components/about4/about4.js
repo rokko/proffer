@@ -75,7 +75,7 @@ const About4 = (props) => {
           <div className="col col-lg-8 col-md-10">
             <div className="section-title-s3">
               <h2>
-                Dove può condurre e spingerti la passione per la pallacanestro?
+              Dove può condurti la passione per la pallacanestro?”
               </h2>
               <p>
                 Se lo è sempre chiesto Valerio D’Angelo, ragazzo romano con gli
