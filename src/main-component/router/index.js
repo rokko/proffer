@@ -47,6 +47,7 @@ import CinqueMilleTop from '../AboutPage/51000Top';
 import DonaOraTop from '../AboutPage/DonaOraTop';
 import DiventaVolontarioTop from '../AboutPage/DiventaVolontarioTop';
 import MobileBlocker from '../../components/mobileBlocker';
+import DashboardValePerTutti from '../DashboardValePerTutti';
 
 
 
@@ -100,6 +101,7 @@ const AllRoute = () => {
           <Route path='blog-single-left-sidebar/:slug' element={<BlogDetailsLeftSiide />} />
           <Route path='blog-single-fullwidth/:slug' element={<BlogDetailsFull />} />
           <Route path='404' element={<ErrorPage />} />
+          <Route path='/dashboard' element={<DashboardValePerTutti/>}/>
         <Route path='contact' element={<ContactPage />} /> 
         </Routes>
       </BrowserRouter>

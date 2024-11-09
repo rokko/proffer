@@ -72,7 +72,7 @@ const CauseSinglePage = (props) => {
                                 
                             </div>
                             {caseDetails.fotoArticolo2 && <img src={caseDetails.fotoArticolo2} alt="" />}
-                        <div style={{display:'flex', flexDirection:'row', gap:'2rem'}}>
+                        <div style={{display:'flex', flexDirection:'row', gap:'2rem', marginTop:'20px'}}>
                             <h3>Seguici su Instagram </h3>
                         <a style={{ width: '48px', height: '48px' }} href="https://www.instagram.com/valepertutti.it/" target='_blank'>
                         <img width="48" height="48" src={Instagram} alt="instagram-new" />
