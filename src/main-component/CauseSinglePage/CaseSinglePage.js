@@ -8,6 +8,7 @@ import Footer from '../../components/footer/Footer';
 import Causes from '../../api/cause'
 import Logo from '../../images/logo.png'
 import DonaOra from './DonaOra';
+import Instagram from '../../images/instagram.png'
 
 const CauseSinglePage = (props) => {
     const { slug } = useParams()
@@ -71,9 +72,16 @@ const CauseSinglePage = (props) => {
                                 
                             </div>
                             {caseDetails.fotoArticolo2 && <img src={caseDetails.fotoArticolo2} alt="" />}
+                        <div style={{display:'flex', flexDirection:'row', gap:'2rem'}}>
+                            <h3>Seguici su Instagram </h3>
+                        <a style={{ width: '48px', height: '48px' }} href="https://www.instagram.com/valepertutti.it/" target='_blank'>
+                        <img width="48" height="48" src={Instagram} alt="instagram-new" />
+                    </a>
+                    </div>
                         </div>
 
                     <div className="row donate-area-bottom">
+                    
                         <div className="col col-lg-8 col-12">
                             <div className="donate-area-wrapper">
                                 <h3>Dona Ora</h3>
