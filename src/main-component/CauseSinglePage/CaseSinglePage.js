@@ -51,7 +51,7 @@ const CauseSinglePage = (props) => {
     return (
         <Fragment>
             <Navbar hclass={'header-style-1'} Logo={Logo} btnClass={'theme-btn-s1'} />
-            <section className="case-single-section " style={{padding:'120px'}}>
+            <section className="case-single-section " style={{padding:'20px'}}>
                 <div className="container">
                 <div className="section-title-s3" style={{marginTop:'30px'}}>
                 
@@ -80,42 +80,43 @@ const CauseSinglePage = (props) => {
                     </div>
                         </div>
 
-                    <div className="row donate-area-bottom">
+                   
+                </div>
+                <div className="row donate-area-bottom">
                     
-                        <div className="col col-lg-8 col-12">
-                            <div className="donate-area-wrapper">
-                                <h3>Dona Ora</h3>
-                                <DonaOra/>
-                            </div>
+                    <div className="col col-lg-8 col-12">
+                        <div className="donate-area-wrapper">
+                            <h3>Dona Ora</h3>
+                            <DonaOra/>
                         </div>
-                        <div className="col col-lg-4 col-12">
-                            <div className="case-single-sidebar">
-                                <div className="widget contact-widget" style={{marginTop:'34px' , backgroundColor:'#78C3E0'}}>
-                                    <div>
-                                        <p>Numero di telefono:</p>
-                                        <h4>+39 3487303525</h4>
-                                    </div>
-                                    <div>
-                                        <p>Email:</p>
-                                        <h4>valepertutti.info@gmail.com</h4>
-                                    </div>
+                    </div>
+                    <div className="col col-lg-4 col-12">
+                        <div className="case-single-sidebar">
+                            <div className="widget contact-widget" style={{marginTop:'34px' , backgroundColor:'#78C3E0'}}>
+                                <div>
+                                    <p>Numero di telefono:</p>
+                                    <h4>+39 3487303525</h4>
                                 </div>
+                                <div>
+                                    <p>Email:</p>
+                                    <h4>valepertutti.info@gmail.com</h4>
+                                </div>
+                            </div>
 
-                                <div className="widget urgent-case-widget">
-                                    <div className="cases">
-                                        {Causes.slice(0, 3).map((Cause, citem) => (
-                                            <div className="case" key={citem}>
-                                                <div className="img-holder">
-                                                    <img src={Cause.cImg} alt="" />
-                                                </div>
-                                                <div className="details">
-                                                    <h4><Link onClick={ClickHandler} to={`/cause-single/${Cause.slug}`}>{Cause.cTitle}</Link></h4>
-                                                   
-                                                </div>
+                            <div className="widget urgent-case-widget">
+                                <div className="cases">
+                                    {Causes.slice(0, 3).map((Cause, citem) => (
+                                        <div className="case" key={citem}>
+                                            <div className="img-holder">
+                                                <img src={Cause.cImg} alt="" />
                                             </div>
-                                        ))}
+                                            <div className="details">
+                                                <h4><Link onClick={ClickHandler} to={`/cause-single/${Cause.slug}`}>{Cause.cTitle}</Link></h4>
+                                               
+                                            </div>
+                                        </div>
+                                    ))}
 
-                                    </div>
                                 </div>
                             </div>
                         </div>

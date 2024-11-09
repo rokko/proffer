@@ -81,7 +81,7 @@ function DonaOra() {
       alignItems: 'center'
     }}>
       <form onSubmit={handleSubmit} style={{
-        width:isMobile?'350px':'40%',
+        width:isMobile?'320px':'40%',
         maxWidth: '1200px',
         padding: '20px',
         background: 'rgba(255, 255, 255, 1)',
