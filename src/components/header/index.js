@@ -150,9 +150,8 @@ const Header = (props) => {
                     </div>}
                 {!isMobile && <>
                     <img width="250" height={48} src={dona} style={{ marginLeft: '20px' }} onClick={handleOpenModal} alt="great-britain" />
-                    <div style={{ marginLeft: '30px' }}>
-                        <img onClick={() => handleTranslate()} width="40" height="40" src="https://img.icons8.com/color/48/great-britain.png" alt="great-britain" />
-                    </div>
+                    <div style={{marginLeft:'10px'}} id="google_translate_element"></div>
+
                 </>
                 }
             </nav>
