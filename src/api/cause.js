@@ -1,10 +1,10 @@
 import sveva from './imageCauses/IMG_8315.jpg'
-import camerunCourt from './imageCauses/Card Articolo Camerun Court.webp'
+import camerunCourt from './imageCauses/Card Articolo Camerun Court NUOVA.webp'
 import khalifa from './imageCauses/Card Articolo Khalifa.webp'
 import fotoArticoloKhalifa from './imageCauses/Foto Articolo Khalifa.webp'
 
-import fotoArticoloCamerunCourt from './imageCauses/Foto Articolo Camerun Court (1).webp'
-import fotoArticoloCamerunCourt2 from './imageCauses/Foto Articolo Camerun Court (2).webp'
+import fotoArticoloCamerunCourt from './imageCauses/Foto Articolo Camerun Court (4).webp'
+import fotoArticoloCamerunCourt2 from './imageCauses/Foto Articolo Camerun Court (5).webp'
 
 import cardIoTifoSveva from './imageCauses/Card Articolo IoTifoSveva.webp'
 import fotoArticoloIoTifoSveva from './imageCauses/Foto Articolo IoTifoSveva (1).webp'
@@ -23,10 +23,13 @@ import cardTorneoRoma from './imageCauses/Card Articolo Torneo Roma Nord.webp'
 import fotoArticoloTorneoRoma from './imageCauses/Foto Articolo Torneo Roma Nord (1).webp'
 import fotoArticoloTorneoRoma2 from './imageCauses/Foto Articolo Torneo Roma Nord (2).webp'
 
-import camerunGame from './imageCauses/Card Articolo Camerun Game.webp'
-import fotoArticoloCamerunGame from './imageCauses/Foto Articolo Camerun Game (1).webp'
+import camerunGame from './imageCauses/Card Articolo Coaching x Tutti.webp'
+import fotoArticoloCamerunGame from './imageCauses/Foto Articolo Coaching x Tutti (11).webp'
+import fotoArticoloCamerunGame2 from './imageCauses/Foto Articolo Coaching x Tutti (12).webp'
+
 import morales from './imageCauses/Card Articolo Murales (1).webp'
-import fotoArticoloMorales from './imageCauses/Foto Articolo Murales (2) (1).webp'
+import fotoArticoloMorales from './imageCauses/Foto Articolo Murales (3).webp'
+import fotoArticoloMorales2 from './imageCauses/Foto Articolo Murales (4).webp'
 import camerun2 from './imageCauses/feel the court 3.jpg'
 
 import cardCarcereMinorile from './imageCauses/Card Articolo Carcere Minorile.webp'
@@ -73,19 +76,21 @@ const Causes = [
         Raised:'2,000.00',
         authorName:'Vale Per tutti',
         fotoArticolo :fotoArticoloMorales,
+        fotoArticolo2 : fotoArticoloMorales2,
         testo : ` 20 settembre 2022:\nuna giornata splendida, che ci resterà nel cuore, a simboleggiare l'inizio di tutta la nostra attività.\nDa oggi, infatti, sulla facciata della scuola Winckelmann, troneggia il grande murales opera dall'artista Piskv, donatoci dalla più grande organizzazione di pallacanestro mondiale, la NBA.\nSi, avete letto bene. La NBA.\nDa una parte un fenomeno come Emanuel Ginobili, dall'altra un campione come Marco Belinelli.\nMa al centro l'immagine più iconica di ciò che facciamo: il nostro Vale a prendere in braccio Damiano per aiutarlo ad arrivare a canestro, idealmente mostrandoci la strada verso la fratellanza e l'aiuto reciproco con la passione per la pallacanestro a fare da trait d'union.\nOggi c'eravamo tutti.\nChi giocando, come i tanti ragazzi e bambini che hanno fatto uno splendido rumore con le loro voci e col pallone che rimbalzava.\nChi parlando, chi sorridendo, chi stando un po' in disparte, chi emozionandosi.\nChi non è potuto venire ma c'era comunque col cuore.\nOggi è ufficialmente nata la nostra associazione.\nAbbiamo voglia di fare.\nAbbiamo voglia di contaminare il mondo con Vale.\nAggiornamento:\nIl nostro murale è sbarcato ad Abu Dhabi con NBA District: una fiera dedicata agli appassionati di basket.\nTra i tributi a Nowitzki, Kobe, concerti, mostre, proiezioni, anche il murale dedicato a Vale.\nScopri di più:\nhttps://www.facebook.com/NBAItalia/videos/1780352015635161/?extid=NS-UNK-UNK-UNK-AN_GK0T-GK1C\nhttps://www.facebook.com/LaGiornataTipo/posts/pfbid02GdENgzrqwfGDCEMR73vhBbF7fVPPvzxGcXCVAPLjuaJbWqL96gm37G6zZFMixMd9l\n`
     },
     {
         id: '4',
         cImg:camerunGame,
         process:'65',
-        thumb:'CamerunGame',
-        cTitle: 'Camerun Game',
+        thumb:'Coaching per Tutti',
+        cTitle: 'Coaching Per Tutti',
         slug:'CamerunGame', 
         Goal:'3,000.00',
         Raised:'2,000.00',
         authorName:'Vale Per tutti',
         fotoArticolo :fotoArticoloCamerunGame,
+        fotoArticolo2 : fotoArticoloCamerunGame2,
         testo : 'Come promesso, dopo mesi di dura preparazione, nel febbraio 2024 partiamo ancora una volta in direzione Sangmélima, Camerun.\nValerio, l’operatore locale di Avaz, ci attende per dare il via al nostro primo clinic (termine tecnico che indica un corso di formazione intensiva) per gli aspiranti allenatori di basket camerunesi!\nIl risultato ai nostri occhi e nei nostri cuori è stato sorprendente, ben oltre le iniziali aspettative: uomini, donne, ragazze, ragazzi, bambine e bambini hanno manifestato un grande interesse per il movimento cestistico, che in quei giorni ha assunto un rinnovato vigore e una nuova linfa vitale.\nLa cosa che forse ci ha stupiti di più è stata l’amore.\nL’amore palpabile per questo sport.\nL’amore fraterno che si è instaurato tra tutti noi durante gli allenamenti, nonostante le differenze culturali e linguistiche (ancora un grazie a Valerio per le traduzioni giornaliere).\nL’amore per la vita e per il basket che Valerio ci ha lasciato in eredità e che in qualche modo strano siamo riusciti a convogliare in un circolo virtuoso e crescente.\nCi siamo imbarcati su un aereo per portare la nostra passione e le nostre competenze, e alla fine, banale quanto reale, ci siamo ritrovati in prima linea tra coloro che stavano ricevendo qualcosa di grande da quell’esperienza indimenticabile.\nUna di quelle per cui c’è un prima e un dopo.\nLast but not least, grazie al fantastico e inaspettato contributo di alcuni ex compagni di scuola di Vale, siamo riusciti a portare nel villaggio anche l’amore per la musica: alcune tastiere e chitarre per condividere momenti meravigliosi con i bambini e accendere il loro immaginario anche da questo punto di vista.\nSiamo consapevoli di essere una goccia nell’oceano, ma crediamo anche che in ogni goccia ci sia un oceano.\nE ci crediamo ancor più forte dopo aver visto gli occhi e i sorrisi che illuminavano quel campo da basket a Sangmélima e il ricordo indelebile di Valerio.',
 
     },
