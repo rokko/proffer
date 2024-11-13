@@ -23,7 +23,16 @@ html {
 
   @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
 
-
+  .slick-dots li button:before {
+    color: #000000; /* Cambia questo colore con quello che preferisci */
+  }
+  
+  .slick-dots li.slick-active button:before {
+    color: #f26e09; /* Colore per il dot attivo */
+  }
+  .slick-dots li button:before {
+    font-size: 15px; /* Aumenta questo valore per ingrandire i dots */
+  }
 
 
 :root {
