@@ -98,7 +98,7 @@ const [imagePagine, setImagePagine]= useState('')
     
     return (
        
-        <section className="page-title" style={{backgroundImage: `url(${imagePagine})` , backgroundSize:'cover'}}>
+        <section className="page-title" style={{backgroundImage: `url(${imagePagine})` , backgroundSize:'cover', backgroundPosition: isMobile?'center':'', backgroundRepeat:'no-repeat'}}>
             <div className="page-title-container" >
                 <div className="page-title-wrapper">
                     <div className="container">
