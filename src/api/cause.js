@@ -12,10 +12,11 @@ import fotoArticoloIoTifoSveva2 from './imageCauses/Foto Articolo IoTifoSveva (2
 
 
 import cardExcelsior from './imageCauses/Card Articolo Excelsior.webp'
-import fotoArticoloExcelsior from './imageCauses/Foto Articolo Excelsior (1) (1).webp'
+import fotoArticoloExcelsior from './imageCauses/fotoexc.webp'
 import fotoArticoloExcelsior2 from './imageCauses/Foto Articolo Excelsior (2).webp'
 
 import cardBoxNatale from './imageCauses/Card Articolo Box Natale 22.webp'
+
 import fotoArticoloBoxNatale from './imageCauses/Foto Articolo Box Natale 22 (1).webp'
 import fotoArticoloBoxNatale2 from './imageCauses/Foto Articolo Box Natale 22 (2).webp'
 
