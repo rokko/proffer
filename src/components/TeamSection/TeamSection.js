@@ -74,10 +74,11 @@ const isMobile = window.innerWidth <= 768;
             
             style={{
                 padding: '15px',
+                width:'300px',
                 backgroundColor: '#78c3e0',
                 color: 'white',
                 border: 'none',
-                borderRadius: '4px',
+                borderRadius: '100px',
                 cursor: 'pointer',
                 fontSize: '16px'
                 
