@@ -1,15 +1,23 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Link } from 'react-router-dom';
 import Causes from '../../api/cause'
-import frecciaSinistra from '../../images/frecciaSinistra.png'
-import frecciaDestra from '../../images/frecciaDestra.png'
+import frecciaSinistra from './frecciaSinistra.png'
+import frecciaDestra from './frecciaDestra.png'
 const CauseSection2 = (props) => {
     const ClickHandler = () => {
         window.scrollTo(10, 0);
     }
+
+    useEffect(()=>{
+        const frecciaDestra  =document.getElementsByClassName('slick-next')
+        const frecciaSinistra = document.getElementsByClassName('slick-prev')
+        console.log(frecciaDestra, 'questa freccia destra')
+        frecciaDestra[0].style.width = '60px!important'
+        frecciaSinistra[0].setAttribute('width','60px!important')
+    },[])
 
     var settings = {
         dots: false,
@@ -20,8 +28,8 @@ const CauseSection2 = (props) => {
         slidesToScroll: 1,
         centerPadding:'220px',
         autoplay: true,
-        prevArrow: <img style={{marginLeft:'20px'}} src={frecciaSinistra}></img>,
-        nextArrow: <img  src={frecciaDestra}></img>,
+        prevArrow: <img style={{marginLeft:'20px'}} src={frecciaDestra}></img>,
+        nextArrow: <img  src={frecciaSinistra}></img>,
 
 
         responsive: [
