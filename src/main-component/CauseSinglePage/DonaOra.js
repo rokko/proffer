@@ -83,7 +83,8 @@ function DonaOra() {
       <form onSubmit={handleSubmit} style={{
         width:isMobile?'320px':'40%',
         maxWidth: '1200px',
-        padding: '20px',
+        padding:'20px',
+       
         background: 'rgba(255, 255, 255, 1)',
         boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
         borderRadius: '8px'
@@ -107,7 +108,7 @@ function DonaOra() {
                   ...prevState,
                   ['importo']: 5
                 }))
-              }} style={{ background: selectedTaglio.taglio5 ? '#78c3e0' : 'white', color: selectedTaglio.taglio5 ? 'white' : 'black', padding: '10px', width: '100px', height: '100px', borderRadius: '4px', border: '1px solid #ccc', display: 'flex', alignContent: 'center', alignItems: 'center', justifyContent: 'center', fontSize: '35px' }}>
+              }} style={{ background: selectedTaglio.taglio5 ? '#78c3e0' : 'white', color: selectedTaglio.taglio5 ? 'white' : 'black', padding: '5px', width: '100px', height: '100px', borderRadius: '4px', border: '1px solid #ccc', display: 'flex', alignContent: 'center', alignItems: 'center', justifyContent: 'center', fontSize: '35px' }}>
                 5 €
               </div>
               <div onClick={() => {
@@ -116,7 +117,7 @@ function DonaOra() {
                   ...prevState,
                   ['importo']: 10
                 }))
-              }} style={{ background: selectedTaglio.taglio10 ? '#78c3e0' : 'white', color: selectedTaglio.taglio10 ? 'white' : 'black', padding: '10px', width: '100px', height: '100px', borderRadius: '4px', border: '1px solid #ccc', display: 'flex', alignContent: 'center', alignItems: 'center', justifyContent: 'center', fontSize: '35px' }}>
+              }} style={{ background: selectedTaglio.taglio10 ? '#78c3e0' : 'white', color: selectedTaglio.taglio10 ? 'white' : 'black', padding: '5px', width: '100px', height: '100px', borderRadius: '4px', border: '1px solid #ccc', display: 'flex', alignContent: 'center', alignItems: 'center', justifyContent: 'center', fontSize: '35px' }}>
                 10 €
               </div>
               <div onClick={() => {
@@ -125,7 +126,7 @@ function DonaOra() {
                   ...prevState,
                   ['importo']: 25
                 }))
-              }} style={{ background: selectedTaglio.taglio25 ? '#78c3e0' : 'white', color: selectedTaglio.taglio25 ? 'white' : 'black', padding: '10px', width: '100px', height: '100px', borderRadius: '4px', border: '1px solid #ccc', display: 'flex', alignContent: 'center', alignItems: 'center', justifyContent: 'center', fontSize: '35px' }}>
+              }} style={{ background: selectedTaglio.taglio25 ? '#78c3e0' : 'white', color: selectedTaglio.taglio25 ? 'white' : 'black', padding: '5px', width: '100px', height: '100px', borderRadius: '4px', border: '1px solid #ccc', display: 'flex', alignContent: 'center', alignItems: 'center', justifyContent: 'center', fontSize: '35px' }}>
                 25 €
               </div>
 
