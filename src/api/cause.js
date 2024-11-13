@@ -1,6 +1,6 @@
 import sveva from './imageCauses/IMG_8315.jpg'
 import camerunCourt from './imageCauses/Card Articolo Camerun Court NUOVA.webp'
-import khalifa from './imageCauses/Card Articolo Khalifa.webp'
+import khalifa from './imageCauses/cardarticolokalifa.webp'
 import fotoArticoloKhalifa from './imageCauses/Foto Articolo Khalifa.webp'
 
 import fotoArticoloCamerunCourt from './imageCauses/Foto Articolo Camerun Court (4).webp'
