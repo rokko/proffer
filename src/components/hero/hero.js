@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState, useEffect} from "react";
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 import { Navigation, A11y } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -16,6 +16,24 @@ const ClickHandler = () => {
 }
 
 const Hero = () => {
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+      const handleResize = () => {
+        setIsMobile(window.innerWidth <= 768);
+      };
+  
+      // Verifica iniziale
+      handleResize();
+  
+      // Aggiungi l'event listener per il resize
+      window.addEventListener('resize', handleResize);
+  
+      // Rimuovi l'event listener al momento della pulizia
+      return () => {
+        window.removeEventListener('resize', handleResize);
+      };
+    }, []);
     return (
 
         <section className="hero-slider hero-style-1">
@@ -48,7 +66,7 @@ const Hero = () => {
                             </div>
                             <AnimatedComponent>
                             <div data-swiper-parallax="400" className="slide-text big-text">
-                                <p>Siamo una giovane associazione che ha il sogno di regalare l'amore per il basket e la possibilità di giocarlo a chi è meno fortunato.
+                                <p style={{fontSize:isMobile?'18px':'', fontWeight:isMobile?'bold':'', lineHeight:isMobile?'20px':''}}>Siamo una giovane associazione che ha il sogno di regalare l'amore per il basket e la possibilità di giocarlo a chi è meno fortunato.
 
                                 </p>                            </div></AnimatedComponent>
                            
@@ -67,7 +85,7 @@ const Hero = () => {
                             </div>
                             <AnimatedComponent>
                             <div data-swiper-parallax="400" className="slide-text">
-                           <p> Creiamo e sosteniamo realtà sportive, riqualificando spazi e fornendo formazione e attrezzature.</p>
+                            <p style={{fontSize:isMobile?'18px':'', fontWeight:isMobile?'bold':'', lineHeight:isMobile?'20px':''}}> Creiamo e sosteniamo realtà sportive, riqualificando spazi e fornendo formazione e attrezzature.</p>
 
 </div></AnimatedComponent>
                             
@@ -88,7 +106,7 @@ const Hero = () => {
                             </div>
                             <AnimatedComponent>
                             <div data-swiper-parallax="400" className="slide-text">
-                           <p> Puoi sostenere i nostri progetti, puoi aiutarci economicamente, con il tuo tempo o donando materiali.</p>
+                            <p style={{fontSize:isMobile?'18px':'', fontWeight:isMobile?'bold':'', lineHeight:isMobile?'20px':''}}>Puoi sostenere i nostri progetti, puoi aiutarci economicamente, con il tuo tempo o donando materiali.</p>
 
 </div></AnimatedComponent>
                            
