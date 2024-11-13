@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from 'react';
+import React, { Fragment, useState , useEffect} from 'react';
 import Navbar from '../../components/Navbar/Navbar';
 import { Link } from 'react-router-dom'
 import PageTitle from '../../components/pagetitle/PageTitle'
@@ -11,6 +11,25 @@ import DonaOra from './DonaOra';
 import Instagram from '../../images/instagram.png'
 
 const CauseSinglePage = (props) => {
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+      const handleResize = () => {
+        setIsMobile(window.innerWidth <= 768);
+      };
+  
+      // Verifica iniziale
+      handleResize();
+  
+      // Aggiungi l'event listener per il resize
+      window.addEventListener('resize', handleResize);
+  
+      // Rimuovi l'event listener al momento della pulizia
+      return () => {
+        window.removeEventListener('resize', handleResize);
+      };
+    }, []);
+  
     const { slug } = useParams()
     var numeroArticolo = 0
 
@@ -55,7 +74,7 @@ const CauseSinglePage = (props) => {
                 <div className="container">
                 <div className="section-title-s3" style={{marginTop:'30px'}}>
                 
-                <h2 style={{marginBottom:'-40px'}}>
+                <h2 style={{marginTop:isMobile?'':'120px'}}>
                 {caseDetails.cTitle} </h2>
                 </div>
                         <div className="col col-xl-8 col-lg-7 col-12">
