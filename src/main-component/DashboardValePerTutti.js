@@ -39,11 +39,11 @@ const DashboardValePerTutti = () => {
         <p>(inserire un nome all'articolo senza spazi, es. "cameruncourt" </p>
         <input id="titolo"  onChange={(e)=> setNomeAccorciato(e.target.value)}></input>
         <p>Testo</p>
-        {'(inserire il testo dellarticolo , per il grassetto utilizzare <strong></strong> es. <strong> valerio </strong> ; per andare a capo usare <br/>)'}
+        {"(inserire il testo dell' articolo , per il grassetto utilizzare <strong></strong> es. <strong> valerio </strong> ; per andare a capo usare <br/>)"}
         <textarea id="testo"  rows="5"
         cols="50" onChange={(e)=> setTesto(e.target.value)}></textarea>
-        <h4>NB Per le immagini bisogna caricarle sul sito https://it.imgbb.com/ , una volta caricata aprirla , cliccare con il tasto destro sull'immagine e selezionare "copia indirizzo immagine" <br/>
-        e incollarla nello spazio qui sotto</h4>
+        <p>NB Per le immagini bisogna caricarle sul sito https://it.imgbb.com/ , una volta caricata , aprirla , cliccare con il tasto destro sull'immagine e selezionare "copia indirizzo immagine" <br/>
+        e incollarla nello spazio qui sotto .es link https://i.ibb.co/vkMzgNC/screen.jpg</p>
         <p>Immagine1</p>
         <input id="url1" onChange={(e)=> setImmagine1(e.target.value)}></input>
         <p>Immagine 2 opzionale</p>
