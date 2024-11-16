@@ -12,10 +12,25 @@ const DashboardValePerTutti = () => {
     const [immagine2, setImmagine2] = useState()
     const [NomeAccorciato, setNomeAccorciato] = useState()
     const [value, setValue] = useState('');
+    const [password,setPassword]= useState('')
+    const [test,setTest]=useState('')
 
     const options = ['FeelTheDream', 'FeelTheCourt', 'FeelTheGame', 'FeelTheMoment', 'AltreIniziative', 'WorkInProgress'];
+    const accedi=()=> {
+
+      if( password === 'ValePerTutti2024'){
+        setTest(true)
+      }
+      
+    }
   
-    return(
+   if (!test) return (
+      <div>
+        <input onChange={e=>setPassword(e.target.value)}></input>
+        <button onClick={()=>accedi()}>Vai</button>
+      </div>
+   )
+    else return(
         <div style={{width:'100%', display:'flex', flexDirection:'column', justifyContent:'center', alignContent:'center',alignItems:'center'}}>
         <p>Dashboard</p>
         <h2>Inserimento nuovo articolo</h2>
