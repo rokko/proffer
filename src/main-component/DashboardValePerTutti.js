@@ -11,10 +11,25 @@ const DashboardValePerTutti = () => {
     const [immagine1, setImmagine1] = useState()
     const [immagine2, setImmagine2] = useState()
     const [NomeAccorciato, setNomeAccorciato] = useState()
+    const [value, setValue] = useState('');
+
+    const options = ['FeelTheDream', 'FeelTheCourt', 'FeelTheGame', 'FeelTheMoment', 'AltreIniziative', 'WorkInProgress'];
+  
     return(
-        <div>
+        <div style={{width:'100%', display:'flex', flexDirection:'column', justifyContent:'center', alignContent:'center',alignItems:'center'}}>
         <p>Dashboard</p>
         <h2>Inserimento nuovo articolo</h2>
+        <div>
+      <select value={value} onChange={(e) => setValue(e.target.value)}>
+        <option value="" disabled>Seleziona un'opzione</option>
+        {options.map((option, index) => (
+          <option key={index} value={option}>
+            {option}
+          </option>
+        ))}
+      </select>
+      <p>Hai selezionato: {value}</p>
+    </div>
         <div style={{display:'flex', flexDirection:'column'}}>
             <p>Titolo</p>
         <input id="titolo"  onChange={(e)=> setTitolo(e.target.value)}></input>
@@ -28,7 +43,7 @@ const DashboardValePerTutti = () => {
         <input id="url1" onChange={(e)=> setImmagine1(e.target.value)}></input>
         <p>Immagine 2 opzionale</p>
         <input id="url2" onChange={(e)=> setImmagine2(e.target.value)}></input>
-        <button onClick={()=>salvainput()}>INVIA</button>
+        <button style={{width:'200px'}} onClick={()=>salvainput()}>INVIA</button>
         </div>
         </div>
     )
