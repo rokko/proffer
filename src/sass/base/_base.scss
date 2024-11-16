@@ -4,7 +4,14 @@
 html {
     font-size: $base-font-size + px;
 }
-
+strong {
+    font-weight: bold;
+    color: white;
+    background-color: lightblue;
+    padding: 0 5px;
+    border-radius: 5px;
+    
+}
 
 // Importa il font
 @font-face {
