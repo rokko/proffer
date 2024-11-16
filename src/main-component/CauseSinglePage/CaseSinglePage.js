@@ -84,7 +84,7 @@ const CauseSinglePage = (props) => {
                         </div>
                         <div >
                             <div className="case-info-area section-title-s3 .testo-paragraph">
-                               {convertTextAndLinks(caseDetails.testo)}
+                            <p dangerouslySetInnerHTML={{ __html: caseDetails.testo }} />
                                
                                
                                 
