@@ -82,12 +82,12 @@ const FeelTheDream = (props) => {
             <div className="section-title-s3">
               <h2>Feel The Dream</h2>
               <p>
-                Questo progetto nasce per sostenere ed aiutare il sogno di
+                Questo progetto nasce per <strong>sostenere</strong> ed aiutare il sogno di
                 ragazze e ragazzi che non hanno possibilità.
                 <br />
                 Il sogno di VALE PER TUTTI è dare a chiunque l'opportunità di
                 innamorarsi di uno sport e procurare loro le attrezzature
-                sportive, i contatti e il supporto economico affinché possano
+                sportive, i contatti e il <strong>supporto</strong> economico affinché possano
                 ogni giorno fare un passo in più verso la loro meta, come
                 Khalifa, colui che ci ha fornito l'assist per ideare questo
                 progetto.

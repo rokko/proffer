@@ -56,7 +56,7 @@ function DonaOra2() {
           <div className="section-title-s3">
  
       <h2 style={{ textAlign: 'left' }}>Dona ora</h2>
- <p>La tua donazione è fondamentale per continuare il nostro lavoro.<br/> Ogni contributo, grande o piccolo, ci permette di portare avanti progetti che fanno la differenza nella vita di molti bambini e ragazzi. <br/>Grazie al tuo sostegno, possiamo costruire nuovi campi da basket, riqualificare spazi esistenti e offrire corsi di formazione per il personale locale.
+ <p>La tua donazione è <strong>fondamentale</strong> per continuare il nostro lavoro.<br/> Ogni contributo, grande o piccolo, ci permette di portare avanti progetti che fanno la differenza nella vita di molti bambini e ragazzi. <br/>Grazie al tuo <strong>sostegno</strong>, possiamo costruire nuovi campi da basket, riqualificare spazi esistenti e offrire corsi di formazione per il personale locale.
 <br/><br/>
 Puoi decidere di fare una donazione singola, o di attivare quella mensile.<br/>
 
@@ -64,7 +64,7 @@ Puoi decidere di fare una donazione singola, o di attivare quella mensile.<br/>
 Quest’ultima è veramente speciale: Roma non è nata in un giorno, e poter contare sul tuo aiuto nel lungo periodo ci permettere di progettarci ancora meglio!<br/>
 
 
-Per donare, puoi compilare il form e utilizzare PayPal, oppure tramite bonifico, specificando nella causale “donazione” o “erogazione liberale”<br/>
+<strong>Per donare</strong>, puoi compilare il form e utilizzare PayPal, oppure tramite bonifico, specificando nella causale “<strong>donazione</strong> o “<strong>erogazione liberale</strong>”<br/>
 
 
 Unisciti a noi nella missione di trasformare la passione per il basket in uno strumento di cambiamento sociale.<br/> <br/>

@@ -11,20 +11,20 @@ const AboutPerche = (props) => {
                         <div className="section-title-s3">
                         <h2>
                 Perchè lo facciamo
-              </h2>                           <p>Oltre a voler regalare al mondo ciò che Valerio ci ha donato, crediamo fermamente nel valore educativo a tutto tondo dello sport.
+              </h2>                           <p>Oltre a voler regalare al mondo ciò che Valerio ci ha donato,<strong> crediamo </strong> nel <strong>valore</strong> educativo a tutto tondo dello sport.
                             </p>
-                            <p>Lo sport, infatti, non è solo un'attività fisica, ma una potente forza capace di trasformare le vite.</p>
+                            <p><strong>Lo sport</strong>, infatti, non è solo un'attività fisica, ma una<strong> potente forza</strong> capace di trasformare le vite.</p>
                             <p>Ci insegna la disciplina, il rispetto, a conoscere e superare i nostri limiti, a lavorare insieme e a scoprire il nostro potenziale.
                             </p>
-                            <p>Ed è meraviglioso che tutto ciò, avviene giocando, ovvero attraverso un linguaggio universale e fondamentale nello sviluppo della persona.
+                            <p>Ed è meraviglioso che tutto ciò <strong>avvenga con gioco</strong>, ovvero attraverso un linguaggio universale e fondamentale nello sviluppo della persona.
                             </p>
                             <img src={perche1} alt='perche1' />
-                            <p>Infine, il nostro impegno nasce anche da una triste consapevolezza acquisita nei primi progetti.</p>
+                            <p>Infine, il nostro impegno nasce anche da una triste<strong>consapevolezza</strong>  acquisita nei primi progetti.</p>
                             <p>Purtroppo, infatti, nei luoghi in cui operiamo, quando non sono a scuola, bambini e bambine passano la maggior parte del loro tempo per strada, dove sono esposti a pericoli e influenze negative.
                             </p>
-                            <p>La nostra speranza è che i nostri campi da basket possano essere nuovi luoghi di aggregazione.
+                            <p>La nostra <strong>speranza</strong> è che i nostri campi da basket possano essere nuovi luoghi di aggregazione.
                             </p>
-                            <p>Per noi, lo sport è molto più di un gioco. È un mezzo per costruire comunità più forti, per educare alla vita e per dare speranza a chi ne ha più bisogno. È un'eredità che vogliamo trasmettere, un sogno che vogliamo condividere con il mondo intero.
+                            <p>Per noi, lo sport è molto <strong>più di un gioco</strong>. È un mezzo per <strong>costruire comunità</strong> più forti, per <strong>educare</strong> alla vita e per dare speranza a chi ne ha più bisogno. È <strong>un'eredità</strong> che vogliamo trasmettere, un sogno che vogliamo condividere con il mondo intero.
                             </p>
                             <img src={perche2} alt='perche2' />
                         </div>

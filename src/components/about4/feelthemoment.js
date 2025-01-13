@@ -84,7 +84,7 @@ const FeelTheMoment = (props) => {
             <div className="section-title-s3">
               <h2>Feel The Moment</h2>
               <p>
-              "VALE PER TUTTI", in collaborazione con L'associazione "IO TIFO SVEVA", sogna di donare dei momenti di felicità ai piccoli appassionati di sport che trascorrono lunghi periodi nei reparti pediatrici, cercando di regalare loro un sorriso in un periodo difficile della loro vita, come ci ha insegnato la piccola Sveva.
+              "VALE PER TUTTI", in collaborazione con L'associazione "IO TIFO SVEVA", sogna di donare dei <strong>momenti di felicità</strong> ai piccoli appassionati di sport che trascorrono lunghi periodi nei reparti pediatrici, cercando di regalare loro un<strong>sorriso</strong>  in un periodo difficile della loro vita, come ci ha insegnato la piccola Sveva.
               </p>
             </div>
           </div>

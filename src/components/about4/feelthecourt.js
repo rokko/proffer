@@ -84,7 +84,7 @@ const FeelTheCourt = (props) => {
             <div className="section-title-s3">
               <h2>Feel The Court</h2>
               <p>
-              È il cuore della nostra associazione, il punto di partenza di ogni nostro piano e il punto di partenza di ogni bambino che si affaccia al mondo dello sport per la prima volta, ovvero lo spazio.<br/> Il nostro intento è quello di realizzare e/o riqualificare spazi destinati allo sport, a Roma, in Africa o in qualunque altro posto ci sia un bambino meno fortunato che abbia bisogno di un luogo dove poter rincorrere la sua passione.
+              È il cuore della nostra associazione, il punto di partenza di ogni nostro piano e il punto di partenza di ogni bambino che si affaccia al mondo dello sport per la prima volta, ovvero lo <strong>spazio</strong>.<br/> Il nostro intento è quello di <strong>realizzare e/o riqualificare spazi </strong>destinati allo sport, a Roma, in Africa o in qualunque altro posto ci sia un bambino meno fortunato che abbia bisogno di un luogo dove poter rincorrere la sua passione.
               </p>
             </div>
           </div>

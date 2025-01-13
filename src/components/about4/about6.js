@@ -13,16 +13,16 @@ const About6 = (props) => {
               <h2>
                 Trasparenza
               </h2>
-              <p>Per noi, la trasparenza è un valore fondamentale.</p>
+              <p>Per noi, la <strong>trasparenza</strong> è un valore fondamentale.</p>
               <p>
-                Crediamo che la fiducia sia alla base di ogni relazione matura e
+                Crediamo che la <strong>fiducia</strong> sia alla base di ogni relazione matura e
                 duratura, per questo, ci impegniamo a operare con la massima
                 trasparenza in tutte le nostre attività. Non siamo perfetti e a
                 volte sbaglieremo, ma quando (e se) succederà saremo qui a
                 dirvelo e a rimediare al meglio delle nostre capacità.
               </p>
               <p>
-                La fiducia che ci date ogni giorno, come sostenitori e partner,
+                La fiducia che ci date ogni giorno, come <strong>sostenitori</strong> e partner,
                 è qualcosa di prezioso, e la prendiamo molto seriamente.
               </p>
               <p>
@@ -32,28 +32,28 @@ const About6 = (props) => {
               <h2>Donazioni</h2>
               <p>
                 Ogni euro donato alla nostra associazione viene gestito con la
-                massima cura e responsabilità. Siamo consapevoli dell'importanza
-                di utilizzare le risorse in modo efficace ed efficiente, per
+                <strong>massima cura e responsabilità</strong>. Siamo consapevoli dell'importanza
+                di utilizzare le <strong>risorse</strong> in modo efficace ed efficiente, per
                 massimizzare l'impatto delle nostre iniziative. Le donazioni
                 sono destinate a progetti specifici e dettagliati, che vengono
-                costantemente monitorati e valutati per garantirne il successo e
+                <strong>costantemente monitorati </strong>e valutati per garantirne il successo e
                 la sostenibilità.
               </p>
               <h2>Comunicazione</h2>
               <p>
-                Ci impegniamo a mantenere una comunicazione aperta e onesta con
+                Ci impegniamo a mantenere una comunicazione aperta e<strong> onesta</strong> con
                 tutti i nostri sostenitori e incoraggiamo la partecipazione ai
-                nostri progetti. Infine, forniamo aggiornamenti regolari sui
+                nostri progetti. Infine, forniamo <strong>aggiornamenti regolari</strong> sui
                 progressi dei nostri progetti, sui risultati raggiunti e sulle
-                sfide affrontate. Questo ci permette di mantenere un dialogo
+                sfide affrontate. Questo ci permette di mantenere un <strong>dialogo</strong>
                 costante con la nostra comunità, coinvolgendola attivamente
                 nelle nostre attività e decisioni.
               </p>
               <h2>Rendicontazione</h2>
               <p>
                 Ogni anno, pubblichiamo un rapporto dettagliato sulle nostre
-                attività, includendo informazioni finanziarie complete e
-                trasparenti. Crediamo che rendicontare in modo chiaro e
+                attività, includendo <strong>informazioni finanziarie complete e
+                trasparenti.</strong> Crediamo che rendicontare in modo chiaro e
                 comprensibile sia essenziale per mantenere la fiducia di chi ci
                 supporta.
               </p>

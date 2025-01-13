@@ -12,11 +12,11 @@ const AboutDonaMateriali = (props) => {
                             <h2>Dona quello che puoi</h2>
                             <p>Sappiamo che esistono numerose altre associazioni e che tutte sono fondamentali e necessarie.
                             </p>
-                            <p>Ma oltre alle donazioni economiche, puoi supportarci donando materiali utili per i nostri progetti. Attrezzature sportive, abbigliamento, materiali didattici, giochi: quanto spesso finiamo per averne troppi? Per noi, sono sempre ben accetti e possono fare una grande differenza nella vita dei giovani che beneficiano delle nostre iniziative.
+                            <p>Ma oltre alle donazioni economiche, puoi supportarci <strong>donando materiali </strong>utili per i nostri progetti. <strong>Attrezzature sportive, abbigliamento, materiali didattici, giochi</strong>: quanto spesso finiamo per averne troppi? Per noi, sono sempre ben accetti e possono fare una grande differenza nella vita dei giovani che beneficiano delle nostre iniziative.
                             </p>
-                            <p>Le donazioni di materiali ci permettono di fornire risorse essenziali ai nostri centri sportivi e alle scuole con cui collaboriamo. Ogni pallone, ogni paio di scarpe, ogni libro può contribuire a creare un ambiente più stimolante e inclusivo per i nostri ragazzi.
+                            <p>Le donazioni di materiali ci permettono di fornire <strong>risorse essenziali</strong> ai nostri centri sportivi e alle scuole con cui collaboriamo. Ogni pallone, ogni paio di scarpe, ogni libro può contribuire a creare un ambiente più stimolante e inclusivo per i nostri ragazzi.
                             </p>
-                            <p>Per donarli, compila il form!
+                            <p>Per donarli, <strong>compila il form!</strong>
                             </p>
                             <p>Ogni dono materiale è un passo avanti verso il nostro obiettivo di offrire a tutti i ragazzi le stesse opportunità di crescita e sviluppo attraverso lo sport e l'educazione.
                             </p>

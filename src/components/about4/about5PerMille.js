@@ -22,7 +22,7 @@ const About51000 = (props) => {
                         <h2>5x1000</h2>
                         <h4>Cos'è il 5x1000</h4>
                         <p>Senza entrare in dettagli complicati, immagina di poter fare una magia che aiuta molte persone, senza dover tirar fuori neanche un centesimo dal portafoglio!</p>
-                        <p>Ecco il 5x1000 è un po' così. È una misura fiscale che ti permette di donare una parte delle tasse che devi già pagare, ad una buona causa (per esempio a noi, diciamo così per dire).</p>
+                        <p>Ecco il 5x1000 è un po' così. È una misura fiscale che ti permette di donare una parte delle tasse che devi già pagare, ad una <strong>buona causa</strong> (per esempio a noi, diciamo così per dire).</p>
                         <p>Ti bastano 3 semplici mosse, una specie di terzo tempo.</p>
                         <p>Destinare il 5x1000 della tua dichiarazione dei redditi alla nostra associazione è un gesto semplice ma di grande impatto, che ci permette di finanziare progetti e attività a favore di bambini e ragazzi in difficoltà.</p>
                         <p>Per te è solo una firma, per noi molto di più!</p>

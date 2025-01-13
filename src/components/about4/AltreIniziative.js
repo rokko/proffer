@@ -89,7 +89,7 @@ const AltreIniziative = (props) => {
               Altre iniziative
               </h2>
               <p>
-              Oltre alle nostre iniziative principali, ogni tanto ci piace uscire dagli schemi.
+              Oltre alle nostre iniziative principali, ogni tanto ci piace <strong>uscire dagli schemi</strong>.
               </p>
               <p>
               Che sia una cena tutti insieme, un minitorneo di basket o la collaborazione con un nuovo partner che condivida i nostri valori.

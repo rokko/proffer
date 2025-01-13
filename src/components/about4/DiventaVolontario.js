@@ -14,15 +14,15 @@ const DiventaVolontario = (props) => {
 
                             <h2>Diventa un volontario                            </h2>
                             <p>
-                                Il volontariato è il cuore pulsante di Vale per Tutti.<br /> Senza il supporto dei nostri volontari, non potremmo realizzare le nostre attività e raggiungere i nostri obiettivi. Perché alla fine, un po' come il basket, questa associazione è uno sport di squadra!
+                                Il <strong>volontariato</strong> è il <strong>cuore</strong> pulsante di Vale per Tutti.<br /> Senza il supporto dei nostri volontari, non potremmo realizzare le nostre attività e raggiungere i nostri obiettivi. Perché alla fine, un po' come il basket, questa associazione è uno sport di squadra!
 
                             </p>
                             <p>
-                                Diventare volontario, quindi, significa mettere a disposizione il proprio tempo, le proprie competenze e la propria passione per contribuire a realizzare la nostra Mission!
+                                <strong>Diventare volontario</strong>, quindi, significa mettere a disposizione il proprio tempo, le proprie competenze e la propria passione per contribuire a realizzare la nostra Mission!
 
                             </p>
                             <p>
-                                Se vuoi darci una mano, ti invitiamo a unirti a noi. Compila il modulo di iscrizione e scopri come puoi fare la differenza. Insieme, possiamo continuare a costruire un futuro migliore per tanti giovani.
+                                Se vuoi darci una mano, ti invitiamo a unirti a noi. Compila il modulo di iscrizione e scopri come puoi fare la differenza. <strong>Insieme</strong>, possiamo continuare a costruire un futuro migliore per tanti giovani.
 </p>
                         </div>
                     </div>

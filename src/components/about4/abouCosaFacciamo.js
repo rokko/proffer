@@ -301,7 +301,7 @@ const AboutCosaFacciamo = (props) => {
                 Il nostro impegno non si ferma mai: anche quando non stiamo
                 costruendo nuove strutture sportive o non siamo in missione per
                 realizzare progetti, il nostro lavoro continua incessantemente
-                dietro le quinte. Ogni giorno è un'opportunità per fare la
+                dietro le quinte. <strong>Ogni giorno</strong> è un'opportunità per fare la
                 differenza, e ci dedichiamo con passione a numerose attività
                 essenziali per il successo delle nostre iniziative.
               </p>
@@ -317,7 +317,7 @@ const AboutCosaFacciamo = (props) => {
                 <AccordionDetails>
                   <p >
                     Uno degli aspetti fondamentali del nostro lavoro quotidiano è il
-                    monitoraggio continuo dei progetti in corso. Verifichiamo
+                    <strong>monitoraggio</strong> continuo dei progetti in corso. Verifichiamo
                     costantemente i progressi, risolviamo eventuali problemi e
                     assicuriamo che ogni attività proceda secondo i piani stabiliti.
                   </p>
@@ -335,7 +335,7 @@ const AboutCosaFacciamo = (props) => {
                 <AccordionDetails>
                   <p>
                     Il futuro è sempre al centro dei nostri pensieri. Ogni giorno
-                    lavoriamo per ideare e pianificare nuovi progetti che possano
+                    lavoriamo per <strong>ideare</strong> e <strong>pianificare</strong> nuovi progetti che possano
                     portare beneficio alle comunità che supportiamo. Dalle riunioni
                     di brainstorming alle telefonate con i partner locali, c’è
                     sempre qualcosa di nuovo da fare.
@@ -354,7 +354,7 @@ const AboutCosaFacciamo = (props) => {
                 <AccordionDetails>
                   <p>
                     La comunicazione efficace è alla base del nostro operato.
-                    Rispondere alle mail, effettuare telefonate ed organizzare
+                    <strong>Rispondere</strong> alle mail, effettuare telefonate ed organizzare
                     incontri ci consente di mantenere un contatto costante con i
                     nostri partner, i volontari e i sostenitori, garantendo una
                     collaborazione fluida e produttiva. Ogni interazione è
@@ -375,7 +375,7 @@ const AboutCosaFacciamo = (props) => {
                 <AccordionDetails>
                   <p>
                     Le raccolte fondi sono cruciali per il finanziamento dei nostri
-                    progetti, per questo è fondamentale pianificare e organizzare
+                    progetti, per questo è fondamentale pianificare e <strong>organizzare</strong>
                     eventi e campagne di fundraising. Dall'ideazione di nuove
                     iniziative alla gestione degli aspetti logistici, lavoriamo con
                     impegno per coinvolgere sempre più persone e raccogliere i fondi
@@ -395,10 +395,10 @@ const AboutCosaFacciamo = (props) => {
                 </AccordionSummary>
                 <AccordionDetails>
                   <p>
-                    Dietro ogni grande progetto c'è una solida gestione
-                    amministrativa. Ci occupiamo della gestione delle risorse, della
-                    contabilità e della rendicontazione, assicurando trasparenza e
-                    responsabilità in ogni transazione. Questo ci permette di
+                    Dietro ogni grande progetto c'è una solida<strong> gestione
+                    amministrativa</strong>. Ci occupiamo della gestione delle risorse, della
+                    contabilità e della rendicontazione, assicurando <strong>trasparenza</strong> e
+                    <strong>responsabilità</strong> in ogni transazione. Questo ci permette di
                     mantenere una gestione finanziaria rigorosa e di garantire che
                     ogni donazione venga utilizzata in modo efficace.
                   </p>

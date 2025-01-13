@@ -86,14 +86,14 @@ const WorkInProgress = (props) => {
                 Work in Progress
               </h2>
               <p>
-              Un po' come una partita di basket, siamo sempre in movimento e guardiamo costantemente al futuro con nuove idee e progetti in cantiere.
+              Un po' come una partita di basket, siamo <strong>sempre in movimento</strong> e guardiamo costantemente al futuro con nuove idee e progetti in cantiere.
 
               </p>
               <p>
               Un po' come Roma non è stata costruita in un giorno, anche noi abbiamo bisogno del nostro tempo.
               </p>
               <p>
-              Qui di seguito, puoi trovare alcuni piccoli spoiler sui progetti che stiamo programmando, ma che non sono ancora partiti. A voi la scelta, se rovinarvi la sorpresa o meno!
+              Qui di seguito, puoi trovare alcuni <strong>piccoli spoiler</strong> sui progetti che stiamo programmando, ma che non sono ancora partiti. A voi la scelta, se rovinarvi la sorpresa o meno!
 
               </p>
              

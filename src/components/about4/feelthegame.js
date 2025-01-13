@@ -86,7 +86,7 @@ const FeelTheGame = (props) => {
               <p>
               L'obiettivo della nostra associazione è allacciarsi le scarpe e scendere in campo.<br/>
 
-Formare, seguire e aggiornare il personale locale, affinché possa insegnare ai ragazzi le regole del gioco e sfruttare al meglio gli spazi riqualificati così che la partita possa proseguire anche in nostra assenza.</p>
+<strong>Formare, seguire e aggiornare</strong> il personale locale, affinché possa <strong>insegnare</strong> ai ragazzi le regole del gioco e sfruttare al meglio gli spazi riqualificati così che la partita possa proseguire anche in nostra assenza.</p>
             </div>
           </div>
         </div>
