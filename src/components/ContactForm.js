@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './contactform.style.scss'; // Ensure the CSS file is imported
-
+import { collection, addDoc } from "firebase/firestore";
+import { db } from "../firebase";
 function ContactForm() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -8,7 +9,15 @@ function ContactForm() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log('Submitting', { name, email, message });
+    const messaggio={
+      nome:name,
+      email:email,
+      message:message,
+
+    }
+      addDoc(collection(db, "messaggi"), formData);
+      ; // Reset del form
+    
     // Integration with backend or email service goes here
   };
   return (
