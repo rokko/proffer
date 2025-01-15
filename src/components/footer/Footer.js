@@ -18,6 +18,7 @@ const Footer = (props) => {
 
 
     const SubmitHandler = (e) => {
+        e.preventDefault();
         addDoc(collection(db, "newsletter"), {email:emailNewsetter});
         setemaiNewsletter('')
 
@@ -68,7 +69,7 @@ const Footer = (props) => {
                                         <input type="email" className="form-control" placeholder="Email Address *"  onChange={(e)=>setemaiNewsletter(e.target.value)}required style={{color:'white', opacity:'1'}} />
                                     </div>
                                     <div className="submit clearfix">
-                                        <button type="submit" style={{display:'flex',justifyContent:'center',alignItems:'center', backgroundColor:'#78c3e0'}}><i className="fi flaticon-paper-plane"></i></button>
+                                        <button type="submit" style={{display:'flex',justifyContent:'center',alignItems:'center', backgroundColor:'#78c3e0'}} ><i className="fi flaticon-paper-plane"></i></button>
                                     </div>
                                 </form>
                             </div>

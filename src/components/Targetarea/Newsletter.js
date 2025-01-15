@@ -12,6 +12,7 @@ const NewsLetter = (props) => {
     }
 
     const saveEmail=()=>{
+        e.preventDefault();
          addDoc(collection(db, "users"), {email:emailNewsletter})
     }
 
@@ -33,7 +34,7 @@ const NewsLetter = (props) => {
                         <div style={{width:isMobile?'500px':"700px",  fontSize:isMobile?'1.5rem':'2rem',display:'flex', flexDirection:'column', alignContent:'center', alignItems:'center',justifyContent:'center'}}>
                             <form action="" className='form-css'>
                                 <input type="email" name="email" id="email" placeholder="email@email.it" onChange={(e)=>setEmailNewsletter(e.target.value)} />
-                                <input style={{ backgroundColor: '#78c3e0' }} type="submit" name="submit" value="Iscriviti" onClick={saveEmail} />
+                                <input style={{ backgroundColor: '#78c3e0' }} type="submit" name="submit" value="Iscriviti" onClick={(e)=>saveEmail(e)} />
                             </form>
                         </div>                
                         </div>                
