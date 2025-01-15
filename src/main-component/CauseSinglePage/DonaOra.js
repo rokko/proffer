@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import DonaOraImage from '../../images/nuovoDonaOra.webp';
-
+import { collection, addDoc } from "firebase/firestore";
+import { db } from "../firebase";
 function DonaOra() {
   const [formData, setFormData] = useState({
     nome: '',
@@ -48,8 +49,15 @@ function DonaOra() {
     }
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit =async (e) => {
     e.preventDefault();
+    try {
+      // Aggiunge i dati a una collezione chiamata "users"
+      await addDoc(collection(db, "donazioni"), formData);
+    } catch (error) {
+      console.error("Errore durante il salvataggio: ", error);
+    }
+
     window.location.href = "https://www.paypal.com/ncp/payment/P8EUAH2ZXMWTW"; 
 
     // Qui puoi gestire l'invio dei dati, come salvarli o inviarli a un API
