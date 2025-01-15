@@ -15,7 +15,7 @@ function ContactForm() {
       message:message,
 
     }
-      addDoc(collection(db, "messaggi"), formData);
+      addDoc(collection(db, "donazioni-diventavolontario"), formData);
       ; // Reset del form
     
     // Integration with backend or email service goes here
