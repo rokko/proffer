@@ -18,8 +18,8 @@ const Footer = (props) => {
 
 
     const SubmitHandler = (e) => {
-        e.preventDefault()
-        addDoc(collection(db, "newsletter"), emailNewsetter);
+        addDoc(collection(db, "newsletter"), {email:emailNewsetter});
+        setemaiNewsletter('')
 
     }
 
