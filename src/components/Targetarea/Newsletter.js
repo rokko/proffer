@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState} from 'react'
 import abimg from '../../images/target.jpg'
 import { Link } from 'react-router-dom';
 import './newsletter.style.scss'
