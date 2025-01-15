@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './contactform.style.scss'; // Ensure the CSS file is imported
 import { collection, addDoc } from "firebase/firestore";
-import { db } from "../firebase";
+import { db } from "../main-component/firebase";
 function ContactForm() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -15,7 +15,7 @@ function ContactForm() {
       message:message,
 
     }
-      addDoc(collection(db, "donazioni-diventavolontario"), formData);
+      addDoc(collection(db, "donazioni-diventavolontario"), messaggio);
       ; // Reset del form
     
     // Integration with backend or email service goes here

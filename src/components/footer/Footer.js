@@ -1,18 +1,26 @@
-import React from 'react'
+import React , {useState} from 'react'
 import { Link } from 'react-router-dom'
 import Logo from '../../images/logo.png'
 import sfondo from '../../images/footersfondo.webp'
 import Facebook from '../../images/facebook.png'
 import Youtube from '../../images/youtube.png'
 import Instagram from '../../images/instagram.png'
+import { collection, addDoc } from "firebase/firestore";
+import { db } from "../../main-component/firebase";
 const Footer = (props) => {
+
+    const [emailNewsetter, setemaiNewsletter]= useState('')
 
     const ClickHandler = () => {
         window.scrollTo(10, 0);
     }
 
+
+
     const SubmitHandler = (e) => {
         e.preventDefault()
+        addDoc(collection(db, "newsletter"), emailNewsetter);
+
     }
 
     return (
@@ -57,7 +65,7 @@ const Footer = (props) => {
                                 <h3 style={{color:'white', fontSize:'1.25rem'}}>Iscriviti alla newsletter per rimanere aggiornato.</h3>
                                 <form onSubmit={SubmitHandler}>
                                     <div className="input-1" style={{colore:'white'}}>
-                                        <input type="email" className="form-control" placeholder="Email Address *" required style={{color:'white', opacity:'1'}} />
+                                        <input type="email" className="form-control" placeholder="Email Address *"  onChange={(e)=>setemaiNewsletter(e.target.value)}required style={{color:'white', opacity:'1'}} />
                                     </div>
                                     <div className="submit clearfix">
                                         <button type="submit" style={{display:'flex',justifyContent:'center',alignItems:'center', backgroundColor:'#78c3e0'}}><i className="fi flaticon-paper-plane"></i></button>
