@@ -2,10 +2,17 @@ import React from 'react'
 import abimg from '../../images/target.jpg'
 import { Link } from 'react-router-dom';
 import './newsletter.style.scss'
+import { collection, addDoc } from "firebase/firestore";
+import { db } from "../../main-component/firebase"
 const NewsLetter = (props) => {
+    const [emailNewsletter, setEmailNewsletter]=useState('')
 
     const ClickHandler = () => {
         window.scrollTo(10, 0);
+    }
+
+    const saveEmail=()=>{
+         addDoc(collection(db, "users"), {email:emailNewsletter})
     }
 
     const isMobile = window.innerWidth <= 768;
@@ -25,8 +32,8 @@ const NewsLetter = (props) => {
 
                         <div style={{width:isMobile?'500px':"700px",  fontSize:isMobile?'1.5rem':'2rem',display:'flex', flexDirection:'column', alignContent:'center', alignItems:'center',justifyContent:'center'}}>
                             <form action="" className='form-css'>
-                                <input type="email" name="email" id="email" placeholder="email@email.it" />
-                                <input style={{ backgroundColor: '#78c3e0' }} type="submit" name="submit" value="Iscriviti" />
+                                <input type="email" name="email" id="email" placeholder="email@email.it" onChange={(e)=>setEmailNewsletter(e.target.value)} />
+                                <input style={{ backgroundColor: '#78c3e0' }} type="submit" name="submit" value="Iscriviti" onClick={saveEmail} />
                             </form>
                         </div>                
                         </div>                
