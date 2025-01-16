@@ -11,7 +11,7 @@ const NewsLetter = (props) => {
         window.scrollTo(10, 0);
     }
 
-    const saveEmail=()=>{
+    const saveEmail=(e)=>{
         e.preventDefault();
          addDoc(collection(db, "users"), {email:emailNewsletter})
     }
