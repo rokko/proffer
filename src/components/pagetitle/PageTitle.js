@@ -20,12 +20,17 @@ import donaora from './imagesCopertina/donaora2.webp'
 import donamateriali from './imagesCopertina/donamateriale.webp'
 import diventavolontario from './imagesCopertina/diventaunvolontario.webp'
 import diventaVolontario2 from './imagesCopertina/diventavolontario3.webp'
+
+import feelcourtmobile from './imagesCopertina/feelcourtmobie.webp'
+import feeldreammobile from './imagesCopertina/feeldreammobile.webp'
+import feelmomentmobile from './imagesCopertina/feelmomentmobile.webp'
+import feelgamemobile from './imagesCopertina/feelgamemobile.webp'
 const PageTitle = (props) => {
 
 const [imagePagine, setImagePagine]= useState('')
-
+const [isMobileTrue, setIsMobileTrue]= useState(false)
     useEffect(() => {
-       
+        setIsMobileTrue(window.innerWidth <= 768);
         if( props.nomepagina==='chi-siamo'|| props.nomepagina==='team') {
             setImagePagine(chisiamo)
             
@@ -55,16 +60,32 @@ const [imagePagine, setImagePagine]= useState('')
         
         }
         if (props.nomepagina==='feel-the-dream') {
+            if(isMobile){
+                setImagePagine(feeldreammobile)
+            }else{
             setImagePagine(feelthedream)
+            }
         }
         if(props.nomepagina==='feel-the-game') {
-            setImagePagine(feelthegame)
+            if(isMobile){
+                setImagePagine(feelgamemobile)
+            }
+            else{
+            setImagePagine(feelthegame)}
         }
         if(props.nomepagina==='feel-the-court') {
-            setImagePagine(feelthecourt)
+            if(isMobile){
+                setImagePagine(feelcourtmobile)
+            }
+            else{
+            setImagePagine(feelthecourt)}
         }
         if(props.nomepagina==='feel-the-moment') {
-            setImagePagine(feelthemoment)
+            if(isMobile){
+                setImagePagine(feelmomentmobile)
+            }
+            else{
+            setImagePagine(feelthemoment)}
         }
         if(props.nomepagina==='aste'){
             setImagePagine(aste)
