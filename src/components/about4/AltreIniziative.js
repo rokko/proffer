@@ -1,15 +1,31 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Causes2 from "../../api/cause";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Link } from 'react-router-dom';
 import ContactForm from "../ContactForm";
-
+import { collection, addDoc } from "firebase/firestore";
+import { db } from "../../main-component/firebase";
 const AltreIniziative = (props) => {
   const ClickHandler = () => {
     window.scrollTo(10, 0);
   }
+  const fetchCauses = async () => {
+    try {
+      const causesRef = db.collection('articoli'); // Nome della collection
+      const snapshot = await causesRef.get(); // Recupera tutti i documenti
+      const causesArray = snapshot.docs.map(doc => doc.data()); // Estrai i dati dai documenti
+      return causesArray;
+    } catch (error) {
+      console.error('Errore nel recupero delle causes:', error);
+    }
+  };
+
+  useEffect(()=>{
+    const causeOnline = fetchCauses()
+    console.log(causeOnline)
+  })
   const Causes = Causes2.filter((citem) => {
     if (citem.slug === 'TorneoRoma' || citem.slug==='Excelsior' || citem.slug==='BoxNatale'    ) {
       console.log(citem)
