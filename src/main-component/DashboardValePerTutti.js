@@ -7,6 +7,7 @@ const DashboardValePerTutti = () => {
     const salvainput = async(e) =>{
 
       const formData ={
+        progettoPadre : value,
         titolo : titolo,
         testo : testo,
         immagine1:immagine1,
