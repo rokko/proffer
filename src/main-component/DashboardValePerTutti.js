@@ -1,10 +1,26 @@
 import react, {useState} from 'react'
+import { collection, addDoc } from "firebase/firestore";
+import { db } from "../main-component/firebase";
 
 const DashboardValePerTutti = () => {
 
-    const salvainput = () =>{
-        console.log(titolo)
-        console.log(testo)
+    const salvainput = async(e) =>{
+
+      const formData ={
+        titolo : titolo,
+        testo : testo,
+        immagine1:immagine1,
+        immagine2:immagine2,
+        NomeAccorciato:NomeAccorciato
+      }
+        e.preventDefault();
+          try {
+            // Aggiunge i dati a una collezione chiamata "users"
+            await addDoc(collection(db, "articoli"), formData);
+          } catch (error) {
+            console.error("Errore durante il salvataggio: ", error);
+          }
+       
     }
     const [titolo, setTitolo] = useState()
     const [testo, setTesto] = useState()
@@ -63,7 +79,7 @@ const DashboardValePerTutti = () => {
         <input id="url1" onChange={(e)=> setImmagine1(e.target.value)}></input>
         <p>Immagine 2 opzionale</p>
         <input id="url2" onChange={(e)=> setImmagine2(e.target.value)}></input>
-        <button style={{width:'200px'}} onClick={()=>salvainput()}>INVIA</button>
+        <button style={{width:'200px'}} onClick={(e)=>salvainput(e)}>INVIA</button>
         </div>
         </div>
     )
