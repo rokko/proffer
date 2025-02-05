@@ -9,17 +9,34 @@ import Causes from '../../api/cause'
 import Logo from '../../images/logo.png'
 import DonaOra from './DonaOra';
 import Instagram from '../../images/instagram.png'
+import { fetchCauses } from "../../components/about4/fetch";
+
 
 const CauseSinglePage = (props) => {
     const [isMobile, setIsMobile] = useState(false);
-
+    const [causeOnline, setCauseOnline] = useState()
+    const [caseDetails, setCaseDetails] = useState()
+    const { slug } = useParams()
     useEffect(() => {
+        const primo = Causes.find(item => item.slug === slug)
+
+        setCaseDetails(primo)
       const handleResize = () => {
         setIsMobile(window.innerWidth <= 768);
       };
+
   
       // Verifica iniziale
       handleResize();
+
+      const loadCauses = async () => {
+        const fetchedCauses = await fetchCauses();
+        setCauseOnline(fetchedCauses);
+         let due =  fetchedCauses.find((citem) => citem.slug===slug)  
+         setCaseDetails(due)
+      };
+  if (!caseDetails){
+      loadCauses();}
   
       // Aggiungi l'event listener per il resize
       window.addEventListener('resize', handleResize);
@@ -30,11 +47,10 @@ const CauseSinglePage = (props) => {
       };
     }, []);
   
-    const { slug } = useParams()
+  
     var numeroArticolo = 0
 
-    const caseDetails = Causes.find(item => item.slug === slug)
-    console.log(caseDetails)
+  
     const convertTextAndLinks = (text) => {
         // RegEx per rilevare i link
         const urlRegex = /(https?:\/\/[^\s]+)/g;
@@ -67,7 +83,7 @@ const CauseSinglePage = (props) => {
         window.scrollTo(10, 0);
     }
 
-    return (
+    if(caseDetails) return (
         <Fragment>
             <Navbar hclass={'header-style-1'} Logo={Logo} btnClass={'theme-btn-s1'} />
             <section className="case-single-section " style={{padding:'20px'}}>
