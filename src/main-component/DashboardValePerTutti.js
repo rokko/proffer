@@ -12,7 +12,7 @@ const DashboardValePerTutti = () => {
         testo : testo,
         immagine1:immagine1,
         immagine2:immagine2,
-        NomeAccorciato:NomeAccorciato
+        nomeAccorciato:NomeAccorciato
       }
         e.preventDefault();
           try {

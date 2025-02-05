@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Causes2 from "../../api/cause";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -7,31 +7,57 @@ import { Link } from 'react-router-dom';
 import ContactForm from "../ContactForm";
 import { collection, addDoc } from "firebase/firestore";
 import { db } from "../../main-component/firebase";
+import { fetchCauses } from "./fetch";
 const AltreIniziative = (props) => {
+
+  const [causeOnline, setCauseOnline] = useState()
+  const [causeNewOnline, setCauseNewOnline] = useState()
+  const [Causes, setCauses] = useState([])
+  var causes3=[]
   const ClickHandler = () => {
     window.scrollTo(10, 0);
   }
-  const fetchCauses = async () => {
-    try {
-      const causesRef = db.collection('articoli'); // Nome della collection
-      const snapshot = await causesRef.get(); // Recupera tutti i documenti
-      const causesArray = snapshot.docs.map(doc => doc.data()); // Estrai i dati dai documenti
-      return causesArray;
-    } catch (error) {
-      console.error('Errore nel recupero delle causes:', error);
-    }
-  };
 
-  useEffect(()=>{
-    const causeOnline = fetchCauses()
-    console.log(causeOnline)
-  })
-  const Causes = Causes2.filter((citem) => {
-    if (citem.slug === 'TorneoRoma' || citem.slug==='Excelsior' || citem.slug==='BoxNatale'    ) {
-      console.log(citem)
-      return citem
+ 
+
+  useEffect(()=>
+    {
+      const loadCauses = async () => {
+        const fetchedCauses = await fetchCauses();
+        setCauseOnline(fetchedCauses);
+        console.log(fetchedCauses)
+         causes3 =  fetchedCauses.filter((citem) => {
+          if (citem.padre=='AltreIniziative') {
+            console.log('PROVA ALTRE',citem)
+            return citem
+          }
+        })
+
+        const causeNew = Causes2.filter((citem) => {
+          if (!!citem.slug && (citem?.slug === 'TorneoRoma' || citem?.slug==='Excelsior' || citem?.slug==='BoxNatale'   ) ) {
+            console.log(citem)
+            return citem
+          }
+        }).concat(causes3) 
+        setCauses(causeNew)
+        console.log(causeNew)
+
+        
+      };
+  
+      loadCauses();
+
+     
+
     }
-  })
+  ,[causeOnline])
+
+
+
+
+
+  console.log(Causes)
+
   var settings = {
     dots: false,
     arrows: true,
@@ -125,7 +151,9 @@ const AltreIniziative = (props) => {
             <ContactForm/>
           </div>
         </div>
-        <section className={`causes-section section-padding ${props.cClass}`} style={{ backgroundColor: '#ced4da', padding: '20px' }}>
+        {(!!Causes) &&
+        (
+        <section  className={`causes-section section-padding ${props.cClass}`} style={{ backgroundColor: '#ced4da', padding: '20px' }}>
           <div className="container-fluid">
             <div className="section-title-s2">
               <span style={{ marginTop: '10px', textAlign: 'center' }}>Ultimi Progetti</span>
@@ -133,74 +161,34 @@ const AltreIniziative = (props) => {
             </div>
             <div className="content-area causes-slider" style={{ borderRadius: '20px' }}>
               <Slider {...settings}>
-
-
-
-
-                <div className="item" key={Causes[0].id} style={{ borderRadius: '20px', height: '200px' }}>
-                  <Link onClick={ClickHandler} to={`/cause-single/${Causes[0].slug}`}>
+                {Causes.map((causa, i)=>{console.log('Causa',causa) ;if (causa.slug)return(
+                 
+                  <div className="item" key={Causes[0].id} style={{ borderRadius: '20px', height: '200px' }}>
+                  <Link onClick={ClickHandler} to={`/cause-single/${causa.slug}`}>
                     <div className="inner">
                       <div className="img-holder">
-                        <img src={Causes[0].cImg} alt="" />
+                        <img src={causa.cImg} alt="" />
                       </div>
                       <div className="overlay">
                         <div className="overlay-content">
 
-                          <h3><Link onClick={ClickHandler} to={`/cause-single/${Causes[0].slug}`}>{Causes[0].cTitle}</Link></h3>
+                          <h3><Link onClick={ClickHandler} to={`/cause-single/${causa.slug}`}>{causa.cTitle}</Link></h3>
                           <div className="goal-raised">
 
-                            <Link onClick={ClickHandler} to={`/cause-single/${Causes[0].slug}`} className="donate-btn"><i className="fi flaticon-heart-1"></i>Donate</Link>
+                            <Link onClick={ClickHandler} to={`/cause-single/${causa.slug}`} className="donate-btn"><i className="fi flaticon-heart-1"></i>Donate</Link>
                           </div>
                         </div>
                       </div>
                     </div>
                   </Link>
                 </div>
-                <div className="item" key={Causes[1].id} style={{ borderRadius: '20px', height: '200px' }}>
-                  <Link onClick={ClickHandler} to={`/cause-single/${Causes[1].slug}`}>
-                    <div className="inner">
-                      <div className="img-holder">
-                        <img src={Causes[1].cImg} alt="" />
-                      </div>
-                      <div className="overlay">
-                        <div className="overlay-content">
 
-                          <h3><Link onClick={ClickHandler} to={`/cause-single/${Causes[1].slug}`}>{Causes[1].cTitle}</Link></h3>
-                          <div className="goal-raised">
-
-                            <Link onClick={ClickHandler} to={`/cause-single/${Causes[1].slug}`} className="donate-btn"><i className="fi flaticon-heart-1"></i>Donate</Link>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </Link>
-                </div>
-                <div className="item" key={Causes[2].id} style={{ borderRadius: '20px', height: '200px' }}>
-                  <Link onClick={ClickHandler} to={`/cause-single/${Causes[2].slug}`}>
-                    <div className="inner">
-                      <div className="img-holder">
-                        <img src={Causes[2].cImg} alt="" />
-                      </div>
-                      <div className="overlay">
-                        <div className="overlay-content">
-
-                          <h3><Link onClick={ClickHandler} to={`/cause-single/${Causes[2].slug}`}>{Causes[2].cTitle}</Link></h3>
-                          <div className="goal-raised">
-
-                            <Link onClick={ClickHandler} to={`/cause-single/${Causes[2].slug}`} className="donate-btn"><i className="fi flaticon-heart-1"></i>Donate</Link>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </Link>
-                </div>
-            
-
-
+                )})}
               </Slider>
             </div>
           </div>
-        </section>
+        </section>)
+}
       </div>
     </section>
   );
