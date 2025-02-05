@@ -11,9 +11,14 @@ const NewsLetter = (props) => {
         window.scrollTo(10, 0);
     }
 
-    const saveEmail=(e)=>{
+    const saveEmail=async (e)=>{
         e.preventDefault();
-         addDoc(collection(db, "users"), {email:emailNewsletter})
+        try{ 
+            await addDoc(collection(db, "users"), {email:emailNewsletter})
+        }
+        catch(err){
+            console.error(err)
+        }
     }
 
     const isMobile = window.innerWidth <= 768;
