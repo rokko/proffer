@@ -1,19 +1,54 @@
-import React from "react";
+import React,{useState,useEffect} from "react";
 import { Link } from 'react-router-dom';
 import Causes2 from "../../api/cause";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { fetchCauses } from "./fetch";
+
 const FeelTheDream = (props) => {
+  const [causeOnline, setCauseOnline] = useState()
+  const [causeNewOnline, setCauseNewOnline] = useState()
+  const [Causes, setCauses] = useState([])
+  var causes3=[]
   const ClickHandler = () => {
     window.scrollTo(10, 0);
   }
-  const Causes = Causes2.filter((citem) => {
-    if (citem.slug === 'Khalifa') {
-      console.log(citem)
-      return citem
+
+ 
+
+  useEffect(()=>
+    {
+      const loadCauses = async () => {
+        const fetchedCauses = await fetchCauses();
+        setCauseOnline(fetchedCauses);
+        console.log(fetchedCauses)
+         causes3 =  fetchedCauses.filter((citem) => {
+          if (citem.padre=='FeelTheDream') {
+            console.log('PROVA ALTRE',citem)
+            return citem
+          }
+        })
+
+        const causeNew = Causes2.filter((citem) => {
+          if (!!citem.slug &&    (citem.slug === 'Khalifa')  ) {
+            console.log(citem)
+            return citem
+          }
+        }).concat(causes3) 
+        setCauses(causeNew)
+        console.log(causeNew)
+
+        
+      };
+  
+      loadCauses();
+
+     
+
     }
-  })
+  ,[causeOnline])
+ 
   var settings = {
     dots: false,
     arrows: true,
@@ -95,6 +130,7 @@ const FeelTheDream = (props) => {
             </div>
           </div>
         </div>
+        {(!!Causes) &&(
         <section className={`causes-section section-padding ${props.cClass}`} style={{ backgroundColor: '#ced4da', padding: '20px' }}>
           <div className="container-fluid">
             <div className="section-title-s2">
@@ -106,26 +142,29 @@ const FeelTheDream = (props) => {
 
 
 
-
-                <div className="item" key={Causes[0].id} style={{ borderRadius: '20px', height: '200px' }}>
-                  <Link onClick={ClickHandler} to={`/cause-single/${Causes[0].slug}`}>
-                    <div className="inner">
-                      <div className="img-holder">
-                        <img src={Causes[0].cImg} alt="" />
-                      </div>
-                      <div className="overlay">
-                        <div className="overlay-content">
-
-                          <h3><Link onClick={ClickHandler} to={`/cause-single/${Causes[0].slug}`}>{Causes[0].cTitle}</Link></h3>
-                          <div className="goal-raised">
-
-                            <Link onClick={ClickHandler} to={`/cause-single/${Causes[0].slug}`} className="donate-btn"><i className="fi flaticon-heart-1"></i>Donate</Link>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </Link>
-                </div>
+  {Causes.map((causa, i)=>{console.log('Causa',causa) ;if (causa.slug)return(
+                              
+                               <div className="item" key={Causes[0].id} style={{ borderRadius: '20px', height: '200px' }}>
+                               <Link onClick={ClickHandler} to={`/cause-single/${causa.slug}`}>
+                                 <div className="inner">
+                                   <div className="img-holder">
+                                     <img src={causa.cImg} alt="" />
+                                   </div>
+                                   <div className="overlay">
+                                     <div className="overlay-content">
+             
+                                       <h3><Link onClick={ClickHandler} to={`/cause-single/${causa.slug}`}>{causa.cTitle}</Link></h3>
+                                       <div className="goal-raised">
+             
+                                         <Link onClick={ClickHandler} to={`/cause-single/${causa.slug}`} className="donate-btn"><i className="fi flaticon-heart-1"></i>Donate</Link>
+                                       </div>
+                                     </div>
+                                   </div>
+                                 </div>
+                               </Link>
+                             </div>
+             
+                             )})}
               
 
 
@@ -134,8 +173,10 @@ const FeelTheDream = (props) => {
             </div>
           </div>
         </section>
+        )}
       </div>
     </section>
+    
   );
 };
 
