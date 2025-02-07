@@ -45,7 +45,7 @@ const CauseSinglePage = (props) => {
       return () => {
         window.removeEventListener('resize', handleResize);
       };
-    }, []);
+    }, [caseDetails]);
   
   
     var numeroArticolo = 0
