@@ -71,7 +71,7 @@ const DashboardValePerTutti = () => {
         <p>(inserire un nome all'articolo senza spazi, es. "cameruncourt" </p>
         <input id="titolo"  onChange={(e)=> setNomeAccorciato(e.target.value)}></input>
         <p>Testo</p>
-        {"(inserire il testo dell' articolo , per il grassetto utilizzare <strong></strong> es. <strong> valerio </strong> ; per andare a capo usare <br/>)"}
+        {"(inserire il testo dell' articolo , per il grassetto utilizzare <strong></strong> es. <strong> valerio </strong> ; per andare a capo usare <br/>) Se vuoi inserire un link devi scriverlo cosi <a href='link'>Testo che vuoi </a>"}
         <textarea id="testo"  rows="5"
         cols="50" onChange={(e)=> setTesto(e.target.value)}></textarea>
         <p>NB Per le immagini bisogna caricarle sul sito https://it.imgbb.com/ , una volta caricata , aprirla , cliccare con il tasto destro sull'immagine e selezionare "copia indirizzo immagine" <br/>
