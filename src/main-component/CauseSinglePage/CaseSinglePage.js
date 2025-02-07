@@ -16,9 +16,13 @@ const CauseSinglePage = (props) => {
     const [isMobile, setIsMobile] = useState(false);
     const [causeOnline, setCauseOnline] = useState()
     const [caseDetails, setCaseDetails] = useState()
+    const [isLoad, setIsLoad] = useState(false)
     const { slug } = useParams()
     useEffect(() => {
         const primo = Causes.find(item => item.slug === slug)
+        if(!!primo){
+            setIsLoad(true)
+        }
 
         setCaseDetails(primo)
       const handleResize = () => {
@@ -34,8 +38,9 @@ const CauseSinglePage = (props) => {
         setCauseOnline(fetchedCauses);
          let due =  fetchedCauses.find((citem) => citem.slug===slug)  
          setCaseDetails(due)
+         setIsLoad(true)
       };
-  if (!caseDetails){
+  if (!caseDetails && !isLoad){
       loadCauses();}
   
       // Aggiungi l'event listener per il resize
