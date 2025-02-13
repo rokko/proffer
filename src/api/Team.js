@@ -9,7 +9,7 @@ import pietro from '../images/team/pietro.jpg'
    {
       Id: '1',
       AtImg: damiano,
-      name: 'Damiano D’angelo',
+      name: 'Damiano D’Angelo',
       slug: 'Test',
       title: 'Presidente',
    },
