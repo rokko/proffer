@@ -23,8 +23,10 @@ function PdfViewer() {
   }
 
   function goToNextPage() {
-    // Avanza di 2 pagine per volta, assicurandoti di non superare numPages
+    if(pageNumber < 11){ 
+     // Avanza di 2 pagine per volta, assicurandoti di non superare numPages
     setPageNumber((prevPageNumber) => Math.min(numPages, prevPageNumber + 2));
+    }
   }
   const pageStyle = {
     display: 'flex',
