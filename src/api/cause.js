@@ -29,7 +29,7 @@ import fotoArticoloCamerunGame from './imageCauses/Foto Articolo Coaching x Tutt
 import fotoArticoloCamerunGame2 from './imageCauses/Foto Articolo Coaching x Tutti (12).webp'
 
 import morales from './imageCauses/Card Articolo Murales (1).webp'
-import fotoArticoloMorales from './imageCauses/Foto Articolo Murales (3).webp'
+import fotoArticoloMorales from './imageCauses/fotoMura.webp'
 import fotoArticoloMorales2 from './imageCauses/Foto Articolo Murales (4).webp'
 import camerun2 from './imageCauses/feel the court 3.jpg'
 
