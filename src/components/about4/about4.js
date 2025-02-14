@@ -95,7 +95,7 @@ const About4 = (props) => {
             
               <p style={{marginTop:'50px'}}>
                 Valerio era una mente eccelsa, nel lavoro e nelle passioni. Ha
-                soprattutto scritto <strong>libri</strong> (<a href="https://www.lagiornatatipo.it/basket-i-feel-this-game/" target="_blank">scopri di più</a>), <strong>giocato
+                soprattutto scritto <strong>articoli</strong> e anche un libro (<a href="https://www.lagiornatatipo.it/author/valerio/" target="_blank">scopri di più</a>), <strong>giocato
                 a basket, girato il mondo</strong>, spiccato il volo dalla sua Ostia
                 verso Dublino, Londra, Los Angeles. Perché mentre la
                 pallacanestro ha sempre rappresentato il suo “paese delle
