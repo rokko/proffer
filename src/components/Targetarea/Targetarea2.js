@@ -39,7 +39,7 @@ const Targetarea2 = (props) => {
                                 
                             </div>
                             {isMobile &&(
-                                <a href='/valePerTuttiBrochure.pdf' target='_blank'>
+                                <a href='/valepertuttimobile.pdf' target='_blank'>
                                  <div className="content">
                                  <PdfViewer/>
                                  </div>
