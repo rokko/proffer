@@ -8,6 +8,7 @@ import faro from '../../images/partner/faro.png'
 import iotifo from '../../images/partner/iotifo.png'
 import lagiornata from '../../images/partner/lagiornata.png'
 import westin from '../../images/partner/westin.png'
+import wecare from '../../images/partner/wecare.png'
 
 const Collaborazioni = (props) => {
 
@@ -35,6 +36,7 @@ const Collaborazioni = (props) => {
                     <img width={100} src={avaz} />
                     <img width={100} src={iotifo} />
                     <img width={100} src={lagiornata} />
+                    <img width={100} src={wecare} />
 
 
 
@@ -54,6 +56,7 @@ const Collaborazioni = (props) => {
 
                     <img width={100} src={iotifo} />
                     <img width={100} src={lagiornata} />
+                    <img width={100} src={wecare} />
                     </div>
                 </div>
             }
