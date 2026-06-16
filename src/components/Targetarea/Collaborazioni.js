@@ -28,38 +28,22 @@ const Collaborazioni = (props) => {
                 <span style={{ textAlign: 'center' }}>Collaborazioni</span>
 
             </div>
-            {!isMobile &&
-                <div className="content" style={{ display: 'flex', flexDirection: 'row', alignContent: 'center', alignItems: 'center', gap: '50px' }}>
-
-                    <img width={100} src={faro} />
-                    <img width={100} src={westin} />
-                    <img width={100} src={avaz} />
-                    <img width={100} src={iotifo} />
-                    <img width={100} src={lagiornata} />
-                    <img width={100} src={wecare} />
-
-
-
-                </div>}
-            {isMobile &&
-                <div style={{ display: 'flex', flexDirection: 'column', justifyContent:'center', alignContent:'center',gap:'20px' }}>
-                    <div className="content" style={{ display: 'flex', flexDirection: 'row', alignContent: 'center', alignItems: 'center', gap: '50px' }}>
-
-                        <img width={100} src={faro} />
-                        <img width={100} src={westin} />
-                        <img width={100} src={avaz} />
-
-
-
-                    </div>
-                    <div className="content" style={{ display: 'flex', flexDirection: 'row', justifyContent:'center',alignContent: 'center', alignItems: 'center', gap: '50px' }}>
-
-                    <img width={100} src={iotifo} />
-                    <img width={100} src={lagiornata} />
-                    <img width={100} src={wecare} />
-                    </div>
-                </div>
-            }
+            <div className="content" style={{ 
+                display: 'flex', 
+                flexDirection: 'row', 
+                flexWrap: 'wrap',
+                justifyContent: 'center', 
+                alignItems: 'center', 
+                gap: isMobile ? '30px' : '50px',
+                padding: '10px 20px'
+            }}>
+                <img width={isMobile ? 90 : 110} src={faro} />
+                <img width={isMobile ? 90 : 110} src={westin} />
+                <img width={isMobile ? 90 : 110} src={avaz} />
+                <img width={isMobile ? 90 : 110} src={iotifo} />
+                <img width={isMobile ? 90 : 110} src={lagiornata} />
+                <img width={isMobile ? 110 : 170} src={wecare} />
+            </div>
 
 
 
