@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "homepage": "http://proffer-react.themegeniuslab.com",
   "private": true,
+  "engines": {
+    "node": "24.x"
+  },
   "dependencies": {
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
