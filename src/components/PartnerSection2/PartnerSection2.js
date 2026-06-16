@@ -5,6 +5,7 @@ import pimg3 from '../../images/partners/img-3.png'
 import pimg4 from '../../images/partners/img-4.png'
 import pimg5 from '../../images/partners/img-5.png'
 import pimg6 from '../../images/partners/img-6.png'
+import wecareLogo from '../../images/partners/wecare.png'
 
 const partners = [
     {
@@ -24,6 +25,9 @@ const partners = [
     },
     {
         pImg: pimg6,
+    },
+    {
+        pImg: wecareLogo,
     }
 ]
 
